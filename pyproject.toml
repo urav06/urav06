@@ -1,0 +1,15 @@
+[project]
+name = "urav06"
+version = "0.1.0"
+description = "Entropy: Repository Entropy Visualization"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "google-genai>=1.52.0",
+    "httpx>=0.28.1",
+    "matplotlib>=3.10.7",
+    "numpy>=2.3.5",
+]
+
+[dependency-groups]
+dev = []
