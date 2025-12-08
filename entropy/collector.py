@@ -26,7 +26,7 @@ IGNORED_USERS: set[str] = set()  # Insert snowflakes here
 GITHUB_API              : str = "https://api.github.com"
 SEARCH_COMMITS_ENDPOINT : str = "/search/commits"
 EVENTS_ENDPOINT         : str = "/users/{user}/received_events/public"
-STARRTED_ENDPOINT       : str = "/users/{user}/starred"
+STARRED_ENDPOINT       : str = "/users/{user}/starred"
 COMMITS_ENDPOINT        : str = "/repos/{repo}/commits"
 FETCH_COMMIT_ENDPOINT   : str = "/repos/{repo}/commits/{sha}"
 
@@ -81,6 +81,9 @@ class EntropyCollector:
             return None
 
         for event in cast(list[Event], resp):
+            if event["type"] != "PushEvent":
+                continue
+
             user: GitHubLogin   = GitHubLogin(event["actor"]["login"])
             repo: RepoSlug      = RepoSlug(event["repo"]["name"])
             sha : CommitHash    = CommitHash(event["payload"]["head"])
@@ -88,7 +91,7 @@ class EntropyCollector:
             if self._parse_ts(event["created_at"]) < self._cutoff:
                 break
 
-            if (event["type"] != "PushEvent") or (user in IGNORED_USERS) or (repo in IGNORED_REPOS):
+            if user in IGNORED_USERS or repo in IGNORED_REPOS:
                 continue
 
             if source := self.fetch_commit(repo, sha):
@@ -98,28 +101,28 @@ class EntropyCollector:
 
     def _scout_starred(self) -> EntropySource | None:
         """ Latest commit from a recently-pushed starred repo. """
-        if not (resp := self._get(STARRTED_ENDPOINT.format(user=self.user), params={"per_page": 50})):
+        if not (resp := self._get(STARRED_ENDPOINT.format(user=self.user), params={"per_page": 50})):
             return None
 
         repos       = cast(list[StarredRepo], resp)
         fresh_repos = [
-            r for r in repos
+            RepoSlug(r["full_name"]) for r in repos
             if self._parse_ts(r.get("pushed_at") or "2000-06-01") > self._cutoff
             and r["full_name"] not in IGNORED_REPOS
             and r["owner"]["login"] not in IGNORED_USERS
         ]
         random.shuffle(fresh_repos)
 
-        for repo_data in fresh_repos:
-            repo = RepoSlug(repo_data["full_name"])
-
+        for repo in fresh_repos:
             if not (resp := self._get(COMMITS_ENDPOINT.format(repo=repo), params={"per_page": 1})):
                 continue
 
-            commits = cast(list[CommitSummary], resp)
-            if source := self.fetch_commit(repo, CommitHash(commits[0]["sha"])):
-                if source.author_handle not in IGNORED_USERS:
-                    return source
+            if (
+                len(commits := cast(list[CommitSummary], resp)) > 0
+                and (source := self.fetch_commit(repo, CommitHash(commits[0]["sha"])))
+                and (source.author_handle not in IGNORED_USERS)
+            ):
+                return source
 
         return None
 
@@ -140,7 +143,7 @@ class EntropyCollector:
         if not (resp := self._get(FETCH_COMMIT_ENDPOINT.format(repo=repo, sha=sha))):
             return None
 
-        data    = cast("CommitResponse", resp)
+        data    = cast(CommitResponse, resp)
         author  = data["author"]
         commit  = data["commit"]
 
@@ -179,7 +182,7 @@ class EntropyCollector:
         resp = self.client.get(endpoint, params=params)
         if resp.status_code in (403, 404):
             return None  # Expected: private repo, deleted, etc.
-        resp.raise_for_status()
+        _ = resp.raise_for_status()
         return resp.json()
 
     @staticmethod
