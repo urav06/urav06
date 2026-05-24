@@ -70,7 +70,7 @@ class EntropyCollector:
         if not (items := SearchResponse.model_validate(resp).items):
             return None
 
-        return self.fetch_commit(RepoSlug(items[0].repository.full_name), CommitHash(items[0].sha))
+        return self.fetch_commit(RepoSlug(items[0].full_name), CommitHash(items[0].sha))
 
     def _scout_network(self) -> EntropySource | None:
         """ PushEvents from network → fetch commit. """
@@ -82,9 +82,9 @@ class EntropyCollector:
             if event.type != "PushEvent":
                 continue
 
-            user: GitHubLogin   = GitHubLogin(event.actor.login)
-            repo: RepoSlug      = RepoSlug(event.repo.name)
-            sha : CommitHash    = CommitHash(event.payload.head)
+            user: GitHubLogin   = GitHubLogin(event.actor)
+            repo: RepoSlug      = RepoSlug(event.repo)
+            sha : CommitHash    = CommitHash(event.head)
 
             if event.created_at < self._cutoff:
                 break
@@ -106,7 +106,7 @@ class EntropyCollector:
             RepoSlug(r.full_name) for r in TypeAdapter(list[StarredRepo]).validate_python(resp)
             if r.pushed_at and r.pushed_at > self._cutoff
             and r.full_name not in IGNORED_REPOS
-            and r.owner.login not in IGNORED_USERS
+            and r.owner_login not in IGNORED_USERS
         ]
         random.shuffle(fresh_repos)
 
@@ -143,12 +143,12 @@ class EntropyCollector:
 
         data = CommitResponse.model_validate(resp)
         return EntropySource(
-            timestamp       = data.commit.author.date,
-            author_name     = data.commit.author.name,
-            author_handle   = GitHubLogin(data.author.login if data.author else "Unknown"),
+            timestamp       = data.author_date,
+            author_name     = data.author_name,
+            author_handle   = GitHubLogin(data.author_login or "Unknown"),
             repo_slug       = repo,
             commit_hash     = sha,
-            message         = data.commit.message,
+            message         = data.message,
             diff            = self._pack_diff(data.files),
             permalink       = data.html_url,
         )

@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from typing import NewType
 
-from pydantic import BaseModel
+from pydantic import AliasPath, BaseModel, Field
 
 # ==========================================
 # Domain Primitives
@@ -46,79 +46,38 @@ class Transmutation:
 # ==========================================
 # GitHub API Response Models
 # ==========================================
-# Validated at the boundary by the Collector. Optional fields are defaulted so
-# eager validation tolerates the API's variety (e.g. non-PushEvents carry no
-# payload.head, binary files carry no patch).
+# Validated at the boundary by the Collector. Field-aliases flatten the API's
+# nesting down to the values we actually read; a missing or null path falls back
+# to the field default, so non-PushEvents, null authors and binary files (no
+# patch) all validate cleanly.
 
-# --- Search API ---
-class SearchRepository(BaseModel):
-    full_name: str
-
-
+# --- Search API: GET /search/commits ---
 class SearchHit(BaseModel):
-    """One result from GET /search/commits"""
-
     sha         : str
-    repository  : SearchRepository
+    full_name   : str = Field(validation_alias=AliasPath("repository", "full_name"))
 
 
 class SearchResponse(BaseModel):
-    """GET /search/commits response"""
-
     items: list[SearchHit]
 
 
-# --- Events API ---
-class EventRepo(BaseModel):
-    name: str
-
-
-class PushPayload(BaseModel):
-    head: str = ""
-
-
-class EventActor(BaseModel):
-    login: str
-
-
+# --- Events API: GET /users/{user}/received_events ---
 class Event(BaseModel):
-    """One event from GET /users/{user}/received_events"""
-
     type        : str  # "PushEvent", "WatchEvent", etc.
-    repo        : EventRepo
-    actor       : EventActor
-    payload     : PushPayload
     created_at  : datetime
+    repo        : str = Field(validation_alias=AliasPath("repo", "name"))
+    actor       : str = Field(validation_alias=AliasPath("actor", "login"))
+    head        : str = Field("", validation_alias=AliasPath("payload", "head"))
 
 
-# --- Starred API ---
-class RepoOwner(BaseModel):
-    login: str
-
-
+# --- Starred API: GET /users/{user}/starred ---
 class StarredRepo(BaseModel):
-    """One repo from GET /users/{user}/starred"""
-
     full_name   : str
     pushed_at   : datetime | None = None
-    owner       : RepoOwner
+    owner_login : str = Field(validation_alias=AliasPath("owner", "login"))
 
 
-# --- Commits API ---
-class CommitAuthor(BaseModel):
-    name: str
-    date: datetime
-
-
-class CommitData(BaseModel):
-    author  : CommitAuthor
-    message : str
-
-
-class GitHubUser(BaseModel):
-    login: str
-
-
+# --- Commits API: GET /repos/{repo}/commits[/{sha}] ---
 class FilePatch(BaseModel):
     filename: str
     patch   : str = ""
@@ -129,9 +88,9 @@ class CommitSummary(BaseModel):
 
 
 class CommitResponse(BaseModel):
-    """GET /repos/{owner}/{repo}/commits/{sha} response"""
-
-    commit  : CommitData
-    author  : GitHubUser | None = None
-    html_url: str
-    files   : list[FilePatch] = []
+    html_url    : str
+    message     : str             = Field(validation_alias=AliasPath("commit", "message"))
+    author_name : str             = Field(validation_alias=AliasPath("commit", "author", "name"))
+    author_date : datetime        = Field(validation_alias=AliasPath("commit", "author", "date"))
+    author_login: str | None      = Field(None, validation_alias=AliasPath("author", "login"))
+    files       : list[FilePatch] = []
