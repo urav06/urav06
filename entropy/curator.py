@@ -94,11 +94,13 @@ class Curator:
         )
 
     def _inject_section(self, text: str, section: str) -> str:
-        """Replace content between markers."""
-        start   = text.find(MARKER_START)
-        end     = text.find(MARKER_END)
+        """ Replace the marked section, normalizing the blank lines around it. """
+        start = text.find(MARKER_START)
+        end   = text.find(MARKER_END)
 
         if start == -1 or end == -1:
-            return text + "\n" + section
+            raise RuntimeError("README.md is missing ENTROPY markers")
 
-        return text[:start] + section + text[end + len(MARKER_END) :]
+        before = text[:start].rstrip()
+        after  = text[end + len(MARKER_END):].lstrip()
+        return f"{before}\n\n{section.strip()}\n\n{after}"
