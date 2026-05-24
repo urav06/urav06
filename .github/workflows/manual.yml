@@ -1,0 +1,42 @@
+name: Entropy (Manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: Repository (owner/repo)
+        required: true
+        type: string
+      sha:
+        description: Commit SHA
+        required: true
+        type: string
+
+concurrency:
+  group: entropy
+  cancel-in-progress: true
+
+jobs:
+  entropy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v4
+        with:
+          enable-cache: true
+
+      - name: Run pipeline
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: uv run python -m entropy "${{ inputs.repo }}" "${{ inputs.sha }}"
+
+      - name: Commit & Push
+        run: .github/workflows/commit.sh "🌌 $(date +%Y-%m-%d)"

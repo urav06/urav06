@@ -1,0 +1,36 @@
+name: Entropy (Auto)
+
+on:
+  schedule:
+    - cron: '0 3 * * *'  # Daily at 3am UTC
+  workflow_dispatch:
+
+concurrency:
+  group: entropy
+  cancel-in-progress: true
+
+jobs:
+  entropy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v4
+        with:
+          enable-cache: true
+
+      - name: Run pipeline
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          GITHUB_USER: urav06
+        run: uv run python -m entropy
+
+      - name: Commit & Push
+        run: .github/workflows/commit.sh "🌌 $(date +%Y-%m-%d)"
