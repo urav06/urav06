@@ -18,9 +18,11 @@ from entropy.types import (
 )
 
 # --- Configuration ---
-FRESHNESS_HRS: int      = 25
-IGNORED_REPOS: set[str] = {"urav06/urav06"}
-IGNORED_USERS: set[str] = set()  # Insert snowflakes here
+FRESHNESS_HRS   : int       = 25
+DIFF_BUDGET     : int       = 50_000    # total diff chars fed to the model — bounded for any commit size
+DIFF_PER_FILE   : int       = 10_000    # per-file cap so one huge file can't crowd out the rest
+IGNORED_REPOS   : set[str]  = {"urav06/urav06"}
+IGNORED_USERS   : set[str]  = set()  # Insert snowflakes here
 
 # --- API Endpoints ---
 GITHUB_API              : str = "https://api.github.com"
@@ -29,6 +31,13 @@ EVENTS_ENDPOINT         : str = "/users/{user}/received_events/public"
 STARRED_ENDPOINT        : str = "/users/{user}/starred"
 COMMITS_ENDPOINT        : str = "/repos/{repo}/commits"
 FETCH_COMMIT_ENDPOINT   : str = "/repos/{repo}/commits/{sha}"
+
+# --- Response validators (built once) ---
+_SEARCH  : TypeAdapter[SearchResponse]      = TypeAdapter(SearchResponse)
+_EVENTS  : TypeAdapter[list[Event]]         = TypeAdapter(list[Event])
+_STARRED : TypeAdapter[list[StarredRepo]]   = TypeAdapter(list[StarredRepo])
+_COMMITS : TypeAdapter[list[CommitSummary]] = TypeAdapter(list[CommitSummary])
+_COMMIT  : TypeAdapter[CommitResponse]      = TypeAdapter(CommitResponse)
 
 
 class EntropyCollector:
@@ -46,7 +55,6 @@ class EntropyCollector:
         self._cutoff: datetime = datetime.now(UTC) - timedelta(hours=FRESHNESS_HRS)
 
     def collect(self) -> EntropySource:
-
         return (
             self._scout_self()
             or self._scout_network()
@@ -64,21 +72,21 @@ class EntropyCollector:
             f"committer-date:>{self._cutoff.isoformat()}",
         ])
 
-        if not (resp := self._get(SEARCH_COMMITS_ENDPOINT, params={"q": query, "per_page": 1})):
+        if not (resp := self._get(SEARCH_COMMITS_ENDPOINT, _SEARCH, q=query, per_page=1)):
+            return None
+        if not resp.items:
             return None
 
-        if not (items := SearchResponse.model_validate(resp).items):
-            return None
-
-        return self.fetch_commit(RepoSlug(items[0].full_name), CommitHash(items[0].sha))
+        hit = resp.items[0]
+        return self.fetch_commit(RepoSlug(hit.full_name), CommitHash(hit.sha))
 
     def _scout_network(self) -> EntropySource | None:
         """ PushEvents from network → fetch commit. """
 
-        if not (resp := self._get(EVENTS_ENDPOINT.format(user=self.user), params={"per_page": 100})):
+        if not (events := self._get(EVENTS_ENDPOINT.format(user=self.user), _EVENTS, per_page=100)):
             return None
 
-        for event in TypeAdapter(list[Event]).validate_python(resp):
+        for event in events:
             if event.type != "PushEvent":
                 continue
 
@@ -99,11 +107,11 @@ class EntropyCollector:
 
     def _scout_starred(self) -> EntropySource | None:
         """ Latest commit from a recently-pushed starred repo. """
-        if not (resp := self._get(STARRED_ENDPOINT.format(user=self.user), params={"per_page": 50})):
+        if not (repos := self._get(STARRED_ENDPOINT.format(user=self.user), _STARRED, per_page=50)):
             return None
 
         fresh_repos = [
-            RepoSlug(r.full_name) for r in TypeAdapter(list[StarredRepo]).validate_python(resp)
+            RepoSlug(r.full_name) for r in repos
             if r.pushed_at and r.pushed_at > self._cutoff
             and r.full_name not in IGNORED_REPOS
             and r.owner_login not in IGNORED_USERS
@@ -111,15 +119,11 @@ class EntropyCollector:
         random.shuffle(fresh_repos)
 
         for repo in fresh_repos:
-            if not (resp := self._get(COMMITS_ENDPOINT.format(repo=repo), params={"per_page": 1})):
+            if not (commits := self._get(COMMITS_ENDPOINT.format(repo=repo), _COMMITS, per_page=1)):
                 continue
 
-            commits = TypeAdapter(list[CommitSummary]).validate_python(resp)
-            if (
-                commits
-                and (source := self.fetch_commit(repo, CommitHash(commits[0].sha)))
-                and (source.author_handle not in IGNORED_USERS)
-            ):
+            source = self.fetch_commit(repo, CommitHash(commits[0].sha))
+            if source and source.author_handle not in IGNORED_USERS:
                 return source
 
         return None
@@ -138,10 +142,9 @@ class EntropyCollector:
     def fetch_commit(self, repo: RepoSlug, sha: CommitHash) -> EntropySource | None:
         """ Fetch a specific commit by repo and SHA. """
 
-        if not (resp := self._get(FETCH_COMMIT_ENDPOINT.format(repo=repo, sha=sha))):
+        if not (data := self._get(FETCH_COMMIT_ENDPOINT.format(repo=repo, sha=sha), _COMMIT)):
             return None
 
-        data = CommitResponse.model_validate(resp)
         return EntropySource(
             timestamp       = data.author_date,
             author_name     = data.author_name,
@@ -153,29 +156,24 @@ class EntropyCollector:
             permalink       = data.html_url,
         )
 
-    def _pack_diff(self, files: list[FilePatch], max_len: int = 3000) -> str:
-        """ Pack file patches into a buffer, prioritizing larger diffs. """
-        patches = [(f.filename, f.patch) for f in files if f.patch]
-        patches.sort(key=lambda x: len(x[1]), reverse=True)
+    def _pack_diff(self, files: list[FilePatch]) -> str:
+        """ Join file patches under a per-file and total char budget, cutting on line boundaries. """
+        blocks: list[str] = []
+        for f in files:
+            if not f.patch:
+                continue
+            patch = f.patch if len(f.patch) <= DIFF_PER_FILE else f.patch[:DIFF_PER_FILE].rsplit("\n", 1)[0] + "\n…"
+            blocks.append(f"File: {f.filename}\n{patch}")
 
-        buffer: list[str] = []
-        length = 0
-        for name, patch in patches:
-            entry = f"File: {name}\n{patch}\n\n"
-            if length + len(entry) > max_len:
-                remaining = max_len - length
-                if remaining > 50:
-                    buffer.append(f"File: {name}\n{patch[:remaining]}...[Truncated]")
-                break
-            buffer.append(entry)
-            length += len(entry)
+        diff = "\n\n".join(blocks)
+        if len(diff) > DIFF_BUDGET:
+            diff = diff[:DIFF_BUDGET].rsplit("\n", 1)[0] + "\n…[diff truncated]"
+        return diff or "No text changes."
 
-        return "".join(buffer) or "No text changes."
-
-    def _get(self, endpoint: str, params: dict[str, str | int] | None = None) -> object | None:
-        """ Safe GET """
+    def _get[T](self, endpoint: str, shape: TypeAdapter[T], **params: str | int) -> T | None:
+        """ GET, then validate the body into shape; None on the expected 403/404 (private, deleted, etc.). """
         resp = self.client.get(endpoint, params=params)
         if resp.status_code in (403, 404):
-            return None  # Expected: private repo, deleted, etc.
+            return None
         _ = resp.raise_for_status()
-        return resp.json()
+        return shape.validate_python(resp.json())
