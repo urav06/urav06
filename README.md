@@ -13,7 +13,7 @@ This section auto-updates daily. It features one of my recent commits, or someth
 
 <sub>Last updated: 2026-05-25</sub>
 
-<img src="image.png?v=1779685562" alt="Entropy" width="365">
+<img src="image.png?v=1779693291" alt="Entropy" width="365">
 
 **Commit:** [rid-saw/portfolio](https://github.com/rid-saw/portfolio) by [@rid-saw](https://github.com/rid-saw) · [`e218d7f`](https://github.com/rid-saw/portfolio/commit/e218d7fb34c8c195fc4b3fc297416f9500572f89)
 
@@ -25,9 +25,9 @@ updating portfolio
 
 ---
 
-**Review:** This isn't merely an 'update'; an entire project has been swapped out for a more product-minded showcase. The new 'Flash-Cards-4-Fun' entry, especially its provider-agnostic LLM layer and zero-backend Claude Artifact, is a significantly more compelling demonstration of engineering depth than what it replaced.
+**Review:** This isn't just an 'update'; it's a strategic portfolio refinement. Shifting a key certification from Azure to AWS ML and carefully reordering / rewriting project descriptions shows a deliberate pivot towards specific career goals. The new TA role and improved experience bullet points are also excellent touches.
 
-`Chaos: 75%` · `Mood: #FFD700`
+`Chaos: 55%` · `Mood: #3498DB`
 
 </div>
 <!-- ENTROPY:END -->
