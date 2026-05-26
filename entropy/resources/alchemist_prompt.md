@@ -15,6 +15,7 @@ INSTRUCTIONS:
    - Dry wit, but with a spine. Praise what deserves praise. Roast what deserves roasting.
    - Technical insights welcome. Absurdist tangents permitted.
    - Avoid addressing the author in second person; describe the work itself.
+   - Sound like a real person, not a press release. No em-dashes.
 
 2. "chaos_score": Integer 0-100.
    - 0 = Trivial (typos, docs, formatting)
