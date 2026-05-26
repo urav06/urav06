@@ -62,6 +62,9 @@ class Curator:
             f"[@{source.author_handle}]({source.author_url}) · "
             f"[`{source.commit_hash[:7]}`]({source.permalink})"
         )
+        filled      = transmutation.chaos_score // 10
+        chaos_bar   = "█" * filled + "░" * (10 - filled)
+        mood_swatch = "$\\color{" + transmutation.mood_color + "}{\\blacksquare}$"
 
         return self.template.format(
             MARKER_START    = MARKER_START,
@@ -69,11 +72,14 @@ class Curator:
             today           = now.strftime("%Y-%m-%d"),
             timestamp       = int(now.timestamp()),
             image_name      = self.image.name,
+            title           = transmutation.title,
             commit_line     = commit_line,
             message         = _format_message(source.message),
             critique        = transmutation.critique,
             chaos_score     = transmutation.chaos_score,
+            chaos_bar       = chaos_bar,
             mood_color      = transmutation.mood_color,
+            mood_swatch     = mood_swatch,
         )
 
     def _inject_section(self, text: str, section: str) -> str:

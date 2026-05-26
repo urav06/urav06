@@ -46,6 +46,7 @@ class Transmutation:
     """The Alchemist's analysis of the entropy."""
 
     source      : EntropySource
+    title       : str
     critique    : str
     chaos_score : ChaosScore
     mood_color  : HexColor

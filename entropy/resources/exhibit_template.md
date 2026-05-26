@@ -1,21 +1,19 @@
 {MARKER_START}
 <div align="center">
 
-<sub>Last updated: {today}</sub>
-
 <img src="{image_name}?v={timestamp}" alt="Entropy" width="365">
 
-**Commit:** {commit_line}
+### {title}
 
-**Message:**
+Chaos {chaos_bar} {chaos_score} · Mood {mood_swatch} {mood_color}
+
+{commit_line}
 
 {message}
 
----
+{critique}
 
-**Review:** {critique}
-
-`Chaos: {chaos_score}%` · `Mood: {mood_color}`
+<sub>captured {today}</sub>
 
 </div>
 {MARKER_END}

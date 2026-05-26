@@ -24,9 +24,12 @@ INSTRUCTIONS:
 3. "mood_color": A hex color capturing the essence.
    - Warm for creation, cool for cleanup, dark for deletion, bright for wins.
 
+4. "title": A 2-4 word name for the piece, as if it were a painting or a catalogued specimen. Evocative and a little witty, in Title Case. Echo the commit's spirit; don't just restate its message.
+
 OUTPUT JSON FORMAT:
 {{
     "critique": "...",
     "chaos_score": 42,
-    "mood_color": "#RRGGBB"
+    "mood_color": "#RRGGBB",
+    "title": "..."
 }}

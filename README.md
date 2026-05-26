@@ -6,7 +6,7 @@ I'm Urav. I build things with code.
 
 #### 📌 Featured Commit
 
-This section auto-updates daily. It features one of my recent commits, or something interesting from my network, or a random gem from the wild. The commit gets roasted by an opinionated AI and rendered as a strange attractor.
+Every day, a commit — mine, my network's, or a stranger's — gets named and roasted by an opinionated AI, then rendered as a unique strange attractor.
 
 <!-- ENTROPY:START -->
 <div align="center">
@@ -39,19 +39,15 @@ chore: export marketing campaign command
 
 <br>
 
-**The Pipeline:**
-1. A GitHub Action runs daily and picks a commit (my own → network → starred repos → fallback)
-2. The commit diff is fed to Gemini, which produces a witty critique, a chaos score (0-100), and a mood color
-3. A [Lorenz attractor](https://en.wikipedia.org/wiki/Lorenz_system) is rendered using these parameters:
-   - **Chaos score** → modulates ρ (rho), affecting how chaotic the butterfly looks
-   - **Mood color** → tints the gradient from black → color → white
-   - **Commit hash** → seeds the initial conditions, so every commit is unique
+```mermaid
+flowchart LR
+    commit["🌌 daily commit"] -->|diff| gemini["Gemini"]
+    gemini -->|chaos + mood| attractor["Lorenz attractor"]
+    gemini -->|title + roast| exhibit["today's exhibit"]
+    attractor --> exhibit
+```
 
-**The Math:**
-
-The Lorenz system is a set of differential equations that exhibit deterministic chaos. Small changes in initial conditions produce wildly different trajectories. It's the "butterfly effect", fitting for visualizing commits.
-
-**Links:**
+A GitHub Action runs daily and picks a commit — mine → my network → a starred repo → a legendary fallback. Gemini names it, roasts it, and scores its **chaos** (0–100) and **mood** (a color). Those drive a [Lorenz attractor](https://en.wikipedia.org/wiki/Lorenz_system): chaos bends ρ (how wild the butterfly gets), mood tints the gradient, and the commit hash seeds the initial conditions — so deterministic chaos gives every commit its own strange attractor.
 
 [See the code →](./entropy)
 

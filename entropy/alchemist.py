@@ -16,6 +16,7 @@ class AlchemistResponse(BaseModel):
     critique    : str
     chaos_score : int
     mood_color  : str
+    title       : str
 
 
 class Alchemist:
@@ -50,6 +51,7 @@ class Alchemist:
         data = AlchemistResponse.model_validate_json(response.text)
         return Transmutation(
             source      = source,
+            title       = data.title,
             critique    = data.critique,
             chaos_score = ChaosScore(max(0, min(100, data.chaos_score))),
             mood_color  = HexColor(data.mood_color),
