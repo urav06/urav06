@@ -32,6 +32,14 @@ class EntropySource:
     diff            : str
     permalink       : str
 
+    @property
+    def repo_url(self) -> str:
+        return f"https://github.com/{self.repo_slug}"
+
+    @property
+    def author_url(self) -> str:
+        return f"https://github.com/{self.author_handle}"
+
 
 @dataclass(frozen=True)
 class Transmutation:

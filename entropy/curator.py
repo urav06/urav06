@@ -36,7 +36,7 @@ def _format_message(message: str) -> str:
 
 
 class Curator:
-    """ Manages the README's dynamic section: paint → update. """
+    """ Manages the README's dynamic section: paint → splice. """
 
     def __init__(self, repo_root: Path) -> None:
         """ Initialize curator with repository root path. """
@@ -48,29 +48,19 @@ class Curator:
     def curate(self, transmutation: Transmutation) -> None:
         """ Paint the new attractor and splice it into the README. """
         paint(transmutation, self.image)
-        self._update_readme(transmutation)
-
-    def _update_readme(self, transmutation: Transmutation) -> None:
-        """Update README with new dynamic section."""
-        original    = self.readme.read_text(encoding="utf-8")
-        section     = self._render_section(transmutation)
-        updated     = self._inject_section(original, section)
-
-        _ = self.readme.write_text(updated, encoding="utf-8")
+        readme  = self.readme.read_text(encoding="utf-8")
+        section = self._render_section(transmutation)
+        _ = self.readme.write_text(self._inject_section(readme, section), encoding="utf-8")
 
     def _render_section(self, transmutation: Transmutation) -> str:
         """ Generate the dynamic markdown section. """
-        t = transmutation
-        s = t.source
-        now = datetime.now(UTC)
-
-        repo_url   = f"https://github.com/{s.repo_slug}"
-        author_url = f"https://github.com/{s.author_handle}"
-        commit_url = f"{repo_url}/commit/{s.commit_hash}"
+        source = transmutation.source
+        now    = datetime.now(UTC)
 
         commit_line = (
-            f"[{s.repo_slug}]({repo_url}) by "
-            f"[@{s.author_handle}]({author_url}) · [`{s.commit_hash[:7]}`]({commit_url})"
+            f"[{source.repo_slug}]({source.repo_url}) by "
+            f"[@{source.author_handle}]({source.author_url}) · "
+            f"[`{source.commit_hash[:7]}`]({source.permalink})"
         )
 
         return self.template.format(
@@ -80,10 +70,10 @@ class Curator:
             timestamp       = int(now.timestamp()),
             image_name      = self.image.name,
             commit_line     = commit_line,
-            message         = _format_message(s.message),
-            critique        = t.critique,
-            chaos_score     = t.chaos_score,
-            mood_color      = t.mood_color,
+            message         = _format_message(source.message),
+            critique        = transmutation.critique,
+            chaos_score     = transmutation.chaos_score,
+            mood_color      = transmutation.mood_color,
         )
 
     def _inject_section(self, text: str, section: str) -> str:

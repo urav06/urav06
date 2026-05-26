@@ -28,12 +28,15 @@ def main() -> None:
     alchemist   = Alchemist(environ["GOOGLE_API_KEY"])
     curator     = Curator(Path.cwd())
 
-    if len(sys.argv) == 3:  # noqa: PLR2004
-        source = collector.fetch_commit(RepoSlug(sys.argv[1]), CommitHash(sys.argv[2]))
-        if not source:
-            sys.exit(f"Commit not found: {sys.argv[1]}@{sys.argv[2]}")
-    else:
-        source = collector.collect()
+    match sys.argv[1:]:
+        case [repo, sha]:
+            source = collector.fetch_commit(RepoSlug(repo), CommitHash(sha))
+            if not source:
+                sys.exit(f"Commit not found: {repo}@{sha}")
+        case []:
+            source = collector.collect()
+        case _:
+            sys.exit("Usage: python -m entropy [REPO SHA]")
 
     curator.curate(alchemist.transmute(source))
 

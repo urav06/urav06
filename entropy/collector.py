@@ -33,11 +33,11 @@ COMMITS_ENDPOINT        : str = "/repos/{repo}/commits"
 FETCH_COMMIT_ENDPOINT   : str = "/repos/{repo}/commits/{sha}"
 
 # --- Response validators (built once) ---
-_SEARCH  : TypeAdapter[SearchResponse]      = TypeAdapter(SearchResponse)
-_EVENTS  : TypeAdapter[list[Event]]         = TypeAdapter(list[Event])
-_STARRED : TypeAdapter[list[StarredRepo]]   = TypeAdapter(list[StarredRepo])
-_COMMITS : TypeAdapter[list[CommitSummary]] = TypeAdapter(list[CommitSummary])
-_COMMIT  : TypeAdapter[CommitResponse]      = TypeAdapter(CommitResponse)
+SEARCH_RESULTS : TypeAdapter[SearchResponse]      = TypeAdapter(SearchResponse)
+EVENTS         : TypeAdapter[list[Event]]         = TypeAdapter(list[Event])
+STARRED_REPOS  : TypeAdapter[list[StarredRepo]]   = TypeAdapter(list[StarredRepo])
+REPO_COMMITS   : TypeAdapter[list[CommitSummary]] = TypeAdapter(list[CommitSummary])
+COMMIT_DETAIL  : TypeAdapter[CommitResponse]      = TypeAdapter(CommitResponse)
 
 
 class EntropyCollector:
@@ -72,7 +72,7 @@ class EntropyCollector:
             f"committer-date:>{self._cutoff.isoformat()}",
         ])
 
-        if not (resp := self._get(SEARCH_COMMITS_ENDPOINT, _SEARCH, q=query, per_page=1)):
+        if not (resp := self._get(SEARCH_COMMITS_ENDPOINT, SEARCH_RESULTS, q=query, per_page=1)):
             return None
         if not resp.items:
             return None
@@ -83,7 +83,7 @@ class EntropyCollector:
     def _scout_network(self) -> EntropySource | None:
         """ PushEvents from network → fetch commit. """
 
-        if not (events := self._get(EVENTS_ENDPOINT.format(user=self.user), _EVENTS, per_page=100)):
+        if not (events := self._get(EVENTS_ENDPOINT.format(user=self.user), EVENTS, per_page=100)):
             return None
 
         for event in events:
@@ -107,7 +107,7 @@ class EntropyCollector:
 
     def _scout_starred(self) -> EntropySource | None:
         """ Latest commit from a recently-pushed starred repo. """
-        if not (repos := self._get(STARRED_ENDPOINT.format(user=self.user), _STARRED, per_page=50)):
+        if not (repos := self._get(STARRED_ENDPOINT.format(user=self.user), STARRED_REPOS, per_page=50)):
             return None
 
         fresh_repos = [
@@ -119,7 +119,7 @@ class EntropyCollector:
         random.shuffle(fresh_repos)
 
         for repo in fresh_repos:
-            if not (commits := self._get(COMMITS_ENDPOINT.format(repo=repo), _COMMITS, per_page=1)):
+            if not (commits := self._get(COMMITS_ENDPOINT.format(repo=repo), REPO_COMMITS, per_page=1)):
                 continue
 
             source = self.fetch_commit(repo, CommitHash(commits[0].sha))
@@ -142,7 +142,7 @@ class EntropyCollector:
     def fetch_commit(self, repo: RepoSlug, sha: CommitHash) -> EntropySource | None:
         """ Fetch a specific commit by repo and SHA. """
 
-        if not (data := self._get(FETCH_COMMIT_ENDPOINT.format(repo=repo, sha=sha), _COMMIT)):
+        if not (data := self._get(FETCH_COMMIT_ENDPOINT.format(repo=repo, sha=sha), COMMIT_DETAIL)):
             return None
 
         return EntropySource(
