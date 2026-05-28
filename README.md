@@ -11,19 +11,25 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1779946302" alt="Entropy" width="365">
+<img src="image.png?v=1779951289" alt="Entropy" width="365">
 
-### HTML Architecture Blueprint
+### The Version Ritual
 
-Chaos ███████░░░ 70 · Mood $\color{#5C6F7D}{\blacksquare}$ #5C6F7D
+Chaos █░░░░░░░░░ 15 · Mood $\color{#627B9B}{\blacksquare}$ #627B9B
 
-[mattpocock/skills](https://github.com/mattpocock/skills) by [@mattpocock](https://github.com/mattpocock) · [`0288510`](https://github.com/mattpocock/skills/commit/0288510dd61ff6ef7c2003834082ab8f2387e80e)
+[github/spec-kit](https://github.com/github/spec-kit) by [@mnriem](https://github.com/mnriem) · [`cec63d3`](https://github.com/github/spec-kit/commit/cec63d34e31dac77e4bb9b57594d14d677effa28)
 
 ~~~
-Merge branch 'main' of github.com:mattpocock/skills
+chore: release 0.8.16, begin 0.8.17.dev0 development (#2729)
+
+* chore: bump version to 0.8.16
+
+* chore: begin 0.8.17.dev0 development
+
+…
 ~~~
 
-This isn't just a document; it's a manifesto. Defining an entire self-contained HTML reporting standard, complete with strict vocabulary, specific visual patterns, and CDN-loaded tooling, is wonderfully opinionated. It bypasses any build process, focusing purely on communicative efficacy. A refreshing insistence on clarity over corporate platitudes.
+This is the heartbeat of a well-oiled project: boring, necessary version bumps. One release done, the next already ticking into a new `dev0` cycle – a relentless march forward with zero surprises.
 
 <sub>captured 2026-05-28</sub>
 
