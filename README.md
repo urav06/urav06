@@ -11,27 +11,21 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1779810391" alt="Entropy" width="365">
+<img src="image.png?v=1779946302" alt="Entropy" width="365">
 
-### The Perennial Bump
+### HTML Architecture Blueprint
 
-Chaos █░░░░░░░░░ 15 · Mood $\color{#A0CBE8}{\blacksquare}$ #A0CBE8
+Chaos ███████░░░ 70 · Mood $\color{#5C6F7D}{\blacksquare}$ #5C6F7D
 
-[github/spec-kit](https://github.com/github/spec-kit) by [@mnriem](https://github.com/mnriem) · [`c47f334`](https://github.com/github/spec-kit/commit/c47f334629bed1394424bafb01e717abdf76b449)
+[mattpocock/skills](https://github.com/mattpocock/skills) by [@mattpocock](https://github.com/mattpocock) · [`0288510`](https://github.com/mattpocock/skills/commit/0288510dd61ff6ef7c2003834082ab8f2387e80e)
 
 ~~~
-chore: release 0.8.14, begin 0.8.15.dev0 development (#2706)
-
-* chore: bump version to 0.8.14
-
-* chore: begin 0.8.15.dev0 development
-
-…
+Merge branch 'main' of github.com:mattpocock/skills
 ~~~
 
-Another glorious cycle completes, with bots co-authoring the inevitable version bump and changelog update. This is a perfectly mechanical 'chore', proving that the wheels of progress, even the tiny ones, keep turning on schedule. The future date in the changelog entry is a delightful touch, ensuring *someone* is always thinking ahead.
+This isn't just a document; it's a manifesto. Defining an entire self-contained HTML reporting standard, complete with strict vocabulary, specific visual patterns, and CDN-loaded tooling, is wonderfully opinionated. It bypasses any build process, focusing purely on communicative efficacy. A refreshing insistence on clarity over corporate platitudes.
 
-<sub>captured 2026-05-26</sub>
+<sub>captured 2026-05-28</sub>
 
 </div>
 <!-- ENTROPY:END -->
