@@ -11,27 +11,26 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1779951289" alt="Entropy" width="365">
+<img src="image.png?v=1780037686" alt="Entropy" width="365">
 
-### The Version Ritual
+### No-Op Rites Cease
 
-Chaos █░░░░░░░░░ 15 · Mood $\color{#627B9B}{\blacksquare}$ #627B9B
+Chaos █░░░░░░░░░ 15 · Mood $\color{#607B8B}{\blacksquare}$ #607B8B
 
-[github/spec-kit](https://github.com/github/spec-kit) by [@mnriem](https://github.com/mnriem) · [`cec63d3`](https://github.com/github/spec-kit/commit/cec63d34e31dac77e4bb9b57594d14d677effa28)
+[github/spec-kit](https://github.com/github/spec-kit) by [@mnriem](https://github.com/mnriem) · [`5372dcb`](https://github.com/github/spec-kit/commit/5372dcbdeab4ccde9617865206e4df75841e1f0e)
 
 ~~~
-chore: release 0.8.16, begin 0.8.17.dev0 development (#2729)
+fix: disable no-op issue reporting for catalog submission workflows (#2748)
 
-* chore: bump version to 0.8.16
-
-* chore: begin 0.8.17.dev0 development
-
+Add noop: report-as-issue: false to safe-outputs frontmatter in both
+add-community-extension and add-community-preset workflows to prevent
+them from posting noise comments t
 …
 ~~~
 
-This is the heartbeat of a well-oiled project: boring, necessary version bumps. One release done, the next already ticking into a new `dev0` cycle – a relentless march forward with zero surprises.
+Ah, the silent satisfaction of squashing unnecessary notifications. This isn't grand architecture, but it's brilliant friction reduction, a classic case of taming an overzealous automated assistant. Less noise, more signal; that's good hygiene.
 
-<sub>captured 2026-05-28</sub>
+<sub>captured 2026-05-29</sub>
 
 </div>
 <!-- ENTROPY:END -->
