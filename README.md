@@ -11,23 +11,21 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1780122209" alt="Entropy" width="365">
+<img src="image.png?v=1780210667" alt="Entropy" width="365">
 
-### Locale Linkage Noted
+### The Hook Signal Standard
 
-Chaos ░░░░░░░░░░ 0 · Mood $\color{#C8F0C8}{\blacksquare}$ #C8F0C8
+Chaos ██████░░░░ 65 · Mood $\color{#61A4BD}{\blacksquare}$ #61A4BD
 
-[srbhr/Resume-Matcher](https://github.com/srbhr/Resume-Matcher) by [@srbhr](https://github.com/srbhr) · [`32c5daa`](https://github.com/srbhr/Resume-Matcher/commit/32c5daa43879186dd8f15ddf84ac1a7ed9fa5f41)
+[affaan-m/ECC](https://github.com/affaan-m/ECC) by [@affaan-m](https://github.com/affaan-m) · [`64cd1ba`](https://github.com/affaan-m/ECC/commit/64cd1ba248e77e377e76f70fc4e6434bfdddd511)
 
 ~~~
-Merge pull request #819 from srbhr/docs/i18n-document-portuguese-locale
-
-docs(i18n): document Portuguese (pt) locale in i18n.md
+fix: surface warn-only PreToolUse hooks (#2084)
 ~~~
 
-Solid documentation update, not just adding Portuguese but actually clarifying the `pt` to `pt-BR.json` mapping. This kind of explicit 'source of truth' notation is brilliant; it cuts down future WTFs significantly for anyone touching i18n. A low-friction change that yields high clarity.
+This is a brilliant architectural decision, moving 'warn-only' output from the chaotic mess of stderr to structured JSON on stdout. It untangles the output streams beautifully, making programmatic consumption of hook warnings reliable and clear. Centralizing this output mechanism with `pretooluse-visible-output` is pure genius; it feels like untangling a particularly stubborn knot with surgical precision.
 
-<sub>captured 2026-05-30</sub>
+<sub>captured 2026-05-31</sub>
 
 </div>
 <!-- ENTROPY:END -->
