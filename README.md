@@ -11,21 +11,23 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1780210667" alt="Entropy" width="365">
+<img src="image.png?v=1780385052" alt="Entropy" width="365">
 
-### The Hook Signal Standard
+### Locale Doc Level Up
 
-Chaos ██████░░░░ 65 · Mood $\color{#61A4BD}{\blacksquare}$ #61A4BD
+Chaos █░░░░░░░░░ 15 · Mood $\color{#A3F2A3}{\blacksquare}$ #A3F2A3
 
-[affaan-m/ECC](https://github.com/affaan-m/ECC) by [@affaan-m](https://github.com/affaan-m) · [`64cd1ba`](https://github.com/affaan-m/ECC/commit/64cd1ba248e77e377e76f70fc4e6434bfdddd511)
+[srbhr/Resume-Matcher](https://github.com/srbhr/Resume-Matcher) by [@srbhr](https://github.com/srbhr) · [`32c5daa`](https://github.com/srbhr/Resume-Matcher/commit/32c5daa43879186dd8f15ddf84ac1a7ed9fa5f41)
 
 ~~~
-fix: surface warn-only PreToolUse hooks (#2084)
+Merge pull request #819 from srbhr/docs/i18n-document-portuguese-locale
+
+docs(i18n): document Portuguese (pt) locale in i18n.md
 ~~~
 
-This is a brilliant architectural decision, moving 'warn-only' output from the chaotic mess of stderr to structured JSON on stdout. It untangles the output streams beautifully, making programmatic consumption of hook warnings reliable and clear. Centralizing this output mechanism with `pretooluse-visible-output` is pure genius; it feels like untangling a particularly stubborn knot with surgical precision.
+Adding documentation for a new locale, complete with flag and explicit file paths, is the minimum standard for internationalization. The note clarifying `pt` to `pt-BR.json` and its source prevents future head-scratching. It's solid, diligent housekeeping that far too many projects overlook.
 
-<sub>captured 2026-05-31</sub>
+<sub>captured 2026-06-02</sub>
 
 </div>
 <!-- ENTROPY:END -->
