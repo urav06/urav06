@@ -11,23 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1780385052" alt="Entropy" width="365">
+<img src="image.png?v=1780474622" alt="Entropy" width="365">
 
-### Locale Doc Level Up
+### The Purging Pivot
 
-Chaos █░░░░░░░░░ 15 · Mood $\color{#A3F2A3}{\blacksquare}$ #A3F2A3
+Chaos ████████░░ 80 · Mood $\color{#306D5E}{\blacksquare}$ #306D5E
 
-[srbhr/Resume-Matcher](https://github.com/srbhr/Resume-Matcher) by [@srbhr](https://github.com/srbhr) · [`32c5daa`](https://github.com/srbhr/Resume-Matcher/commit/32c5daa43879186dd8f15ddf84ac1a7ed9fa5f41)
+[urav06/claudestrophobic](https://github.com/urav06/claudestrophobic) by [@urav06](https://github.com/urav06) · [`e49244b`](https://github.com/urav06/claudestrophobic/commit/e49244bf25b4290a61ea139297751766d9ed2e9e)
 
 ~~~
-Merge pull request #819 from srbhr/docs/i18n-document-portuguese-locale
+feat: chat + project management over a shared CLI core
 
-docs(i18n): document Portuguese (pt) locale in i18n.md
+Rewrite the plugin around one stdlib engine (cli/store.py) behind two thin
+skill faces:
+
+  /sessions  list, delete (by UUID prefix), prune, and browse chats in the
+…
 ~~~
 
-Adding documentation for a new locale, complete with flag and explicit file paths, is the minimum standard for internationalization. The note clarifying `pt` to `pt-BR.json` and its source prevents future head-scratching. It's solid, diligent housekeeping that far too many projects overlook.
+This isn't just adding new features; it's a necessary architectural facelift. Consolidating core cleanup logic into a single Python engine is a sharp move, correcting the previous ad-hoc script spaghetti. The new project-level 'nuke' option, with its focus on atomic operations and real CWD tracking, brings long-overdue control to Claude's digital sprawl, even if Max Spevack’s influence suggests previous shortcomings.
 
-<sub>captured 2026-06-02</sub>
+<sub>captured 2026-06-03</sub>
 
 </div>
 <!-- ENTROPY:END -->
