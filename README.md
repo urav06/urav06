@@ -11,27 +11,21 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1780474622" alt="Entropy" width="365">
+<img src="image.png?v=1780557844" alt="Entropy" width="365">
 
-### The Purging Pivot
+### Clutter Conquest Guide
 
-Chaos ████████░░ 80 · Mood $\color{#306D5E}{\blacksquare}$ #306D5E
+Chaos ░░░░░░░░░░ 7 · Mood $\color{#4281A4}{\blacksquare}$ #4281A4
 
-[urav06/claudestrophobic](https://github.com/urav06/claudestrophobic) by [@urav06](https://github.com/urav06) · [`e49244b`](https://github.com/urav06/claudestrophobic/commit/e49244bf25b4290a61ea139297751766d9ed2e9e)
+[urav06/claudestrophobic](https://github.com/urav06/claudestrophobic) by [@urav06](https://github.com/urav06) · [`d6510a0`](https://github.com/urav06/claudestrophobic/commit/d6510a09f8b492c4c6d8eace531501b7ff2747f1)
 
 ~~~
-feat: chat + project management over a shared CLI core
-
-Rewrite the plugin around one stdlib engine (cli/store.py) behind two thin
-skill faces:
-
-  /sessions  list, delete (by UUID prefix), prune, and browse chats in the
-…
+docs: tighten README
 ~~~
 
-This isn't just adding new features; it's a necessary architectural facelift. Consolidating core cleanup logic into a single Python engine is a sharp move, correcting the previous ad-hoc script spaghetti. The new project-level 'nuke' option, with its focus on atomic operations and real CWD tracking, brings long-overdue control to Claude's digital sprawl, even if Max Spevack’s influence suggests previous shortcomings.
+This README revision is absolutely vital. It transforms vague descriptions into a sharp, pointed argument for the tool's necessity, clearly articulating a real user pain point that Claude Code has criminally neglected. It's less a documentation tightening and more a declaration of war on AI-driven digital clutter.
 
-<sub>captured 2026-06-03</sub>
+<sub>captured 2026-06-04</sub>
 
 </div>
 <!-- ENTROPY:END -->
