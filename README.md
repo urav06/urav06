@@ -11,21 +11,24 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1780557844" alt="Entropy" width="365">
+<img src="image.png?v=1780643264" alt="Entropy" width="365">
 
-### Clutter Conquest Guide
+### The Conductor's Dashboard
 
-Chaos ░░░░░░░░░░ 7 · Mood $\color{#4281A4}{\blacksquare}$ #4281A4
+Chaos ████████░░ 85 · Mood $\color{#1E4287}{\blacksquare}$ #1E4287
 
-[urav06/claudestrophobic](https://github.com/urav06/claudestrophobic) by [@urav06](https://github.com/urav06) · [`d6510a0`](https://github.com/urav06/claudestrophobic/commit/d6510a09f8b492c4c6d8eace531501b7ff2747f1)
+[affaan-m/ECC](https://github.com/affaan-m/ECC) by [@affaan-m](https://github.com/affaan-m) · [`bc8e12b`](https://github.com/affaan-m/ECC/commit/bc8e12bb80c904a5a9864797ef1fd1212aa82f3d)
 
 ~~~
-docs: tighten README
+feat: add dynamic workflow team orchestration surface
+
+Adds dynamic workflow/team orchestration skills, the content pack, and control-pane work-item/Kanban state DB support. Includes reviewer hardening for state-db CLI validation, optional state DB f
+…
 ~~~
 
-This README revision is absolutely vital. It transforms vague descriptions into a sharp, pointed argument for the tool's necessity, clearly articulating a real user pain point that Claude Code has criminally neglected. It's less a documentation tightening and more a declaration of war on AI-driven digital clutter.
+This isn't merely a feature; it's a declaration of war on solo agent silos. A new Kanban-style control pane for agents, backed by a fresh state database, moves ECC firmly into orchestrating AI *teams*. While "optional state DB failure handling" sounds like a polite warning for impending production issues, the strategic depth of the accompanying content pack is undeniably ambitious.
 
-<sub>captured 2026-06-04</sub>
+<sub>captured 2026-06-05</sub>
 
 </div>
 <!-- ENTROPY:END -->
