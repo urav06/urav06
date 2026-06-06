@@ -11,24 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1780643264" alt="Entropy" width="365">
+<img src="image.png?v=1780727431" alt="Entropy" width="365">
 
-### The Conductor's Dashboard
+### AI Flag Purge
 
-Chaos ████████░░ 85 · Mood $\color{#1E4287}{\blacksquare}$ #1E4287
+Chaos ███████░░░ 75 · Mood $\color{#4682B4}{\blacksquare}$ #4682B4
 
-[affaan-m/ECC](https://github.com/affaan-m/ECC) by [@affaan-m](https://github.com/affaan-m) · [`bc8e12b`](https://github.com/affaan-m/ECC/commit/bc8e12bb80c904a5a9864797ef1fd1212aa82f3d)
+[github/spec-kit](https://github.com/github/spec-kit) by [@Copilot](https://github.com/Copilot) · [`7106858`](https://github.com/github/spec-kit/commit/7106858c4e636098815fffa23f6c6b99eb0e156b)
 
 ~~~
-feat: add dynamic workflow team orchestration surface
+feat!: remove legacy --ai, --ai-commands-dir, and --ai-skills flags (0.10.0) (#2872)
 
-Adds dynamic workflow/team orchestration skills, the content pack, and control-pane work-item/Kanban state DB support. Includes reviewer hardening for state-db CLI validation, optional state DB f
+* Initial plan
+
+* feat!: remove legacy --ai, --ai-commands-dir, and --ai-skills flags at 0.10.0
+
 …
 ~~~
 
-This isn't merely a feature; it's a declaration of war on solo agent silos. A new Kanban-style control pane for agents, backed by a fresh state database, moves ECC firmly into orchestrating AI *teams*. While "optional state DB failure handling" sounds like a polite warning for impending production issues, the strategic depth of the accompanying content pack is undeniably ambitious.
+A necessary but brutal purge of old flag aliases and associated cruft. This wasn't just ripping off a band-aid; it was a surgical removal of an entire limb. While the chaos score is high, it reflects a decisive move towards a cleaner, `--integration`-based future. Good riddance to deprecation warnings!
 
-<sub>captured 2026-06-05</sub>
+<sub>captured 2026-06-06</sub>
 
 </div>
 <!-- ENTROPY:END -->
