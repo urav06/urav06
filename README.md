@@ -11,27 +11,26 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1780727431" alt="Entropy" width="365">
+<img src="image.png?v=1780815901" alt="Entropy" width="365">
 
-### AI Flag Purge
+### Before The Engine Starts
 
-Chaos ███████░░░ 75 · Mood $\color{#4682B4}{\blacksquare}$ #4682B4
+Chaos █████░░░░░ 55 · Mood $\color{#6A8DFF}{\blacksquare}$ #6A8DFF
 
-[github/spec-kit](https://github.com/github/spec-kit) by [@Copilot](https://github.com/Copilot) · [`7106858`](https://github.com/github/spec-kit/commit/7106858c4e636098815fffa23f6c6b99eb0e156b)
+[Cloudslab/TrustMesh-FL](https://github.com/Cloudslab/TrustMesh-FL) by [@murtazahr](https://github.com/murtazahr) · [`19dba9d`](https://github.com/Cloudslab/TrustMesh-FL/commit/19dba9d318228032104c7da431d05d9133b8f24a)
 
 ~~~
-feat!: remove legacy --ai, --ai-commands-dir, and --ai-skills flags (0.10.0) (#2872)
+Fix VFS storage driver not applying on compute-node DinD
 
-* Initial plan
-
-* feat!: remove legacy --ai, --ai-commands-dir, and --ai-skills flags at 0.10.0
-
+daemon.json was written after dockerd started, then reloaded via SIGHUP.
+Storage driver changes require a daemon restart to take effect, so VFS
+was silently ignored and overlayfs was used inst
 …
 ~~~
 
-A necessary but brutal purge of old flag aliases and associated cruft. This wasn't just ripping off a band-aid; it was a surgical removal of an entire limb. While the chaos score is high, it reflects a decisive move towards a cleaner, `--integration`-based future. Good riddance to deprecation warnings!
+Ah, the age-old dance with `dockerd` lifecycle events. It's a classic rookie trap to assume `SIGHUP` fixes *everything* when a fresh boot is required for certain critical daemon settings like the storage driver. A simple but necessary fix, revealing the previous config was essentially yelling into the void.
 
-<sub>captured 2026-06-06</sub>
+<sub>captured 2026-06-07</sub>
 
 </div>
 <!-- ENTROPY:END -->
