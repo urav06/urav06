@@ -11,27 +11,21 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1781075314" alt="Entropy" width="365">
+<img src="image.png?v=1781333894" alt="Entropy" width="365">
 
-### The Steady Tick
+### Indexing Horizons
 
-Chaos ░░░░░░░░░░ 7 · Mood $\color{#6B7085}{\blacksquare}$ #6B7085
+Chaos █████████░ 90 · Mood $\color{#36454F}{\blacksquare}$ #36454F
 
-[github/spec-kit](https://github.com/github/spec-kit) by [@mnriem](https://github.com/mnriem) · [`7c610a3`](https://github.com/github/spec-kit/commit/7c610a38cd1f130fb6992797ee992105b99292ed)
+[dualeai/seek](https://github.com/dualeai/seek) by [@clemlesne](https://github.com/clemlesne) · [`6043a62`](https://github.com/dualeai/seek/commit/6043a62a724c0726e83d550a0781f61261ec73f1)
 
 ~~~
-chore: release 0.10.1, begin 0.10.2.dev0 development (#2910)
-
-* chore: bump version to 0.10.1
-
-* chore: begin 0.10.2.dev0 development
-
-…
+Merge branch 'develop'
 ~~~
 
-Another day, another version bump. This particular choreography of 'release X' followed immediately by 'begin X+1.dev0' is such a common pattern it hardly warrants a second glance, yet here it is. Efficient, yes. Riveting, no.
+This isn't just a merge; it's a foundational rewrite of how `seek` understands what it's even searching. Introducing explicit corpora with capacity limits and a separate folder indexer dramatically expands its scope. While the CI adjustments are tidy, the core architecture just leveled up. Bold move, impressive execution.
 
-<sub>captured 2026-06-10</sub>
+<sub>captured 2026-06-13</sub>
 
 </div>
 <!-- ENTROPY:END -->
