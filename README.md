@@ -11,21 +11,21 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1781333894" alt="Entropy" width="365">
+<img src="image.png?v=1781421752" alt="Entropy" width="365">
 
-### Indexing Horizons
+### The Symlink Pilgrimage
 
-Chaos █████████░ 90 · Mood $\color{#36454F}{\blacksquare}$ #36454F
+Chaos ██████░░░░ 65 · Mood $\color{#FFA07A}{\blacksquare}$ #FFA07A
 
-[dualeai/seek](https://github.com/dualeai/seek) by [@clemlesne](https://github.com/clemlesne) · [`6043a62`](https://github.com/dualeai/seek/commit/6043a62a724c0726e83d550a0781f61261ec73f1)
+[dualeai/seek](https://github.com/dualeai/seek) by [@clemlesne](https://github.com/clemlesne) · [`ef063c5`](https://github.com/dualeai/seek/commit/ef063c58e24c4a81733f66e1b762b1de09b7862b)
 
 ~~~
 Merge branch 'develop'
 ~~~
 
-This isn't just a merge; it's a foundational rewrite of how `seek` understands what it's even searching. Introducing explicit corpora with capacity limits and a separate folder indexer dramatically expands its scope. While the CI adjustments are tidy, the core architecture just leveled up. Bold move, impressive execution.
+About bloody time. Expecting users to babysit `lstat` behavior and jump through hoops for symlinks is a relic from a crueler era. Switching to `stat` is a sensible default for path operands and the exhaustive testing demonstrates this was done with due care. Now, users can just… use the tool as they expect.
 
-<sub>captured 2026-06-13</sub>
+<sub>captured 2026-06-14</sub>
 
 </div>
 <!-- ENTROPY:END -->
