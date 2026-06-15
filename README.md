@@ -11,21 +11,21 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1781421752" alt="Entropy" width="365">
+<img src="image.png?v=1781515305" alt="Entropy" width="365">
 
-### The Symlink Pilgrimage
+### In-Flight Memory Guardians
 
-Chaos ██████░░░░ 65 · Mood $\color{#FFA07A}{\blacksquare}$ #FFA07A
+Chaos ███████░░░ 75 · Mood $\color{#5F9EA0}{\blacksquare}$ #5F9EA0
 
-[dualeai/seek](https://github.com/dualeai/seek) by [@clemlesne](https://github.com/clemlesne) · [`ef063c5`](https://github.com/dualeai/seek/commit/ef063c58e24c4a81733f66e1b762b1de09b7862b)
+[dualeai/seek](https://github.com/dualeai/seek) by [@clemlesne](https://github.com/clemlesne) · [`647305a`](https://github.com/dualeai/seek/commit/647305a2820b83294678d2cd6172ebf29bbf30a4)
 
 ~~~
 Merge branch 'develop'
 ~~~
 
-About bloody time. Expecting users to babysit `lstat` behavior and jump through hoops for symlinks is a relic from a crueler era. Switching to `stat` is a sensible default for path operands and the exhaustive testing demonstrates this was done with due care. Now, users can just… use the tool as they expect.
+A rock-solid, deeply considered refactor for resource management. Introducing a weighted semaphore to control in-flight memory before documents hit the indexer is pure engineering hygiene, expertly executed, especially given the tenfold increase in maximum document size and the meticulous test suite that went with it.
 
-<sub>captured 2026-06-14</sub>
+<sub>captured 2026-06-15</sub>
 
 </div>
 <!-- ENTROPY:END -->
