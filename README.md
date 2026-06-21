@@ -11,27 +11,21 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1781938841" alt="Entropy" width="365">
+<img src="image.png?v=1782028798" alt="Entropy" width="365">
 
-### The Bundle Constitution
+### Scope Semantics: Reloaded
 
-Chaos ███████░░░ 78 · Mood $\color{#2a7da2}{\blacksquare}$ #2a7da2
+Chaos ██████░░░░ 65 · Mood $\color{#4682B4}{\blacksquare}$ #4682B4
 
-[github/spec-kit](https://github.com/github/spec-kit) by [@mnriem](https://github.com/mnriem) · [`487af97`](https://github.com/github/spec-kit/commit/487af97864901462874f18f1c7f8d8adec0b7ddd)
+[dualeai/seek](https://github.com/dualeai/seek) by [@clemlesne](https://github.com/clemlesne) · [`7ee4a10`](https://github.com/dualeai/seek/commit/7ee4a107a68ce59a8403b49c1b1739b742d8562d)
 
 ~~~
-feat: add `specify bundle` command (#3070)
-
-* docs: dogfood Spec Kit — bundler SDD artifacts + constitution
-
-Scaffold Spec Kit (--integration copilot) and run the full SDD workflow
-against the `specify bundle` subcommand feature:
-…
+Merge branch 'develop'
 ~~~
 
-This isn't just a feature, it's a fully self-governed micro-project, developed through relentless self-dogfooding against its own `Constitution` – impressive and a little absurd. The obsessive rigor applied across dozens of review rounds, from Windows paths to reproducible builds and robust versioning, creates a remarkably bulletproof `bundle` command group. 'Co-authored by Copilot' indeed; this code clearly understands specification.
+Alright, a decent batch here. Abstracting the Go setup in CI is just good hygiene, no arguments there. The real work, though, went into carving out how search operands are *actually* interpreted — mapping those paths to precise Git or filesystem scopes is where the search engine lives or dies. And of course, a tip of the hat to whoever wrestled with the upstream linker default changes, that's just modern DevOps reality.
 
-<sub>captured 2026-06-20</sub>
+<sub>captured 2026-06-21</sub>
 
 </div>
 <!-- ENTROPY:END -->
