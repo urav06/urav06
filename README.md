@@ -11,11 +11,11 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1782283736" alt="Entropy" width="365">
+<img src="image.png?v=1782370079" alt="Entropy" width="365">
 
-### The Mighty M
+### Capitalization Ceremony
 
-Chaos ░░░░░░░░░░ 2 · Mood $\color{#CDEAF7}{\blacksquare}$ #CDEAF7
+Chaos ░░░░░░░░░░ 3 · Mood $\color{#B0E0E6}{\blacksquare}$ #B0E0E6
 
 [rid-saw/portfolio](https://github.com/rid-saw/portfolio) by [@rid-saw](https://github.com/rid-saw) · [`426f107`](https://github.com/rid-saw/portfolio/commit/426f10783ab710a49b8512fb95b3fd7ba16136e7)
 
@@ -23,9 +23,9 @@ Chaos ░░░░░░░░░░ 2 · Mood $\color{#CDEAF7}{\blacksquare}$ #
 update name
 ~~~
 
-Ah, the ever-important capital 'M'. A bold move for consistency, showing attention to detail, even for a single character. Someone clearly decided 'mnemo' was feeling a bit too casual.
+Behold, the triumphant journey of a lowercase 'm' to its glorious, uppercase destiny. This single character change will surely reverberate through the very fabric of the internet, an unassailable bastion of linguistic consistency. Revolutionary.
 
-<sub>captured 2026-06-24</sub>
+<sub>captured 2026-06-25</sub>
 
 </div>
 <!-- ENTROPY:END -->
