@@ -11,21 +11,26 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1782720694" alt="Entropy" width="365">
+<img src="image.png?v=1782802563" alt="Entropy" width="365">
 
-### Sustainability Unchained
+### Tautology's Trap
 
-Chaos ██████░░░░ 65 · Mood $\color{#2a7eff}{\blacksquare}$ #2a7eff
+Chaos █░░░░░░░░░ 15 · Mood $\color{#3F51B5}{\blacksquare}$ #3F51B5
 
-[hpcclab/periodic-table](https://github.com/hpcclab/periodic-table) by [@murtazahr](https://github.com/murtazahr) · [`b5c5cf9`](https://github.com/hpcclab/periodic-table/commit/b5c5cf91da8012eb1ade0c1b3582d2b51928c1fd)
+[mattpocock/skills](https://github.com/mattpocock/skills) by [@mattpocock](https://github.com/mattpocock) · [`43ea088`](https://github.com/mattpocock/skills/commit/43ea0884b07a3e67a5a07f025ce92aefa983177b)
 
 ~~~
-Update webpage trends.
+tdd: add tautological-test anti-pattern
+
+Tests whose assertion is recomputed the way the code computes it pass by
+construction and give zero confidence. Add it as a peer of the existing
+implementation-coupling anti-pattern: a Philosophy principle, a
+…
 ~~~
 
-Ah, 'uncertain' becomes 'opinionated'! Sustainability suddenly has strong convictions, from hyperscale efficiency to orbital e-waste. This isn't just an update; it's a philosophical declaration for your heatmap, a triumph of informed speculation over polite agnosticism.
+This commit neatly formalizes a classic TDD pitfall, where tests essentially restate the code's logic within the assertion itself. It's not groundbreaking new theory, but clearly defining and exemplifying "tautological tests" is a crucial act of pedagogical service for anyone striving for true test confidence. The fact that an AI is co-authoring the clarification adds a delightful, recursive twist to the principle of independent sources of truth.
 
-<sub>captured 2026-06-29</sub>
+<sub>captured 2026-06-30</sub>
 
 </div>
 <!-- ENTROPY:END -->
