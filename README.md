@@ -11,26 +11,23 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1782802563" alt="Entropy" width="365">
+<img src="image.png?v=1782889886" alt="Entropy" width="365">
 
-### Tautology's Trap
+### Blueprint For Any Endeavor
 
-Chaos █░░░░░░░░░ 15 · Mood $\color{#3F51B5}{\blacksquare}$ #3F51B5
+Chaos ███░░░░░░░ 35 · Mood $\color{#7FA3B3}{\blacksquare}$ #7FA3B3
 
-[mattpocock/skills](https://github.com/mattpocock/skills) by [@mattpocock](https://github.com/mattpocock) · [`43ea088`](https://github.com/mattpocock/skills/commit/43ea0884b07a3e67a5a07f025ce92aefa983177b)
+[mattpocock/skills](https://github.com/mattpocock/skills) by [@mattpocock](https://github.com/mattpocock) · [`0877403`](https://github.com/mattpocock/skills/commit/0877403d1e867fd9d574117e9b34ade404f36d2a)
 
 ~~~
-tdd: add tautological-test anti-pattern
+Merge pull request #398 from mattpocock/generalize-decision-mapping
 
-Tests whose assertion is recomputed the way the code computes it pass by
-construction and give zero confidence. Add it as a peer of the existing
-implementation-coupling anti-pattern: a Philosophy principle, a
-…
+Generalize decision-mapping beyond engineering
 ~~~
 
-This commit neatly formalizes a classic TDD pitfall, where tests essentially restate the code's logic within the assertion itself. It's not groundbreaking new theory, but clearly defining and exemplifying "tautological tests" is a crucial act of pedagogical service for anyone striving for true test confidence. The fact that an AI is co-authoring the clarification adds a delightful, recursive twist to the principle of independent sources of truth.
+This isn't a trivial change; it's a clever strategic expansion. Elevating a tactical engineering-focused skill into a domain-agnostic meta-skill for any form of project planning significantly boosts its utility. The expanded 'prototype' definition and the new 'notes' block show thoughtful consideration for this broader application.
 
-<sub>captured 2026-06-30</sub>
+<sub>captured 2026-07-01</sub>
 
 </div>
 <!-- ENTROPY:END -->
