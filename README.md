@@ -11,23 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1782889886" alt="Entropy" width="365">
+<img src="image.png?v=1782974441" alt="Entropy" width="365">
 
-### Blueprint For Any Endeavor
+### Py Script Ascendant
 
-Chaos ███░░░░░░░ 35 · Mood $\color{#7FA3B3}{\blacksquare}$ #7FA3B3
+Chaos ██████░░░░ 68 · Mood $\color{#7BC043}{\blacksquare}$ #7BC043
 
-[mattpocock/skills](https://github.com/mattpocock/skills) by [@mattpocock](https://github.com/mattpocock) · [`0877403`](https://github.com/mattpocock/skills/commit/0877403d1e867fd9d574117e9b34ade404f36d2a)
+[github/spec-kit](https://github.com/github/spec-kit) by [@mnriem](https://github.com/mnriem) · [`bbe8631`](https://github.com/github/spec-kit/commit/bbe86310cafcd9ebf9728bb1194bca7ab9beec3f)
 
 ~~~
-Merge pull request #398 from mattpocock/generalize-decision-mapping
+feat(cli): add `py` script type & Python interpreter resolution (#3278) (#3285)
 
-Generalize decision-mapping beyond engineering
+* feat(cli): add `py` script type & Python interpreter resolution (#3278)
+
+Introduce a third script variant alongside `sh`/`ps` as the foundation
+for unifying workflow s
+…
 ~~~
 
-This isn't a trivial change; it's a clever strategic expansion. Elevating a tactical engineering-focused skill into a domain-agnostic meta-skill for any form of project planning significantly boosts its utility. The expanded 'prototype' definition and the new 'notes' block show thoughtful consideration for this broader application.
+This is a seriously impressive dive into the often-nightmarish world of cross-platform Python invocation. The logic for finding interpreters—from venvs to PATH to `sys.executable`, all while wrangling Windows paths and executable bits—shows a deep, albeit painful, understanding of real-world portability issues. The level of detail here is a stark reminder that even a 'simple' feature addition can hide a thousand dragons.
 
-<sub>captured 2026-07-01</sub>
+<sub>captured 2026-07-02</sub>
 
 </div>
 <!-- ENTROPY:END -->
