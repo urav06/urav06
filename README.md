@@ -11,23 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1783145979" alt="Entropy" width="365">
+<img src="image.png?v=1783233632" alt="Entropy" width="365">
 
-### Typographic Contortion
+### The Cognitive Audio Suite
 
-Chaos ░░░░░░░░░░ 5 · Mood $\color{#80B3CC}{\blacksquare}$ #80B3CC
+Chaos █████████░ 96 · Mood $\color{#1E90FF}{\blacksquare}$ #1E90FF
 
-[Cloudslab/TrustMesh-FL](https://github.com/Cloudslab/TrustMesh-FL) by [@murtazahr](https://github.com/murtazahr) · [`3b323bf`](https://github.com/Cloudslab/TrustMesh-FL/commit/3b323bf6ffe89cd63b16d093d13d1d78f5793bd7)
+[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`cdd63ff`](https://github.com/palmier-io/palmier-pro/commit/cdd63ffeddf79d0a0fbd58812fa8410646048ef6)
 
 ~~~
-Paper: fit comparison table within text width
+feat(speech-swift): speech detection, dead-air removal, speaker identification (#261)
 
-Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>
+* refactor: share size+mtime cache tag via DiskCache
+
+* refactor(audio): wet-only denoise cache, dry/wet blend in composition
+
+…
 ~~~
 
-Ah, the venerable `\scriptsize` and `\tabcolsep` incantation. This isn't engineering; it's glorified pixel pushing, a last-ditch effort to appease the typesetter's demon and make academic prose fit. At least the minor wording tweaks hint at someone actually *reading* the squashed text, perhaps guided by their co-author's omniscient, AI wisdom.
+A staggering release masquerading as a single commit. This delivers an entirely new suite of audio intelligence: robust on-device speech detection, surgical dead-air removal, and highly sophisticated, cross-file speaker identification with persistent labels. The architectural prowess, ML integration, and painstaking detail in caching, async pipelines, real-world tuning, and consistency fixes across the entire feature set are truly impressive. It's "Audio 2.0" wrapped in an ambitious package, complete with necessary build infrastructure and critical stability fixes for all the moving parts.
 
-<sub>captured 2026-07-04</sub>
+<sub>captured 2026-07-05</sub>
 
 </div>
 <!-- ENTROPY:END -->
