@@ -11,27 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1783233632" alt="Entropy" width="365">
+<img src="image.png?v=1783321945" alt="Entropy" width="365">
 
-### The Cognitive Audio Suite
+### Unified Tool Theory
 
-Chaos █████████░ 96 · Mood $\color{#1E90FF}{\blacksquare}$ #1E90FF
+Chaos █████████░ 95 · Mood $\color{#3D5A80}{\blacksquare}$ #3D5A80
 
-[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`cdd63ff`](https://github.com/palmier-io/palmier-pro/commit/cdd63ffeddf79d0a0fbd58812fa8410646048ef6)
+[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`c55a5fd`](https://github.com/palmier-io/palmier-pro/commit/c55a5fd382b71eb712aa092ba5603d34607d6d30)
 
 ~~~
-feat(speech-swift): speech detection, dead-air removal, speaker identification (#261)
+[agent] rework tools (#263)
 
-* refactor: share size+mtime cache tag via DiskCache
+* refactor(agent): consolidate library tools — folders by path, organize_media
 
-* refactor(audio): wet-only denoise cache, dry/wet blend in composition
+Reshape the project/media/folder/timeline tool tier (16 tools -> 8):
 
 …
 ~~~
 
-A staggering release masquerading as a single commit. This delivers an entirely new suite of audio intelligence: robust on-device speech detection, surgical dead-air removal, and highly sophisticated, cross-file speaker identification with persistent labels. The architectural prowess, ML integration, and painstaking detail in caching, async pipelines, real-world tuning, and consistency fixes across the entire feature set are truly impressive. It's "Audio 2.0" wrapped in an ambitious package, complete with necessary build infrastructure and critical stability fixes for all the moving parts.
+Genius, but intense. This isn't just a refactor; it's a wholesale architectural re-platforming for the agent. Consolidating multiple tools, introducing path-based folders, and implementing a mutation envelope to update agent state with surgical precision fundamentally improves efficiency and consistency.
 
-<sub>captured 2026-07-05</sub>
+<sub>captured 2026-07-06</sub>
 
 </div>
 <!-- ENTROPY:END -->
