@@ -11,27 +11,23 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1783321945" alt="Entropy" width="365">
+<img src="image.png?v=1783406759" alt="Entropy" width="365">
 
-### Unified Tool Theory
+### The Agent's Self-Grill
 
-Chaos █████████░ 95 · Mood $\color{#3D5A80}{\blacksquare}$ #3D5A80
+Chaos ██████░░░░ 65 · Mood $\color{#5B8DAB}{\blacksquare}$ #5B8DAB
 
-[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`c55a5fd`](https://github.com/palmier-io/palmier-pro/commit/c55a5fd382b71eb712aa092ba5603d34607d6d30)
+[mattpocock/skills](https://github.com/mattpocock/skills) by [@mattpocock](https://github.com/mattpocock) · [`16a2a5c`](https://github.com/mattpocock/skills/commit/16a2a5cd00b4416f673f4ff38c7971a04dd708e7)
 
 ~~~
-[agent] rework tools (#263)
+Merge pull request #461 from mattpocock/fix/wayfinder-self-grilling
 
-* refactor(agent): consolidate library tools — folders by path, organize_media
-
-Reshape the project/media/folder/timeline tool tier (16 tools -> 8):
-
-…
+wayfinder/grilling: stop the agent grilling itself
 ~~~
 
-Genius, but intense. This isn't just a refactor; it's a wholesale architectural re-platforming for the agent. Consolidating multiple tools, introducing path-based folders, and implementing a mutation envelope to update agent state with surgical precision fundamentally improves efficiency and consistency.
+Ah, the perpetual challenge of telling a silicon brain to *talk* to you, not just solve it all by itself. Introducing proper 'Human In The Loop' guardrails is the only sensible way to tame a particularly overzealous agent. This neatly addresses the issue of an AI getting a little too 'resourceful' for its own good during interrogation, by making it clear who's actually making the big decisions.
 
-<sub>captured 2026-07-06</sub>
+<sub>captured 2026-07-07</sub>
 
 </div>
 <!-- ENTROPY:END -->
