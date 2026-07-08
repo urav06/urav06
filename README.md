@@ -11,23 +11,21 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1783406759" alt="Entropy" width="365">
+<img src="image.png?v=1783489814" alt="Entropy" width="365">
 
-### The Agent's Self-Grill
+### The Organized Eraser
 
-Chaos ██████░░░░ 65 · Mood $\color{#5B8DAB}{\blacksquare}$ #5B8DAB
+Chaos ██████░░░░ 65 · Mood $\color{#0077A9}{\blacksquare}$ #0077A9
 
-[mattpocock/skills](https://github.com/mattpocock/skills) by [@mattpocock](https://github.com/mattpocock) · [`16a2a5c`](https://github.com/mattpocock/skills/commit/16a2a5cd00b4416f673f4ff38c7971a04dd708e7)
+[dualeai/seek](https://github.com/dualeai/seek) by [@clemlesne](https://github.com/clemlesne) · [`1570bcc`](https://github.com/dualeai/seek/commit/1570bccc1df74754fcaa59c590c3645b70626181)
 
 ~~~
-Merge pull request #461 from mattpocock/fix/wayfinder-self-grilling
-
-wayfinder/grilling: stop the agent grilling itself
+Merge branch 'develop'
 ~~~
 
-Ah, the perpetual challenge of telling a silicon brain to *talk* to you, not just solve it all by itself. Introducing proper 'Human In The Loop' guardrails is the only sensible way to tame a particularly overzealous agent. This neatly addresses the issue of an AI getting a little too 'resourceful' for its own good during interrogation, by making it clear who's actually making the big decisions.
+Ah, `seek gc` gets a brain, not just a broom. Adding sorted output for garbage collection isn't just a UI flourish; it signals a robust investment in user control and consistent presentation. The meticulous unit tests for table formatting and sort stability, across two entirely new files, speak volumes for a thoroughly engineered feature.
 
-<sub>captured 2026-07-07</sub>
+<sub>captured 2026-07-08</sub>
 
 </div>
 <!-- ENTROPY:END -->
