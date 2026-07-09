@@ -11,21 +11,23 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1783489814" alt="Entropy" width="365">
+<img src="image.png?v=1783579467" alt="Entropy" width="365">
 
-### The Organized Eraser
+### Locale Pruned For Speech
 
-Chaos ██████░░░░ 65 · Mood $\color{#0077A9}{\blacksquare}$ #0077A9
+Chaos ██████░░░░ 60 · Mood $\color{#428BCA}{\blacksquare}$ #428BCA
 
-[dualeai/seek](https://github.com/dualeai/seek) by [@clemlesne](https://github.com/clemlesne) · [`1570bcc`](https://github.com/dualeai/seek/commit/1570bccc1df74754fcaa59c590c3645b70626181)
+[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`669c3d3`](https://github.com/palmier-io/palmier-pro/commit/669c3d3bdc625557fc7859fe85062be8dba09f2c)
 
 ~~~
-Merge branch 'develop'
+Merge pull request #57 from brianchiruka/fix/locale-unicode-extension-transcription
+
+Fix on-device transcription failing with non-default system region
 ~~~
 
-Ah, `seek gc` gets a brain, not just a broom. Adding sorted output for garbage collection isn't just a UI flourish; it signals a robust investment in user control and consistent presentation. The meticulous unit tests for table formatting and sort stability, across two entirely new files, speak volumes for a thoroughly engineered feature.
+Ah, the glorious complexities of Locale and framework interoperability. Someone finally stripped down the BCP 47 identifier to its bare minimum for the notoriously picky Speech framework. It's a frustrating but necessary dance to align rich locale data with system APIs that only understand simpler forms.
 
-<sub>captured 2026-07-08</sub>
+<sub>captured 2026-07-09</sub>
 
 </div>
 <!-- ENTROPY:END -->
