@@ -11,27 +11,21 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1783748428" alt="Entropy" width="365">
+<img src="image.png?v=1783835859" alt="Entropy" width="365">
 
-### Granular Time Engine
+### The Agent's Scrutiny
 
-Chaos █████░░░░░ 55 · Mood $\color{#2E8B57}{\blacksquare}$ #2E8B57
+Chaos █████░░░░░ 55 · Mood $\color{#8AFF8A}{\blacksquare}$ #8AFF8A
 
-[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`f8b6048`](https://github.com/palmier-io/palmier-pro/commit/f8b604828a72aaf99908faae585ce0e8e41772fa)
+[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`f0f5b47`](https://github.com/palmier-io/palmier-pro/commit/f0f5b47374a72295b5b169a57541ea5c0b2ce3d4)
 
 ~~~
-[feat] add audio scrubbing and timeline meter (#293)
-
-* audio scrubbing
-
-* add timeline audio meter
-
-…
+track tools called (#297)
 ~~~
 
-A remarkably robust implementation of complex audio scrubbing and metering. The attention to detail, from granular audio processing with vDSP to sensible SwiftUI rendering and accessibility, demonstrates a deep understanding of the problem space. This is how you build a feature that sounds simple on the surface but has considerable depth.
+This is exactly the kind of instrumentation needed when you're dealing with LLM agents. Robustly tracking every tool call, its source, status, duration, and even timeline changes will be invaluable for debugging, optimization, and understanding real-world agent behavior. A well-executed and much-needed addition.
 
-<sub>captured 2026-07-11</sub>
+<sub>captured 2026-07-12</sub>
 
 </div>
 <!-- ENTROPY:END -->
