@@ -11,21 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1783835859" alt="Entropy" width="365">
+<img src="image.png?v=1783923472" alt="Entropy" width="365">
 
-### The Agent's Scrutiny
+### Orchestrated Output Flow
 
-Chaos █████░░░░░ 55 · Mood $\color{#8AFF8A}{\blacksquare}$ #8AFF8A
+Chaos █████████░ 93 · Mood $\color{#1F4F7D}{\blacksquare}$ #1F4F7D
 
-[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`f0f5b47`](https://github.com/palmier-io/palmier-pro/commit/f0f5b47374a72295b5b169a57541ea5c0b2ce3d4)
+[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`0388343`](https://github.com/palmier-io/palmier-pro/commit/038834363be751c240152c38261502ba51836e2b)
 
 ~~~
-track tools called (#297)
+[feat] add cancellable export queue (#298)
+
+* make export cancellable and output-safe
+
+* app-wide FIFO export queue
+
+…
 ~~~
 
-This is exactly the kind of instrumentation needed when you're dealing with LLM agents. Robustly tracking every tool call, its source, status, duration, and even timeline changes will be invaluable for debugging, optimization, and understanding real-world agent behavior. A well-executed and much-needed addition.
+This isn't just a feature; it's a re-architecture of a core function. Ripping out a simple mutex for a full, cancellable FIFO queue, complete with its own lifecycle, error handling, and integrated UI, is a monumental lift. It shows a mature approach to concurrency and a keen eye for user experience, making export robust and agent-manageable. While certainly a hefty single commit, the breadth and depth of change suggest confidence and thoroughness.
 
-<sub>captured 2026-07-12</sub>
+<sub>captured 2026-07-13</sub>
 
 </div>
 <!-- ENTROPY:END -->
