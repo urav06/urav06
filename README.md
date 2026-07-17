@@ -11,27 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1784180406" alt="Entropy" width="365">
+<img src="image.png?v=1784266964" alt="Entropy" width="365">
 
-### Grok Gains Skills
+### SDLC To Storylines
 
-Chaos ██████░░░░ 65 · Mood $\color{#FFBF00}{\blacksquare}$ #FFBF00
+Chaos █████░░░░░ 55 · Mood $\color{#7C4DFF}{\blacksquare}$ #7C4DFF
 
-[github/spec-kit](https://github.com/github/spec-kit) by [@natechadwick](https://github.com/natechadwick) · [`fd101d5`](https://github.com/github/spec-kit/commit/fd101d531eaec8a1e709db2f37632bc93b6ce4d6)
+[github/spec-kit](https://github.com/github/spec-kit) by [@mnriem](https://github.com/mnriem) · [`7bdf6c5`](https://github.com/github/spec-kit/commit/7bdf6c50416c2e7ea96d8398b569a78808adc6e9)
 
 ~~~
-feat(integrations): add Grok Build skills-based integration (#3535)
+docs: weave harness/SDLC framing into landing page (#3567)
 
-* feat(integrations): add Grok Build skills-based integration
+Reframe the docs landing hero and "Make it your own" pillar to inject
+the "harness" and "SDLC" framing while keeping SDD front and center:
 
-Add first-class support for xAI Grok Build via SkillsIntegration, installing
-speckit skills under .grok/skills and wir
+- Hero: describe Spec Kit as an extensible, intent
 …
 ~~~
 
-This is the predictable dance of integrating another new LLM into the ever-expanding menagerie; each requiring bespoke wrangling for headless mode and command invocation. The 'Assisted-by: Grok Build' entry is a self-referential flourish that either points to pure genius or impending AI uprising. A necessary, but hardly revolutionary, set of changes.
+This isn't just updating a readme, it's a full-on product repositioning masked as documentation. Shifting from "AI-assisted software development" to a universal "harness" for any business process—even fiction writing—is an audacious, perhaps slightly terrifying, expansion of scope. Good luck keeping those specs crisp when they apply to your next novel.
 
-<sub>captured 2026-07-16</sub>
+<sub>captured 2026-07-17</sub>
 
 </div>
 <!-- ENTROPY:END -->
