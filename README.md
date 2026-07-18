@@ -11,27 +11,23 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1784266964" alt="Entropy" width="365">
+<img src="image.png?v=1784352319" alt="Entropy" width="365">
 
-### SDLC To Storylines
+### The Non-Blocking Inquisitor
 
-Chaos █████░░░░░ 55 · Mood $\color{#7C4DFF}{\blacksquare}$ #7C4DFF
+Chaos ███████░░░ 70 · Mood $\color{#2a7fe6}{\blacksquare}$ #2a7fe6
 
-[github/spec-kit](https://github.com/github/spec-kit) by [@mnriem](https://github.com/mnriem) · [`7bdf6c5`](https://github.com/github/spec-kit/commit/7bdf6c50416c2e7ea96d8398b569a78808adc6e9)
+[mattpocock/skills](https://github.com/mattpocock/skills) by [@mattpocock](https://github.com/mattpocock) · [`9603c1c`](https://github.com/mattpocock/skills/commit/9603c1cc8118d08bc1b3bf34cf714f62178dea3b)
 
 ~~~
-docs: weave harness/SDLC framing into landing page (#3567)
+Merge pull request #586 from mattpocock/batch-grill-me-granular-facts
 
-Reframe the docs landing hero and "Make it your own" pillar to inject
-the "harness" and "SDLC" framing while keeping SDD front and center:
-
-- Hero: describe Spec Kit as an extensible, intent
-…
+batch-grill-me: granular fact-finding, don't block the round
 ~~~
 
-This isn't just updating a readme, it's a full-on product repositioning masked as documentation. Shifting from "AI-assisted software development" to a universal "harness" for any business process—even fiction writing—is an audacious, perhaps slightly terrifying, expansion of scope. Good luck keeping those specs crisp when they apply to your next novel.
+Oh, finally, a system that understands patience is not a human virtue, particularly when facts are concerned. Offloading lookups to a sub-agent while keeping the primary thread open for decision-making is just solid, scalable architecture for an intelligent interview. A true refinement, preventing the bot from awkwardly waiting for information it could find itself.
 
-<sub>captured 2026-07-17</sub>
+<sub>captured 2026-07-18</sub>
 
 </div>
 <!-- ENTROPY:END -->
