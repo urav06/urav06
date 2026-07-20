@@ -11,25 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1784440316" alt="Entropy" width="365">
+<img src="image.png?v=1784528254" alt="Entropy" width="365">
 
-### Cache Flow Unimpeded
+### Order From Hook Chaos
 
-Chaos ██████░░░░ 65 · Mood $\color{#7DADD0}{\blacksquare}$ #7DADD0
+Chaos ███████░░░ 75 · Mood $\color{#20B2AA}{\blacksquare}$ #20B2AA
 
-[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`cf41b37`](https://github.com/palmier-io/palmier-pro/commit/cf41b373111acf32deffabb2ffdf5923c36a6e4b)
+[affaan-m/ECC](https://github.com/affaan-m/ECC) by [@pythonstrup](https://github.com/pythonstrup) · [`0071fa5`](https://github.com/affaan-m/ECC/commit/0071fa5c3c389d2b4b235a39402c891e146cdef3)
 
 ~~~
-[fix] Prevent beat-cache hydration hangs (#355)
+refactor(hooks): consolidate PostToolUse hooks into sync/async dispatchers (#2494)
 
-* [fix] Prevent beat-cache hydration hangs
+* refactor(hooks): consolidate PostToolUse hooks into sync/async dispatchers
 
-* [fix] Revalidate beat hydration after URL changes
+Replace 10 individual PostToolUse entries in hooks.json with two
+consolidated dispatcher
+…
 ~~~
 
-Solid concurrency management for a tricky caching problem. The team correctly identified the pitfalls of blocking cache hydration, implemented robust task cancellation, and added clever URL revalidation to ensure stale data doesn't persist. Excellent testing to back it all up; a genuinely thoughtful fix.
+A masterful consolidation, wrestling a dozen unwieldy `PostToolUse` entries into two elegant dispatchers. The performance gains alone are commendable, but the real genius is maintaining feature parity (profiling, disabled flags) and even cleaning up the inline Node resolver nonsense. This commit banishes copy-pasted cruft and brings sanity to the post-execution landscape.
 
-<sub>captured 2026-07-19</sub>
+<sub>captured 2026-07-20</sub>
 
 </div>
 <!-- ENTROPY:END -->
