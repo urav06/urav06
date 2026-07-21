@@ -11,27 +11,26 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1784528254" alt="Entropy" width="365">
+<img src="image.png?v=1784612986" alt="Entropy" width="365">
 
-### Order From Hook Chaos
+### Infini-Boolean Defense
 
-Chaos ███████░░░ 75 · Mood $\color{#20B2AA}{\blacksquare}$ #20B2AA
+Chaos █████░░░░░ 55 · Mood $\color{#0077B6}{\blacksquare}$ #0077B6
 
-[affaan-m/ECC](https://github.com/affaan-m/ECC) by [@pythonstrup](https://github.com/pythonstrup) · [`0071fa5`](https://github.com/affaan-m/ECC/commit/0071fa5c3c389d2b4b235a39402c891e146cdef3)
+[github/spec-kit](https://github.com/github/spec-kit) by [@jawwad-ali](https://github.com/jawwad-ali) · [`57cc518`](https://github.com/github/spec-kit/commit/57cc518d63d6f10da3dd93df1ebcadda87c59374)
 
 ~~~
-refactor(hooks): consolidate PostToolUse hooks into sync/async dispatchers (#2494)
+fix(workflows): reject bool / .inf catalog priority in workflow & step catalog loaders (#3526)
 
-* refactor(hooks): consolidate PostToolUse hooks into sync/async dispatchers
+* fix(workflows): reject bool/.inf catalog priority in workflow & step catalog loaders
 
-Replace 10 individual PostToolUse entries in hooks.json with two
-consolidated dispatcher
+The WorkflowRegistry and StepRegistry catalog-config loaders coerc
 …
 ~~~
 
-A masterful consolidation, wrestling a dozen unwieldy `PostToolUse` entries into two elegant dispatchers. The performance gains alone are commendable, but the real genius is maintaining feature parity (profiling, disabled flags) and even cleaning up the inline Node resolver nonsense. This commit banishes copy-pasted cruft and brings sanity to the post-execution landscape.
+Python's `int()` method continues its reign of 'convenience' with implicit type coercion that invariably bites developers. This fix diligently guards against `bool` masquerading as `int` and the crash-inducing `float('inf')` from wrecking catalog priorities. A robust, albeit sadly necessary, defensive programming win.
 
-<sub>captured 2026-07-20</sub>
+<sub>captured 2026-07-21</sub>
 
 </div>
 <!-- ENTROPY:END -->
