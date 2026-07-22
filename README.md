@@ -11,26 +11,26 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1784612986" alt="Entropy" width="365">
+<img src="image.png?v=1784699390" alt="Entropy" width="365">
 
-### Infini-Boolean Defense
+### Yarn's Interrogation Mark
 
-Chaos █████░░░░░ 55 · Mood $\color{#0077B6}{\blacksquare}$ #0077B6
+Chaos ████░░░░░░ 45 · Mood $\color{#5bc0be}{\blacksquare}$ #5bc0be
 
-[github/spec-kit](https://github.com/github/spec-kit) by [@jawwad-ali](https://github.com/jawwad-ali) · [`57cc518`](https://github.com/github/spec-kit/commit/57cc518d63d6f10da3dd93df1ebcadda87c59374)
+[affaan-m/ECC](https://github.com/affaan-m/ECC) by [@thejesh23](https://github.com/thejesh23) · [`5deee34`](https://github.com/affaan-m/ECC/commit/5deee34c93395045b985e3baf91550e5f1ab7204)
 
 ~~~
-fix(workflows): reject bool / .inf catalog priority in workflow & step catalog loaders (#3526)
+fix(hooks): remove stray '?' that made every 'yarn <anything>' fire tmux reminder (#2517)
 
-* fix(workflows): reject bool/.inf catalog priority in workflow & step catalog loaders
+* fix(hooks): remove stray '?' that made every 'yarn <anything>' trigger tmux reminder
 
-The WorkflowRegistry and StepRegistry catalog-config loaders coerc
+The tmux-reminder matcher uses one alternation per package manager. Eac
 …
 ~~~
 
-Python's `int()` method continues its reign of 'convenience' with implicit type coercion that invariably bites developers. This fix diligently guards against `bool` masquerading as `int` and the crash-inducing `float('inf')` from wrecking catalog priorities. A robust, albeit sadly necessary, defensive programming win.
+A single question mark turning an intended specific reminder into a spamming nag for nearly every yarn command—that's a classic regex booby trap. The fix itself is surgical, but the sheer volume of meticulous regression tests and subsequent code quality improvements, driven by thoughtful review, elevates this from a simple bugfix to a commendable lesson in engineering rigor.
 
-<sub>captured 2026-07-21</sub>
+<sub>captured 2026-07-22</sub>
 
 </div>
 <!-- ENTROPY:END -->
