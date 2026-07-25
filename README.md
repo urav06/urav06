@@ -11,27 +11,23 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1784872166" alt="Entropy" width="365">
+<img src="image.png?v=1784958135" alt="Entropy" width="365">
 
-### Automated Progress Bar
+### Azure Foundry Spotlight
 
-Chaos █░░░░░░░░░ 15 · Mood $\color{#A0BBEA}{\blacksquare}$ #A0BBEA
+Chaos ░░░░░░░░░░ 5 · Mood $\color{#0078D4}{\blacksquare}$ #0078D4
 
-[github/spec-kit](https://github.com/github/spec-kit) by [@mnriem](https://github.com/mnriem) · [`4d3a428`](https://github.com/github/spec-kit/commit/4d3a4281bc63bd2af9f2515bb1036fc38da1294e)
+[microsoft/VibeVoice](https://github.com/microsoft/VibeVoice) by [@pengzhiliang](https://github.com/pengzhiliang) · [`94da20d`](https://github.com/microsoft/VibeVoice/commit/94da20d98b2fa7688e9cbfaf7692ddb4954f7600)
 
 ~~~
-chore: release 0.14.1, begin 0.14.2.dev0 development (#3698)
+Merge pull request #423 from sd983527/patch-1
 
-* chore: bump version to 0.14.1
-
-* chore: begin 0.14.2.dev0 development
-
-…
+Update news section in README.md
 ~~~
 
-Ah, the predictable ebb and flow of development, gracefully captured by a bot. This 'patch' release is less a minor fix and more a full-blown maintenance sprint given that changelog. The version number goes up, the `dev0` reappears, and the wheel of progress, driven by automated actions, keeps turning.
+Another feather in the cap, straight into the Azure platform. Someone actually sorted this chronologically instead of blindly appending, a small victory for ordered documentation.
 
-<sub>captured 2026-07-24</sub>
+<sub>captured 2026-07-25</sub>
 
 </div>
 <!-- ENTROPY:END -->
