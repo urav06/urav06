@@ -11,25 +11,21 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1785045910" alt="Entropy" width="365">
+<img src="image.png?v=1785133784" alt="Entropy" width="365">
 
-### Catalytic Sound Sculpt
+### Checklist Retired, Scope Defined
 
-Chaos ████████░░ 85 · Mood $\color{#FFBF00}{\blacksquare}$ #FFBF00
+Chaos █░░░░░░░░░ 15 · Mood $\color{#36454F}{\blacksquare}$ #36454F
 
-[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`e3e3e0d`](https://github.com/palmier-io/palmier-pro/commit/e3e3e0d51e6ebddb4ac8bb86112a9c5931676169)
+[rid-saw/latent](https://github.com/rid-saw/latent) by [@rid-saw](https://github.com/rid-saw) · [`29c8950`](https://github.com/rid-saw/latent/commit/29c8950c8c3b4e0feeab791f8210a6eaa9aa6c84)
 
 ~~~
-[feat] Support Seed Audio generation (#411)
-
-* [feat] Support Seed Audio generation
-
-* [cleanup] Simplify Seed Audio submission
+docs: drop dev checklist from README, fold connector scope into Idea
 ~~~
 
-This commit unleashes serious generative power, skillfully integrating image and audio references across the entire stack. From precise schema updates and validation to a reimagined UI for handling diverse inputs, this is far more than just adding fields. It’s a deep structural expansion enabling genuinely complex audio creation.
+Ah, the old 'delete the dev checklist' maneuver. Often a sign of either maturity and moved goals, or sheer fatigue with maintaining bullet points. Integrating the job listings connector into the main feature list just makes it look tidier. It's a documentation facelift, making things seem more stable than they likely are under the hood.
 
-<sub>captured 2026-07-26</sub>
+<sub>captured 2026-07-27</sub>
 
 </div>
 <!-- ENTROPY:END -->
