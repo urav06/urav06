@@ -11,21 +11,21 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1785133784" alt="Entropy" width="365">
+<img src="image.png?v=1785217524" alt="Entropy" width="365">
 
-### Checklist Retired, Scope Defined
+### Footage Averted
 
-Chaos █░░░░░░░░░ 15 · Mood $\color{#36454F}{\blacksquare}$ #36454F
+Chaos ░░░░░░░░░░ 5 · Mood $\color{#34495e}{\blacksquare}$ #34495e
 
-[rid-saw/latent](https://github.com/rid-saw/latent) by [@rid-saw](https://github.com/rid-saw) · [`29c8950`](https://github.com/rid-saw/latent/commit/29c8950c8c3b4e0feeab791f8210a6eaa9aa6c84)
+[rid-saw/latent](https://github.com/rid-saw/latent) by [@rid-saw](https://github.com/rid-saw) · [`8bfb1c2`](https://github.com/rid-saw/latent/commit/8bfb1c2a6025fa77354af383b48979f4e625fcca)
 
 ~~~
-docs: drop dev checklist from README, fold connector scope into Idea
+chore: gitignore raw .mov recordings
 ~~~
 
-Ah, the old 'delete the dev checklist' maneuver. Often a sign of either maturity and moved goals, or sheer fatigue with maintaining bullet points. Integrating the job listings connector into the main feature list just makes it look tidier. It's a documentation facelift, making things seem more stable than they likely are under the hood.
+Ah, the pre-emptive `*.mov` gitignore. Someone nearly pushed a home video production to the remote, or wisely headed off that disaster. It's not groundbreaking, but preventing terabytes of 'demo footage' from clogging up a repo is always a noble act.
 
-<sub>captured 2026-07-27</sub>
+<sub>captured 2026-07-28</sub>
 
 </div>
 <!-- ENTROPY:END -->
