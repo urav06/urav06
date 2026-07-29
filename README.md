@@ -11,21 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1785217524" alt="Entropy" width="365">
+<img src="image.png?v=1785304303" alt="Entropy" width="365">
 
-### Footage Averted
+### Plugin Init Resilience
 
-Chaos ░░░░░░░░░░ 5 · Mood $\color{#34495e}{\blacksquare}$ #34495e
+Chaos ██████░░░░ 65 · Mood $\color{#7AB8E7}{\blacksquare}$ #7AB8E7
 
-[rid-saw/latent](https://github.com/rid-saw/latent) by [@rid-saw](https://github.com/rid-saw) · [`8bfb1c2`](https://github.com/rid-saw/latent/commit/8bfb1c2a6025fa77354af383b48979f4e625fcca)
+[affaan-m/ECC](https://github.com/affaan-m/ECC) by [@shanujans](https://github.com/shanujans) · [`591ab5c`](https://github.com/affaan-m/ECC/commit/591ab5cbd3f2f65860ea91c226e410b1502c8e2e)
 
 ~~~
-chore: gitignore raw .mov recordings
+fix(opencode): don't crash the whole session when plugins/lib is missing (#2538)
+
+* fix(opencode): don't crash the whole session when plugins/lib is missing (#2530)
+
+* fix: address review feedback (trailing newlines, symptom wording)
+
+…
 ~~~
 
-Ah, the pre-emptive `*.mov` gitignore. Someone nearly pushed a home video production to the remote, or wisely headed off that disaster. It's not groundbreaking, but preventing terabytes of 'demo footage' from clogging up a repo is always a noble act.
+Ah, the classic "a single missing dependency can brick the whole house" problem. The move to lazy loading for `changed-files-store.js`, paired with robust try-catch blocks and sanitized error messages, is excellent defensive programming. This prevents catastrophic OpenCode session crashes from common partial install issues, especially on challenging environments like Termux, and significantly improves overall resilience.
 
-<sub>captured 2026-07-28</sub>
+<sub>captured 2026-07-29</sub>
 
 </div>
 <!-- ENTROPY:END -->
