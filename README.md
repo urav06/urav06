@@ -11,27 +11,21 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1785304303" alt="Entropy" width="365">
+<img src="image.png?v=1785390036" alt="Entropy" width="365">
 
-### Plugin Init Resilience
+### Bundled Badges
 
-Chaos ██████░░░░ 65 · Mood $\color{#7AB8E7}{\blacksquare}$ #7AB8E7
+Chaos ██████░░░░ 65 · Mood $\color{#00A86B}{\blacksquare}$ #00A86B
 
-[affaan-m/ECC](https://github.com/affaan-m/ECC) by [@shanujans](https://github.com/shanujans) · [`591ab5c`](https://github.com/affaan-m/ECC/commit/591ab5cbd3f2f65860ea91c226e410b1502c8e2e)
+[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`bee6314`](https://github.com/palmier-io/palmier-pro/commit/bee631471c0a4a9b8ed52f91440037c70b0d5447)
 
 ~~~
-fix(opencode): don't crash the whole session when plugins/lib is missing (#2538)
-
-* fix(opencode): don't crash the whole session when plugins/lib is missing (#2530)
-
-* fix: address review feedback (trailing newlines, symptom wording)
-
-…
+Show provider logos in model menus (#427)
 ~~~
 
-Ah, the classic "a single missing dependency can brick the whole house" problem. The move to lazy loading for `changed-files-store.js`, paired with robust try-catch blocks and sanitized error messages, is excellent defensive programming. This prevents catastrophic OpenCode session crashes from common partial install issues, especially on challenging environments like Termux, and significantly improves overall resilience.
+Adding provider logos is a solid UX win, tidying up busy model menus. The dedicated `ProviderLogo` component and its runtime asset loading are pragmatic, if a bit old-school compared to modern Swift asset catalogs. At least it handles fallbacks gracefully and comes with decent test coverage for the new plumbing.
 
-<sub>captured 2026-07-29</sub>
+<sub>captured 2026-07-30</sub>
 
 </div>
 <!-- ENTROPY:END -->
