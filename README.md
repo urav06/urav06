@@ -11,21 +11,21 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1785390036" alt="Entropy" width="365">
+<img src="image.png?v=1785478378" alt="Entropy" width="365">
 
-### Bundled Badges
+### Dev Trait Disentanglement
 
-Chaos ██████░░░░ 65 · Mood $\color{#00A86B}{\blacksquare}$ #00A86B
+Chaos ██████░░░░ 60 · Mood $\color{#4A90E2}{\blacksquare}$ #4A90E2
 
-[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`bee6314`](https://github.com/palmier-io/palmier-pro/commit/bee631471c0a4a9b8ed52f91440037c70b0d5447)
+[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`8d5648d`](https://github.com/palmier-io/palmier-pro/commit/8d5648d893c3cd9b71677c5acea44c08b9616f7c)
 
 ~~~
-Show provider logos in model menus (#427)
+[build] Make development traits opt in (#440)
 ~~~
 
-Adding provider logos is a solid UX win, tidying up busy model menus. The dedicated `ProviderLogo` component and its runtime asset loading are pragmatic, if a bit old-school compared to modern Swift asset catalogs. At least it handles fallbacks gracefully and comes with decent test coverage for the new plumbing.
+Ah, the inevitable disentanglement of build configurations. Making heavyweight features like bundled speech and especially 'production telemetry' opt-in for dev builds is excellent for iteration speed and sanity. The build script is getting a bit chonky with all the new conditional logic, but this is a battle well-fought for developer ergonomics.
 
-<sub>captured 2026-07-30</sub>
+<sub>captured 2026-07-31</sub>
 
 </div>
 <!-- ENTROPY:END -->
