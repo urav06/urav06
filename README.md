@@ -11,25 +11,26 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1785650225" alt="Entropy" width="365">
+<img src="image.png?v=1785738144" alt="Entropy" width="365">
 
-### Unified Link Protocol
+### Error States, Unmasked
 
-Chaos ██████░░░░ 60 · Mood $\color{#2196F3}{\blacksquare}$ #2196F3
+Chaos ██████░░░░ 65 · Mood $\color{#20B2AA}{\blacksquare}$ #20B2AA
 
-[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`5ba45f4`](https://github.com/palmier-io/palmier-pro/commit/5ba45f48ef51578b40ec94ade3e058fc5853d719)
+[rid-saw/latent](https://github.com/rid-saw/latent) by [@rid-saw](https://github.com/rid-saw) · [`551d1f2`](https://github.com/rid-saw/latent/commit/551d1f2cf2bace001f5ce9c9047821ffe28cc030)
 
 ~~~
-[agent] Add clip link management tool (#462)
+feat(frontend): show errors in place, with a way to retry
 
-Expose shared clip link mutations so agents can create J/L cuts without duplicating UI behavior.
-
-Co-authored-by: Cursor <cursoragent@cursor.com>
+Wires the recovered error states into the UI. The create modal stays open
+on failure and keeps the typed query, so a retry doesn't mean retyping a
+prompt that took thought to write. A failed
+…
 ~~~
 
-This commit nails a classic video editing pain point with surprising grace. By centralizing clip link eligibility logic, it cleverly prevents future UI and agent divergence for critical J-cuts and L-cuts. The thorough description and robust tests show a deep understanding of the problem and a surprisingly clean, reliable solution.
+This is absolutely vital work, transforming 'what happened?' into 'here's what went wrong, and how you can fix it.' Addressing the 'skeletons forever' problem and allowing retries without retyping is just good user experience engineering. Every missing error state is a silent bug, and this commit squashes many.
 
-<sub>captured 2026-08-02</sub>
+<sub>captured 2026-08-03</sub>
 
 </div>
 <!-- ENTROPY:END -->
