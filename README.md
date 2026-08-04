@@ -11,26 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1785738144" alt="Entropy" width="365">
+<img src="image.png?v=1785822346" alt="Entropy" width="365">
 
-### Error States, Unmasked
+### Invisible Text, Visible Speed
 
-Chaos ██████░░░░ 65 · Mood $\color{#20B2AA}{\blacksquare}$ #20B2AA
+Chaos ██████░░░░ 65 · Mood $\color{#70C1B4}{\blacksquare}$ #70C1B4
 
-[rid-saw/latent](https://github.com/rid-saw/latent) by [@rid-saw](https://github.com/rid-saw) · [`551d1f2`](https://github.com/rid-saw/latent/commit/551d1f2cf2bace001f5ce9c9047821ffe28cc030)
+[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`5280b86`](https://github.com/palmier-io/palmier-pro/commit/5280b8661ff1ce71bfc994f93a8ab938fc656af7)
 
 ~~~
-feat(frontend): show errors in place, with a way to retry
+[perf] Skip AVComposition rebuilds for caption-only edits (#485)
 
-Wires the recovered error states into the UI. The create modal stays open
-on failure and keeps the typed query, so a retry doesn't mean retyping a
-prompt that took thought to write. A failed
+* [perf] Skip AVComposition rebuilds for caption-only edits
+
+The rebuild cache keyed on the whole timeline, so every caption edit
+missed and triggered a full async CompositionBuilder.b
 …
 ~~~
 
-This is absolutely vital work, transforming 'what happened?' into 'here's what went wrong, and how you can fix it.' Addressing the 'skeletons forever' problem and allowing retries without retyping is just good user experience engineering. Every missing error state is a silent bug, and this commit squashes many.
+This is a remarkably thorough and elegant performance fix for a very common workflow bottleneck. Re-architecting the rebuild cache key to disregard cosmetic text-only changes, while still accounting for text's influence on total duration, shows impressive attention to detail. Moving a ~470ms hit to ~6ms is a huge win for user experience and product responsiveness.
 
-<sub>captured 2026-08-03</sub>
+<sub>captured 2026-08-04</sub>
 
 </div>
 <!-- ENTROPY:END -->
