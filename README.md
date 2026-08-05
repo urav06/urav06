@@ -11,27 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1785822346" alt="Entropy" width="365">
+<img src="image.png?v=1785908711" alt="Entropy" width="365">
 
-### Invisible Text, Visible Speed
+### Browser Debut
 
-Chaos ██████░░░░ 65 · Mood $\color{#70C1B4}{\blacksquare}$ #70C1B4
+Chaos ████░░░░░░ 45 · Mood $\color{#FFB800}{\blacksquare}$ #FFB800
 
-[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`5280b86`](https://github.com/palmier-io/palmier-pro/commit/5280b8661ff1ce71bfc994f93a8ab938fc656af7)
+[rid-saw/latent](https://github.com/rid-saw/latent) by [@rid-saw](https://github.com/rid-saw) · [`6f1d703`](https://github.com/rid-saw/latent/commit/6f1d7035faad2184b6660f0224407148d7a2c1f3)
 
 ~~~
-[perf] Skip AVComposition rebuilds for caption-only edits (#485)
+feat(demo): publish a playable browser demo to GitHub Pages
 
-* [perf] Skip AVComposition rebuilds for caption-only edits
+Trying latent meant cloning it, installing Python and Node, and setting up
+Google OAuth. Almost nobody does that to evaluate a project, so the work was
+effectively unseeable.
 
-The rebuild cache keyed on the whole timeline, so every caption edit
-missed and triggered a full async CompositionBuilder.b
 …
 ~~~
 
-This is a remarkably thorough and elegant performance fix for a very common workflow bottleneck. Re-architecting the rebuild cache key to disregard cosmetic text-only changes, while still accounting for text's influence on total duration, shows impressive attention to detail. Moving a ~470ms hit to ~6ms is a huge win for user experience and product responsiveness.
+Finally, someone figured out the marketing part! Making a project 'unseeable' is a cardinal sin. This commit drops a well-crafted workflow and proper mock data to deliver an instantly playable demo. Crucial move for a project like this.
 
-<sub>captured 2026-08-04</sub>
+<sub>captured 2026-08-05</sub>
 
 </div>
 <!-- ENTROPY:END -->
