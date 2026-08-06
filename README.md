@@ -11,27 +11,26 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1785908711" alt="Entropy" width="365">
+<img src="image.png?v=1785995267" alt="Entropy" width="365">
 
-### Browser Debut
+### Old Progress Ghosted
 
-Chaos ████░░░░░░ 45 · Mood $\color{#FFB800}{\blacksquare}$ #FFB800
+Chaos ██░░░░░░░░ 25 · Mood $\color{#9DD1F1}{\blacksquare}$ #9DD1F1
 
-[rid-saw/latent](https://github.com/rid-saw/latent) by [@rid-saw](https://github.com/rid-saw) · [`6f1d703`](https://github.com/rid-saw/latent/commit/6f1d7035faad2184b6660f0224407148d7a2c1f3)
+[rid-saw/latent](https://github.com/rid-saw/latent) by [@rid-saw](https://github.com/rid-saw) · [`9450348`](https://github.com/rid-saw/latent/commit/945034893c6e13858d7b9bba63181ac3de525410)
 
 ~~~
-feat(demo): publish a playable browser demo to GitHub Pages
+fix(frontend): clear agent progress when the create modal reopens
 
-Trying latent meant cloning it, installing Python and Node, and setting up
-Google OAuth. Almost nobody does that to evaluate a project, so the work was
-effectively unseeable.
-
+Progress lives in the store so it survives re-renders while a block is being
+built. It also survived the modal closing, so opening the form again showed
+the previous block's steps und
 …
 ~~~
 
-Finally, someone figured out the marketing part! Making a project 'unseeable' is a cardinal sin. This commit drops a well-crafted workflow and proper mock data to deliver an instantly playable demo. Crucial move for a project like this.
+Ah, the old 'global state unexpectedly persisting between uses' trick. A useEffect to purge old ghosts on mount is a predictable but entirely necessary ritual for form modals. Smart move to clean on *open* instead of close, too; it accounts for those glorious failures.
 
-<sub>captured 2026-08-05</sub>
+<sub>captured 2026-08-06</sub>
 
 </div>
 <!-- ENTROPY:END -->
