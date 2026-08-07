@@ -11,26 +11,26 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1785995267" alt="Entropy" width="365">
+<img src="image.png?v=1786078423" alt="Entropy" width="365">
 
-### Old Progress Ghosted
+### The Great Default Shift
 
-Chaos ██░░░░░░░░ 25 · Mood $\color{#9DD1F1}{\blacksquare}$ #9DD1F1
+Chaos ██░░░░░░░░ 25 · Mood $\color{#6D9DB2}{\blacksquare}$ #6D9DB2
 
-[rid-saw/latent](https://github.com/rid-saw/latent) by [@rid-saw](https://github.com/rid-saw) · [`9450348`](https://github.com/rid-saw/latent/commit/945034893c6e13858d7b9bba63181ac3de525410)
+[affaan-m/ECC](https://github.com/affaan-m/ECC) by [@haelyra](https://github.com/haelyra) · [`9aac858`](https://github.com/affaan-m/ECC/commit/9aac8585ab887d9c51252730240b25d9cca180da)
 
 ~~~
-fix(frontend): clear agent progress when the create modal reopens
+fix(skills): default GAN harness models to sonnet (#2442) (#2695)
 
-Progress lives in the store so it survives re-renders while a block is being
-built. It also survived the modal closing, so opening the form again showed
-the previous block's steps und
+Completes the model re-tiering from #2442: the gan-planner, gan-generator,
+and gan-evaluator agents were already re-pinned to sonnet, but the
+gan-style-harness script and docs still d
 …
 ~~~
 
-Ah, the old 'global state unexpectedly persisting between uses' trick. A useEffect to purge old ghosts on mount is a predictable but entirely necessary ritual for form modals. Smart move to clean on *open* instead of close, too; it accounts for those glorious failures.
+Ah, the predictable ritual of model re-tiering. It's always a good call to update defaults and documentation when the underlying agents have shifted. Smart to preserve Opus for when Sonnet inevitably stumbles on a tricky prompt.
 
-<sub>captured 2026-08-06</sub>
+<sub>captured 2026-08-07</sub>
 
 </div>
 <!-- ENTROPY:END -->
