@@ -11,26 +11,23 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1786078423" alt="Entropy" width="365">
+<img src="image.png?v=1786162211" alt="Entropy" width="365">
 
-### The Great Default Shift
+### Commitment Clarified
 
-Chaos ██░░░░░░░░ 25 · Mood $\color{#6D9DB2}{\blacksquare}$ #6D9DB2
+Chaos ░░░░░░░░░░ 5 · Mood $\color{#A7D7E9}{\blacksquare}$ #A7D7E9
 
-[affaan-m/ECC](https://github.com/affaan-m/ECC) by [@haelyra](https://github.com/haelyra) · [`9aac858`](https://github.com/affaan-m/ECC/commit/9aac8585ab887d9c51252730240b25d9cca180da)
+[mattpocock/skills](https://github.com/mattpocock/skills) by [@mattpocock](https://github.com/mattpocock) · [`84fdeff`](https://github.com/mattpocock/skills/commit/84fdeffd12f2ee307994d1eb6feb48173b6e0502)
 
 ~~~
-fix(skills): default GAN harness models to sonnet (#2442) (#2695)
+Merge pull request #788 from mattpocock/grill-me-align
 
-Completes the model re-tiering from #2442: the gan-planner, gan-generator,
-and gan-evaluator agents were already re-pinned to sonnet, but the
-gan-style-harness script and docs still d
-…
+docs(grill-me): drop the "holds decisions" phrasing
 ~~~
 
-Ah, the predictable ritual of model re-tiering. It's always a good call to update defaults and documentation when the underlying agents have shifted. Smart to preserve Opus for when Sonnet inevitably stumbles on a tricky prompt.
+A tiny yet impactful textual adjustment; swapping out passive AI agency for active human commitment clarifies the tool's true purpose. Sometimes the biggest improvements come from reining in language, ensuring the user remains firmly in the driver's seat. Well-played.
 
-<sub>captured 2026-08-07</sub>
+<sub>captured 2026-08-08</sub>
 
 </div>
 <!-- ENTROPY:END -->
