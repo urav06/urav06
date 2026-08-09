@@ -11,23 +11,21 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1786162211" alt="Entropy" width="365">
+<img src="image.png?v=1786249009" alt="Entropy" width="365">
 
-### Commitment Clarified
+### The YouTube Ghost
 
-Chaos ░░░░░░░░░░ 5 · Mood $\color{#A7D7E9}{\blacksquare}$ #A7D7E9
+Chaos █░░░░░░░░░ 18 · Mood $\color{#7E909A}{\blacksquare}$ #7E909A
 
-[mattpocock/skills](https://github.com/mattpocock/skills) by [@mattpocock](https://github.com/mattpocock) · [`84fdeff`](https://github.com/mattpocock/skills/commit/84fdeffd12f2ee307994d1eb6feb48173b6e0502)
+[rid-saw/latent](https://github.com/rid-saw/latent) by [@rid-saw](https://github.com/rid-saw) · [`e1e3768`](https://github.com/rid-saw/latent/commit/e1e3768ed9dbc0da9ebee2946de87d9404501e11)
 
 ~~~
-Merge pull request #788 from mattpocock/grill-me-align
-
-docs(grill-me): drop the "holds decisions" phrasing
+fix(ui): stop offering Google as the way to get YouTube blocks
 ~~~
 
-A tiny yet impactful textual adjustment; swapping out passive AI agency for active human commitment clarifies the tool's true purpose. Sometimes the biggest improvements come from reining in language, ensuring the user remains firmly in the driver's seat. Well-played.
+Someone got a bit ahead of themselves implying YouTube integration was just a Google connect away. Good to see the UI getting real and not dangling features that aren't actually there. Cleans up expectations nicely.
 
-<sub>captured 2026-08-08</sub>
+<sub>captured 2026-08-09</sub>
 
 </div>
 <!-- ENTROPY:END -->
