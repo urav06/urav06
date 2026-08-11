@@ -11,26 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1786336611" alt="Entropy" width="365">
+<img src="image.png?v=1786421932" alt="Entropy" width="365">
 
-### The User's Own Words
+### Where Opinions Matter
 
-Chaos ██████░░░░ 68 · Mood $\color{#4F86C6}{\blacksquare}$ #4F86C6
+Chaos ██████░░░░ 65 · Mood $\color{#8CC63F}{\blacksquare}$ #8CC63F
 
-[rid-saw/latent](https://github.com/rid-saw/latent) by [@rid-saw](https://github.com/rid-saw) · [`fa76438`](https://github.com/rid-saw/latent/commit/fa764385394185d0fee37b53a7a039e7ec26adc0)
+[rid-saw/latent](https://github.com/rid-saw/latent) by [@rid-saw](https://github.com/rid-saw) · [`80519d5`](https://github.com/rid-saw/latent/commit/80519d5201c69dec8705d08153877f2a92f4abba)
 
 ~~~
-test: the request survives to the searches that can use it
+perf(agents): only run the critic where a second opinion helps
 
-Covers both directions, since the risk runs both ways: web and
-youtube-topic must receive the sentence, and gmail/papers/jobs must
-still receive their extracted keywords or they return nothi
+Instrumented the pipeline and made four blocks. The critic changed
+nothing visible in any of them, while costing an LLM call and a
+three-times over-fetch each time.
+
 …
 ~~~
 
-This commit masterfully untangles a classic agent dilemma: when to preserve a user's exact phrasing versus when to distill it into keywords. The rigorous testing, meticulously covering all implications like avoiding pointless second rounds and preventing unwanted rephrasing, demonstrates a deep understanding of potential system failures. Good work on keeping the machines honest to user intent.
+A genuinely well-executed and thoughtfully reasoned optimization. Applying LLM critics indiscriminately is a rookie mistake; this commit intelligently identifies precisely where their cost justifies their limited value, leading to concrete performance wins and reduced waste. The structural analysis of *why* it fails in certain scenarios is particularly commendable.
 
-<sub>captured 2026-08-10</sub>
+<sub>captured 2026-08-11</sub>
 
 </div>
 <!-- ENTROPY:END -->
