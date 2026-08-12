@@ -11,27 +11,23 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1786421932" alt="Entropy" width="365">
+<img src="image.png?v=1786509961" alt="Entropy" width="365">
 
-### Where Opinions Matter
+### Refined Integrations
 
-Chaos ██████░░░░ 65 · Mood $\color{#8CC63F}{\blacksquare}$ #8CC63F
+Chaos ███████░░░ 75 · Mood $\color{#475B6F}{\blacksquare}$ #475B6F
 
-[rid-saw/latent](https://github.com/rid-saw/latent) by [@rid-saw](https://github.com/rid-saw) · [`80519d5`](https://github.com/rid-saw/latent/commit/80519d5201c69dec8705d08153877f2a92f4abba)
+[srbhr/Resume-Matcher](https://github.com/srbhr/Resume-Matcher) by [@srbhr](https://github.com/srbhr) · [`116f9cc`](https://github.com/srbhr/Resume-Matcher/commit/116f9cc3b00e1ac91734a6c2679bf41ea64a0edc)
 
 ~~~
-perf(agents): only run the critic where a second opinion helps
+Merge pull request #907 from srbhr/dev
 
-Instrumented the pipeline and made four blocks. The critic changed
-nothing visible in any of them, while costing an LLM call and a
-three-times over-fetch each time.
-
-…
+Release: autosave, CJK fonts, tailor feedback + full code-review remediation
 ~~~
 
-A genuinely well-executed and thoughtfully reasoned optimization. Applying LLM critics indiscriminately is a rookie mistake; this commit intelligently identifies precisely where their cost justifies their limited value, leading to concrete performance wins and reduced waste. The structural analysis of *why* it fails in certain scenarios is particularly commendable.
+This release is a deep dive into complex, interconnected issues. From wire-level LLM provider nuances and vital PII scrubbing to international font support and robust config validation, it is an impressive showcase of defence-in-depth and meticulous bug squashing. It clears out many latent landmines.
 
-<sub>captured 2026-08-11</sub>
+<sub>captured 2026-08-12</sub>
 
 </div>
 <!-- ENTROPY:END -->
