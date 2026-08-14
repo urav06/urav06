@@ -11,27 +11,23 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1786596585" alt="Entropy" width="365">
+<img src="image.png?v=1786682821" alt="Entropy" width="365">
 
-### Pi's Principled Mount
+### Lifecycle Locked Down
 
-Chaos ███████░░░ 70 · Mood $\color{#34568B}{\blacksquare}$ #34568B
+Chaos ███████░░░ 75 · Mood $\color{#313a48}{\blacksquare}$ #313a48
 
-[affaan-m/ECC](https://github.com/affaan-m/ECC) by [@Renan-Olovics](https://github.com/Renan-Olovics) · [`eb49702`](https://github.com/affaan-m/ECC/commit/eb4970265169fec82371c92f615e2e133d875e27)
+[affaan-m/ECC](https://github.com/affaan-m/ECC) by [@haelyra](https://github.com/haelyra) · [`c9de8f5`](https://github.com/affaan-m/ECC/commit/c9de8f5b2b3a225bca9befa2b7700aa5e3a4d1b8)
 
 ~~~
-feat: thin Pi adapter mounting ECC's canonical skills and commands (#2759)
+Merge pull request #2784 from affaan-m/fix/installer-hotfix-2.2
 
-* feat: add thin Pi adapter mounting ECC's canonical skills and commands
-
-Adds first-class Pi (@earendil-works/pi-coding-agent) support as a thin
-adapter layer, following the
-…
+fix(install): harden ECC installer lifecycle
 ~~~
 
-This is how you bring a new player into the ecosystem. The commitment to a "thin adapter" and not replicating canonical assets, coupled with the regression guards that practically scream about past integration disasters, shows impressive foresight. Someone clearly learned their lesson the hard way here, and the robust testing and isolation prove it.
+This isn't a hotfix; it's a strategic overhaul. The level of rigor, from atomic external skill installs with rollback logic to multi-OS packed artifact validation baked directly into the release process, indicates a painful lesson learned and an impressive commitment to integrity. Every future deployment will stand on a much firmer foundation.
 
-<sub>captured 2026-08-13</sub>
+<sub>captured 2026-08-14</sub>
 
 </div>
 <!-- ENTROPY:END -->
