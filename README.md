@@ -11,26 +11,26 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1786765046" alt="Entropy" width="365">
+<img src="image.png?v=1786852016" alt="Entropy" width="365">
 
-### Truth From The Wires
+### The Ring And Its Clocks
 
-Chaos ██░░░░░░░░ 25 · Mood $\color{#2A3C4D}{\blacksquare}$ #2A3C4D
+Chaos ███████░░░ 70 · Mood $\color{#4FC3F7}{\blacksquare}$ #4FC3F7
 
-[murtazahr/Kafila](https://github.com/murtazahr/Kafila) by [@murtazahr](https://github.com/murtazahr) · [`4e39eb0`](https://github.com/murtazahr/Kafila/commit/4e39eb0c514fb175d32007d2c13e121464fcb90a)
+[murtazahr/Kafila](https://github.com/murtazahr/Kafila) by [@murtazahr](https://github.com/murtazahr) · [`f28db9f`](https://github.com/murtazahr/Kafila/commit/f28db9fbd99219d812556e630263fae445766d64)
 
 ~~~
-research: design brief for the operations dashboard
+docs: make the README about Kafila
 
-A prompt to hand a design tool, grounded in the system's real data rather
-than invented shapes: the topology JSON, both trace line types, and the
-measured numbers from a running three-node cluster.
+The README was upstream's, so the repository introduced itself as Ollama and
+then spent three hundred lines on download links and a community integrations
+list, none of which says anything about what this fork is f
 …
 ~~~
 
-This isn't just a design brief; it's a meticulously engineered spec for observability, deeply aware of its system's realities. It surgically dissects common pitfalls, particularly around timing and misleading metrics, by grounding every constraint in concrete data and distributed systems principles. The insistence on avoiding invented data and distinguishing real flight time from round-trip time is brilliant, demonstrating profound foresight.
+This isn't just a README rewrite; it's an intellectual refactoring of a project's identity. Swapping generic download links for a deeply technical discussion on distributed model inference and a principled approach to clock discipline elevates the documentation from user guide to research platform. The clarity on complex, easily fudged problems is genuinely impressive.
 
-<sub>captured 2026-08-15</sub>
+<sub>captured 2026-08-16</sub>
 
 </div>
 <!-- ENTROPY:END -->
