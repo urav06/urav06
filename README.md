@@ -11,26 +11,23 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1786852016" alt="Entropy" width="365">
+<img src="image.png?v=1786938566" alt="Entropy" width="365">
 
-### The Ring And Its Clocks
+### The Hard Truths
 
-Chaos ███████░░░ 70 · Mood $\color{#4FC3F7}{\blacksquare}$ #4FC3F7
+Chaos ███░░░░░░░ 35 · Mood $\color{#1F4068}{\blacksquare}$ #1F4068
 
-[murtazahr/Kafila](https://github.com/murtazahr/Kafila) by [@murtazahr](https://github.com/murtazahr) · [`f28db9f`](https://github.com/murtazahr/Kafila/commit/f28db9fbd99219d812556e630263fae445766d64)
+[murtazahr/Kafila](https://github.com/murtazahr/Kafila) by [@murtazahr](https://github.com/murtazahr) · [`368d478`](https://github.com/murtazahr/Kafila/commit/368d478a9ff186606d0ae1f2b267212a5953ba9e)
 
 ~~~
-docs: make the README about Kafila
+Merge pull request #8 from murtazahr/docs/contributing-security
 
-The README was upstream's, so the repository introduced itself as Ollama and
-then spent three hundred lines on download links and a community integrations
-list, none of which says anything about what this fork is f
-…
+docs: fix licence rendering, and make CONTRIBUTING and SECURITY ours
 ~~~
 
-This isn't just a README rewrite; it's an intellectual refactoring of a project's identity. Swapping generic download links for a deeply technical discussion on distributed model inference and a principled approach to clock discipline elevates the documentation from user guide to research platform. The clarity on complex, easily fudged problems is genuinely impressive.
+This isn't just doc cleanup; it's a project claiming its identity. The brutal honesty in the SECURITY.md, openly detailing the unauthenticated cluster transport and its implications, is genuinely refreshing and rarely seen. Combined with the exacting contributor guidelines, this sets a strong, opinionated, and realistic tone for a research platform.
 
-<sub>captured 2026-08-16</sub>
+<sub>captured 2026-08-17</sub>
 
 </div>
 <!-- ENTROPY:END -->
