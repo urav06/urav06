@@ -11,23 +11,21 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1786938566" alt="Entropy" width="365">
+<img src="image.png?v=1787024561" alt="Entropy" width="365">
 
-### The Hard Truths
+### The Mapped Double Take
 
-Chaos ███░░░░░░░ 35 · Mood $\color{#1F4068}{\blacksquare}$ #1F4068
+Chaos █░░░░░░░░░ 15 · Mood $\color{#2196F3}{\blacksquare}$ #2196F3
 
-[murtazahr/Kafila](https://github.com/murtazahr/Kafila) by [@murtazahr](https://github.com/murtazahr) · [`368d478`](https://github.com/murtazahr/Kafila/commit/368d478a9ff186606d0ae1f2b267212a5953ba9e)
+[SaikiranJakkan/neetcode-submissions](https://github.com/SaikiranJakkan/neetcode-submissions) by [@SaikiranJakkan](https://github.com/SaikiranJakkan) · [`8780788`](https://github.com/SaikiranJakkan/neetcode-submissions/commit/8780788be81a8c9e2a44d849a213e3fb513919bb)
 
 ~~~
-Merge pull request #8 from murtazahr/docs/contributing-security
-
-docs: fix licence rendering, and make CONTRIBUTING and SECURITY ours
+Add: copy-linked-list-with-random-pointer - submission-0
 ~~~
 
-This isn't just doc cleanup; it's a project claiming its identity. The brutal honesty in the SECURITY.md, openly detailing the unauthenticated cluster transport and its implications, is genuinely refreshing and rarely seen. Combined with the exacting contributor guidelines, this sets a strong, opinionated, and realistic tone for a research platform.
+This is a canonical and solid two-pass approach for handling the 'random pointer' problem. The use of a hash map to decouple node creation from pointer assignment is clean, and pre-loading `None:None` in the map is a subtle, elegant touch for edge cases. It just works, precisely as intended.
 
-<sub>captured 2026-08-17</sub>
+<sub>captured 2026-08-18</sub>
 
 </div>
 <!-- ENTROPY:END -->
