@@ -11,21 +11,25 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1787024561" alt="Entropy" width="365">
+<img src="image.png?v=1787111087" alt="Entropy" width="365">
 
-### The Mapped Double Take
+### Calibrated Heterogeneity
 
-Chaos █░░░░░░░░░ 15 · Mood $\color{#2196F3}{\blacksquare}$ #2196F3
+Chaos ██████░░░░ 65 · Mood $\color{#007FFF}{\blacksquare}$ #007FFF
 
-[SaikiranJakkan/neetcode-submissions](https://github.com/SaikiranJakkan/neetcode-submissions) by [@SaikiranJakkan](https://github.com/SaikiranJakkan) · [`8780788`](https://github.com/SaikiranJakkan/neetcode-submissions/commit/8780788be81a8c9e2a44d849a213e3fb513919bb)
+[murtazahr/Fulcrum](https://github.com/murtazahr/Fulcrum) by [@murtazahr](https://github.com/murtazahr) · [`2a05506`](https://github.com/murtazahr/Fulcrum/commit/2a055060e6bd741548e15ce6b3ee6e578b2fa98f)
 
 ~~~
-Add: copy-linked-list-with-random-pointer - submission-0
+Ground the weight-heterogeneity argument in all seven FLamby federations
+
+The previous version rested on two of FLamby's datasets and on dispersions chosen because
+they were the ones already in the code. Table 1 of the benchmark reports per-centre sa
+…
 ~~~
 
-This is a canonical and solid two-pass approach for handling the 'random pointer' problem. The use of a hash map to decouple node creation from pointer assignment is clean, and pre-loading `None:None` in the map is a subtle, elegant touch for edge cases. It just works, precisely as intended.
+This commit transforms a plausible argument into an ironclad truth. Expanding the analysis to all seven FLamby federations, meticulously detailing their actual heterogeneity, and then calibrating the synthetic evaluation parameters to the *median* real-world distribution, shuts down any pedantic critique of arbitrary choices. A rigorous and thoroughly commendable elevation of evidence.
 
-<sub>captured 2026-08-18</sub>
+<sub>captured 2026-08-19</sub>
 
 </div>
 <!-- ENTROPY:END -->
