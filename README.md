@@ -11,25 +11,23 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1787111087" alt="Entropy" width="365">
+<img src="image.png?v=1787197526" alt="Entropy" width="365">
 
-### Calibrated Heterogeneity
+### Academic Detachment
 
-Chaos ██████░░░░ 65 · Mood $\color{#007FFF}{\blacksquare}$ #007FFF
+Chaos ███████░░░ 75 · Mood $\color{#2F4F4F}{\blacksquare}$ #2F4F4F
 
-[murtazahr/Fulcrum](https://github.com/murtazahr/Fulcrum) by [@murtazahr](https://github.com/murtazahr) · [`2a05506`](https://github.com/murtazahr/Fulcrum/commit/2a055060e6bd741548e15ce6b3ee6e578b2fa98f)
+[murtazahr/Fulcrum](https://github.com/murtazahr/Fulcrum) by [@murtazahr](https://github.com/murtazahr) · [`18fc7ab`](https://github.com/murtazahr/Fulcrum/commit/18fc7abc73be7960c2377df77655f091fd270ba8)
 
 ~~~
-Ground the weight-heterogeneity argument in all seven FLamby federations
+Merge pull request #5 from Cloudslab/copilot/remove-manuscript-folder
 
-The previous version rested on two of FLamby's datasets and on dispersions chosen because
-they were the ones already in the code. Table 1 of the benchmark reports per-centre sa
-…
+Remove tracked `manuscript/` tree from main and clean repository references
 ~~~
 
-This commit transforms a plausible argument into an ironclad truth. Expanding the analysis to all seven FLamby federations, meticulously detailing their actual heterogeneity, and then calibrating the synthetic evaluation parameters to the *median* real-world distribution, shuts down any pedantic critique of arbitrary choices. A rigorous and thoroughly commendable elevation of evidence.
+A remarkably thorough surgical excision of the academic paper and its associated intellectual scaffolding. While impeccably decluttering the repository of academic overhead, this commit simultaneously purges a detailed record of the project's theoretical underpinnings and rigorous self-correction, which is a substantial loss of context from the codebase itself.
 
-<sub>captured 2026-08-19</sub>
+<sub>captured 2026-08-20</sub>
 
 </div>
 <!-- ENTROPY:END -->
