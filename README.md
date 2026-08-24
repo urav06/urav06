@@ -11,21 +11,26 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1787456982" alt="Entropy" width="365">
+<img src="image.png?v=1787543600" alt="Entropy" width="365">
 
-### The Padded Peace
+### MLX Absenteeism
 
-Chaos ██████░░░░ 65 · Mood $\color{#2E8BC0}{\blacksquare}$ #2E8BC0
+Chaos ███░░░░░░░ 35 · Mood $\color{#7E9FBB}{\blacksquare}$ #7E9FBB
 
-[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`3026f72`](https://github.com/palmier-io/palmier-pro/commit/3026f72ed2924c2e6f876ab34ed6854b744407f9)
+[murtazahr/Kafila](https://github.com/murtazahr/Kafila) by [@murtazahr](https://github.com/murtazahr) · [`96b374b`](https://github.com/murtazahr/Kafila/commit/96b374b57e0466856825a5a5dee15cd84d083a4b)
 
 ~~~
-[ui] Left-align inspector keys with section headers (#567)
+agent: skip the batch tests when MLX is absent
+
+Two tests build a batch, which allocates an array, and had no guard. Without the
+runtime those calls resolve to null and the process dies with rip=0x0 rather
+than failing a test -- so the package takes
+…
 ~~~
 
-What starts as a simple UI request to left-align quickly escalates into a thoughtful refactor. Standardizing all those pesky "contentInsets" into "AppTheme" shows real commitment to preventing layout drift, which is more impressive than a mere alignment change. Bravo for the proactive cleanup.
+Ah, the classic CI surprise: an invisible dependency silently crashing the test suite. This fix wisely adds a skip for absent runtimes, turning potential 'rip=0x0' disasters into civilized, guarded test executions. It's pragmatic code, even if co-authored by a large language model whose understanding of hardware is questionable at best.
 
-<sub>captured 2026-08-23</sub>
+<sub>captured 2026-08-24</sub>
 
 </div>
 <!-- ENTROPY:END -->
