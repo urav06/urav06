@@ -11,23 +11,26 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1787629641" alt="Entropy" width="365">
+<img src="image.png?v=1787716350" alt="Entropy" width="365">
 
-### Sketch vs. Entropy
+### Stage Withdrawn, Queue Unstuck
 
-Chaos ██████░░░░ 65 · Mood $\color{#28A745}{\blacksquare}$ #28A745
+Chaos ███████░░░ 75 · Mood $\color{#2C3E50}{\blacksquare}$ #2C3E50
 
-[murtazahr/sketchguard](https://github.com/murtazahr/sketchguard) by [@murtazahr](https://github.com/murtazahr) · [`f1124ea`](https://github.com/murtazahr/sketchguard/commit/f1124eac358d9603404680cb1a2784fe3b4e3043)
+[murtazahr/Kafila](https://github.com/murtazahr/Kafila) by [@murtazahr](https://github.com/murtazahr) · [`8b73b76`](https://github.com/murtazahr/Kafila/commit/8b73b764780c316e048d3e7b808f6e21fa30c935)
 
 ~~~
-Add Byzantine-fraction communication sweep (measured bytes over ZeroMQ)
+runner: honour the caller while a request waits to be admitted, and withdraw stage 2
 
-Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+Admission waited on the runner's lifetime context rather than the caller's, so a
+client that disconnected while queued went on waiting -- and because admit runs
+inl
+…
 ~~~
 
-This commit masterfully exposes SketchGuard's real value: measurable comms savings under Byzantine attack on ZeroMQ, a significant win for distributed resilience. The 'Claude Opus' co-authorship is... certainly *a statement*, blending a touch of meta-irony with raw engineering. Plus, openly showing initial negative savings at `byz=0`? That's just honest, data-driven science.
+This is a remarkably candid and effective architectural reset. The realization that an entire planned stage was an imported solution for a problem that simply doesn't exist here is admirable pragmatism. Layering in essential fixes for caller context awareness and explicit hang detection during memory waits further strengthens the admission logic, making the whole system significantly more robust and debuggable. Accurately diagnosing head-of-line blocking as the deeper, *unrelated* problem just underscores the technical acumen.
 
-<sub>captured 2026-08-25</sub>
+<sub>captured 2026-08-26</sub>
 
 </div>
 <!-- ENTROPY:END -->
