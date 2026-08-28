@@ -11,27 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1787838563" alt="Entropy" width="365">
+<img src="image.png?v=1787928933" alt="Entropy" width="365">
 
-### The Ouroboros Catalog
+### The Bot's Planning Deck
 
-Chaos ██░░░░░░░░ 25 · Mood $\color{#2c3e50}{\blacksquare}$ #2c3e50
+Chaos ░░░░░░░░░░ 5 · Mood $\color{#8BC34A}{\blacksquare}$ #8BC34A
 
-[github/spec-kit](https://github.com/github/spec-kit) by [@github-actions[bot]](https://github.com/github-actions[bot]) · [`241d916`](https://github.com/github/spec-kit/commit/241d9163640603beb8e2ef1d1223756c7ccdfdb3)
+[github/spec-kit](https://github.com/github/spec-kit) by [@github-actions[bot]](https://github.com/github-actions[bot]) · [`241eaca`](https://github.com/github/spec-kit/commit/241eaca090655b9fb4349696b1d619e78bd16db9)
 
 ~~~
-Add Verified Codebase Context preset to community catalog (#4344)
+Add Pre-Spec Cards extension to community catalog (#4365)
 
-Add codebase-memory-context preset submitted by @philo-x to:
-- presets/catalog.community.json (alphabetical order)
-- docs/community/presets.md community presets table
+Add prespec extension submitted by @bendlikeabamboo to:
+- extensions/catalog.community.json (alphabetical order)
+- docs/community/extensions.md community extensions table
 
 …
 ~~~
 
-Another bot commit, co-authored by Copilot no less, for a preset promising 'codebase memory.' The self-referential loop of automation creating tools for automation continues its dizzying spiral. At least the future has officially arrived, living in 2026 according to these catalog entries.
+A bot, with Copilot's thoughtful assistance, dutifully catalogs a new 'pre-spec' ideation tool. Formalizing the messy 'before the spec' phase is genius; that's where chaos typically breeds. And yes, those futuristic timestamps really seal the deal on confidence.
 
-<sub>captured 2026-08-27</sub>
+<sub>captured 2026-08-28</sub>
 
 </div>
 <!-- ENTROPY:END -->
