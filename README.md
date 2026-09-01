@@ -11,23 +11,21 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1788168127" alt="Entropy" width="365">
+<img src="image.png?v=1788250801" alt="Entropy" width="365">
 
-### Keel Laid, Domain Secured
+### The Provenance Protocol
 
-Chaos ███████░░░ 75 · Mood $\color{#236B8E}{\blacksquare}$ #236B8E
+Chaos ████░░░░░░ 42 · Mood $\color{#4a6c8e}{\blacksquare}$ #4a6c8e
 
-[urav06/ship-of-theseus](https://github.com/urav06/ship-of-theseus) by [@urav06](https://github.com/urav06) · [`eb62c92`](https://github.com/urav06/ship-of-theseus/commit/eb62c9285eb73e392ac773e8c014a090e76068c9)
+[affaan-m/ECC](https://github.com/affaan-m/ECC) by [@haelyra](https://github.com/haelyra) · [`ca185ef`](https://github.com/affaan-m/ECC/commit/ca185ef5f7667078a1e70a763bd3a9c71c48acf0)
 
 ~~~
-lay the keel
-
-Deny-by-default mirror of ~, with zsh and git as the first planks.
+chore(release): prepare signed 2.2.1 patch (#2920)
 ~~~
 
-This isn't merely 'laying the keel'; it's designing a bespoke flagship from first principles. The meticulous deny-by-default `.gitignore`, XDG compliance, and the ingenious directory tinting reveal an engineer who has seen enough chaos and now demands absolute, elegant control over their shell environment.
+This patch goes far beyond a simple version bump; it’s an institutional act of penance for an unsigned v2.2.0. The new runbooks and checklists reveal a painstaking commitment to secure provenance and rigid release management, ensuring every byte is blessed and verified before hitting the wild.
 
-<sub>captured 2026-08-31</sub>
+<sub>captured 2026-09-01</sub>
 
 </div>
 <!-- ENTROPY:END -->
