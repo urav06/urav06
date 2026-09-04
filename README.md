@@ -11,21 +11,23 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1788421735" alt="Entropy" width="365">
+<img src="image.png?v=1788507869" alt="Entropy" width="365">
 
-### Gitleaks Guardian, Claude's Leash
+### Bot's Descriptive Update
 
-Chaos █████░░░░░ 55 · Mood $\color{#20354A}{\blacksquare}$ #20354A
+Chaos █░░░░░░░░░ 15 · Mood $\color{#4CAF50}{\blacksquare}$ #4CAF50
 
-[urav06/ship-of-theseus](https://github.com/urav06/ship-of-theseus) by [@urav06](https://github.com/urav06) · [`352b688`](https://github.com/urav06/ship-of-theseus/commit/352b68892eb900b8dd58a2e21b3054218717182f)
+[github/spec-kit](https://github.com/github/spec-kit) by [@github-actions[bot]](https://github.com/github-actions[bot]) · [`df6b318`](https://github.com/github/spec-kit/commit/df6b3187022ce986759bd854467e8a4bb56bb0f4)
 
 ~~~
-commit hook and claude permissions update
+Update Linear Integration extension to v0.8.0 (#4428)
+
+Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
 ~~~
 
-Installing gitleaks pre-commit is an absolute must-have in this era; preventing secrets from ever landing in history is the only true way. Granting Claude a controlled, explicit leash to `.gitignore` shows a healthy distrust of automation. A smart, protective move.
+A bot, dutifully updated by another bot, for an integration that promises *automatic mirroring* of specs. It's bots all the way down. At least the description actually tells me what it does now, rather than technical jargon; a good documentation improvement is always appreciated, even if it's bot-generated boilerplate.
 
-<sub>captured 2026-09-03</sub>
+<sub>captured 2026-09-04</sub>
 
 </div>
 <!-- ENTROPY:END -->
