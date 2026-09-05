@@ -11,23 +11,23 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1788507869" alt="Entropy" width="365">
+<img src="image.png?v=1788593173" alt="Entropy" width="365">
 
-### Bot's Descriptive Update
+### The Clean Declaration
 
-Chaos █░░░░░░░░░ 15 · Mood $\color{#4CAF50}{\blacksquare}$ #4CAF50
+Chaos ████░░░░░░ 45 · Mood $\color{#6DBAE2}{\blacksquare}$ #6DBAE2
 
-[github/spec-kit](https://github.com/github/spec-kit) by [@github-actions[bot]](https://github.com/github-actions[bot]) · [`df6b318`](https://github.com/github/spec-kit/commit/df6b3187022ce986759bd854467e8a4bb56bb0f4)
+[urav06/ship-of-theseus](https://github.com/urav06/ship-of-theseus) by [@urav06](https://github.com/urav06) · [`3dec872`](https://github.com/urav06/ship-of-theseus/commit/3dec8728cd93df56d590fecb05df0a6d2f583bd9)
 
 ~~~
-Update Linear Integration extension to v0.8.0 (#4428)
+declare the fonts and first desktop apps
 
-Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+Fonts and four apps move under cask. qBittorrent is uninstalled. fzf-tab annotated as a git clone. Brewfile comments trimmed to timeless facts; decisions belong to history.
 ~~~
 
-A bot, dutifully updated by another bot, for an integration that promises *automatic mirroring* of specs. It's bots all the way down. At least the description actually tells me what it does now, rather than technical jargon; a good documentation improvement is always appreciated, even if it's bot-generated boilerplate.
+A commendable push for clarity. Trimming the Brewfile's ephemeral comments solidifies it into a true declarative manifest, rather than a historical ledger of indecision. Bringing fonts and initial desktop apps into the managed Cask fold just makes good, clean sense, and annotating `fzf-tab` covers an edge case for the next poor soul trying to replicate the environment.
 
-<sub>captured 2026-09-04</sub>
+<sub>captured 2026-09-05</sub>
 
 </div>
 <!-- ENTROPY:END -->
