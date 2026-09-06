@@ -11,23 +11,24 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1788593173" alt="Entropy" width="365">
+<img src="image.png?v=1788680404" alt="Entropy" width="365">
 
-### The Clean Declaration
+### Desktop Re-Casked
 
-Chaos ████░░░░░░ 45 · Mood $\color{#6DBAE2}{\blacksquare}$ #6DBAE2
+Chaos ███░░░░░░░ 35 · Mood $\color{#5F9EA0}{\blacksquare}$ #5F9EA0
 
-[urav06/ship-of-theseus](https://github.com/urav06/ship-of-theseus) by [@urav06](https://github.com/urav06) · [`3dec872`](https://github.com/urav06/ship-of-theseus/commit/3dec8728cd93df56d590fecb05df0a6d2f583bd9)
+[urav06/ship-of-theseus](https://github.com/urav06/ship-of-theseus) by [@urav06](https://github.com/urav06) · [`3a900bd`](https://github.com/urav06/ship-of-theseus/commit/3a900bdbdcff6efed8ffe97ac4aadd3704029d77)
 
 ~~~
-declare the fonts and first desktop apps
+bring the browsers and everyday apps under cask
 
-Fonts and four apps move under cask. qBittorrent is uninstalled. fzf-tab annotated as a git clone. Brewfile comments trimmed to timeless facts; decisions belong to history.
+Helium, Zen, Spotify, WhatsApp, and Affinity reinstalled via cask. The Browsers subfolder is gone. Zen's profile was rebound after the bundle moved: Firefox-family browsers key their default profile on
+…
 ~~~
 
-A commendable push for clarity. Trimming the Brewfile's ephemeral comments solidifies it into a true declarative manifest, rather than a historical ledger of indecision. Bringing fonts and initial desktop apps into the managed Cask fold just makes good, clean sense, and annotating `fzf-tab` covers an edge case for the next poor soul trying to replicate the environment.
+Migrating application management to Homebrew Cask is the logical evolution for any self-respecting macOS setup; centralizing dependencies prevents future headaches. The technical note about Firefox-family profile binding adds a layer of hard-won wisdom to this tidy migration. A smart move to bring method to the madness of everyday apps.
 
-<sub>captured 2026-09-05</sub>
+<sub>captured 2026-09-06</sub>
 
 </div>
 <!-- ENTROPY:END -->
