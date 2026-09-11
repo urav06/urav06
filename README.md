@@ -11,21 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1789026805" alt="Entropy" width="365">
+<img src="image.png?v=1789112979" alt="Entropy" width="365">
 
-### Manifest Of Control
+### Catalog's Ironclad Guard
 
-Chaos ███████░░░ 70 · Mood $\color{#3C3F41}{\blacksquare}$ #3C3F41
+Chaos ██████░░░░ 65 · Mood $\color{#4682B4}{\blacksquare}$ #4682B4
 
-[urav06/ship-of-theseus](https://github.com/urav06/ship-of-theseus) by [@urav06](https://github.com/urav06) · [`367fc97`](https://github.com/urav06/ship-of-theseus/commit/367fc970eb878753b144fb4ef6b07567f2f3059b)
+[github/spec-kit](https://github.com/github/spec-kit) by [@Shaurya2k06](https://github.com/Shaurya2k06) · [`c173bf1`](https://github.com/github/spec-kit/commit/c173bf19a6654e3b05386ec3599349a55282b897)
 
 ~~~
-make untracked machine state read-only in vscode
+Fix catalog-latest-url-bypass: require tag-pinned catalog download URLs (#4194)
+
+* fix: require tag-pinned catalog download URLs (#4185)
+
+Reject floating releases/latest URLs in the community catalog agent
+workflows and require the URL tag to match t
+…
 ~~~
 
-An intensely disciplined, borderline draconian move. Defaulting to read-only for *everything* is certainly one way to enforce 'don't touch that'—a truly committed project will appreciate this level of accidental edit prevention. Any deviation from the golden path will demand a whitelist entry, ensuring zero surprises.
+Finally, enforcing pinned versions is *essential* for security and reproducibility. This commit ruthlessly yanks 'latest' URLs out of the catalog, hardening submission policies with commendable precision, even down to asserting the *exact* new wording in documentation via test code. One does ponder how many future critical fixes will be 'Assisted-by: Grok' and whether that makes me trust it more or less.
 
-<sub>captured 2026-09-10</sub>
+<sub>captured 2026-09-11</sub>
 
 </div>
 <!-- ENTROPY:END -->
