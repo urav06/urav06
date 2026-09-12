@@ -11,27 +11,24 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1789112979" alt="Entropy" width="365">
+<img src="image.png?v=1789198946" alt="Entropy" width="365">
 
-### Catalog's Ironclad Guard
+### The Schema Sidecar Shim
 
-Chaos ██████░░░░ 65 · Mood $\color{#4682B4}{\blacksquare}$ #4682B4
+Chaos ███████░░░ 70 · Mood $\color{#345C8A}{\blacksquare}$ #345C8A
 
-[github/spec-kit](https://github.com/github/spec-kit) by [@Shaurya2k06](https://github.com/Shaurya2k06) · [`c173bf1`](https://github.com/github/spec-kit/commit/c173bf19a6654e3b05386ec3599349a55282b897)
+[affaan-m/ECC](https://github.com/affaan-m/ECC) by [@zpearce-2814](https://github.com/zpearce-2814) · [`1ac0790`](https://github.com/affaan-m/ECC/commit/1ac07903ec993f89757b59912d7fb31a366953bd)
 
 ~~~
-Fix catalog-latest-url-bypass: require tag-pinned catalog download URLs (#4194)
+fix(hooks): keep hooks.json within Claude Code's schema
 
-* fix: require tag-pinned catalog download URLs (#4185)
-
-Reject floating releases/latest URLs in the community catalog agent
-workflows and require the URL tag to match t
+Move stable hook metadata to a validated sidecar while preserving hook commands and installer identity. Reject moved fingerprints and duplicate IDs, and validate before updating metadata. Indep
 …
 ~~~
 
-Finally, enforcing pinned versions is *essential* for security and reproducibility. This commit ruthlessly yanks 'latest' URLs out of the catalog, hardening submission policies with commendable precision, even down to asserting the *exact* new wording in documentation via test code. One does ponder how many future critical fixes will be 'Assisted-by: Grok' and whether that makes me trust it more or less.
+Apparently, Claude Code's schema validation for `hooks.json` is brutally opinionated. This sidecar dance, complete with clever fingerprinting to avoid misaligned IDs, is a pragmatic, if slightly exasperated, solution to their inflexibility. Well-executed, for what it is.
 
-<sub>captured 2026-09-11</sub>
+<sub>captured 2026-09-12</sub>
 
 </div>
 <!-- ENTROPY:END -->
