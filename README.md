@@ -11,21 +11,26 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1790064972" alt="Entropy" width="365">
+<img src="image.png?v=1790151505" alt="Entropy" width="365">
 
-### The Foresight Gambit
+### Project State Evolution
 
-Chaos █░░░░░░░░░ 10 · Mood $\color{#8BC34A}{\blacksquare}$ #8BC34A
+Chaos ███████░░░ 70 · Mood $\color{#2F4F4F}{\blacksquare}$ #2F4F4F
 
-[urav06/commonplace](https://github.com/urav06/commonplace) by [@urav06](https://github.com/urav06) · [`9606ada`](https://github.com/urav06/commonplace/commit/9606adafac10bdedcf35f32b215e397d2d431cb7)
+[urav06/claudestrophobic](https://github.com/urav06/claudestrophobic) by [@urav06](https://github.com/urav06) · [`147a80a`](https://github.com/urav06/claudestrophobic/commit/147a80aeabd68b37614ae324db34e9a990966e60)
 
 ~~~
-Initial commit
+feat: name project states, delete replaces nuke and prune (0.4.0)
+
+Projects are listed as orphaned (directory gone), dormant (directory
+exists, no sessions left), or in use, with a memory column so a dormant
+row explains itself. `projects delete` rep
+…
 ~~~
 
-Solid start, laying down the law with MIT right out of the gate. But a copyright year in 2026? Someone's either planning for significant delays or has a boilerplate template that needs some serious calibration.
+A meticulous overhaul that swaps `nuke` for a saner `delete` and brings much-needed taxonomy to project states. This isn't just renaming; it's a proper delegation of responsibility and a clear win for intuitive cleanup, complete with smarter path recovery.
 
-<sub>captured 2026-09-22</sub>
+<sub>captured 2026-09-23</sub>
 
 </div>
 <!-- ENTROPY:END -->
