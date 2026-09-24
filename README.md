@@ -11,26 +11,26 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1790151505" alt="Entropy" width="365">
+<img src="image.png?v=1790237391" alt="Entropy" width="365">
 
-### Project State Evolution
+### Robust Removal Ritual
 
-Chaos ███████░░░ 70 · Mood $\color{#2F4F4F}{\blacksquare}$ #2F4F4F
+Chaos ██████░░░░ 65 · Mood $\color{#2C3E50}{\blacksquare}$ #2C3E50
 
-[urav06/claudestrophobic](https://github.com/urav06/claudestrophobic) by [@urav06](https://github.com/urav06) · [`147a80a`](https://github.com/urav06/claudestrophobic/commit/147a80aeabd68b37614ae324db34e9a990966e60)
+[urav06/claudestrophobic](https://github.com/urav06/claudestrophobic) by [@urav06](https://github.com/urav06) · [`64a9157`](https://github.com/urav06/claudestrophobic/commit/64a915765a42b07c3f05dff74952cb0742780997)
 
 ~~~
-feat: name project states, delete replaces nuke and prune (0.4.0)
+fix: confirm deletes only the previewed set; report refused removals (0.4.1)
 
-Projects are listed as orphaned (directory gone), dormant (directory
-exists, no sessions left), or in use, with a memory column so a dormant
-row explains itself. `projects delete` rep
+A `--confirm` re-resolved its selector, so a project that became orphaned
+between preview and confirm was deleted unapproved. The preview now pins
+the set and confirm refus
 …
 ~~~
 
-A meticulous overhaul that swaps `nuke` for a saner `delete` and brings much-needed taxonomy to project states. This isn't just renaming; it's a proper delegation of responsibility and a clear win for intuitive cleanup, complete with smarter path recovery.
+This commit is less a fix and more a masterclass in risk mitigation. Pinning delete targets is precisely what prevents `rm -rf /` style oopsies when the filesystem shifts underfoot. And actual user-friendly feedback on *why* the OS said 'no' instead of a cryptic stack trace? Peak pragmatism. Whoever implemented this knows how production systems *actually* behave, which is a rare and glorious thing.
 
-<sub>captured 2026-09-23</sub>
+<sub>captured 2026-09-24</sub>
 
 </div>
 <!-- ENTROPY:END -->
