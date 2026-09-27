@@ -11,21 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1790410816" alt="Entropy" width="365">
+<img src="image.png?v=1790499486" alt="Entropy" width="365">
 
-### Future Release Scheduled
+### Git's Primal Cut
 
-Chaos ██░░░░░░░░ 25 · Mood $\color{#6DD06D}{\blacksquare}$ #6DD06D
+Chaos █████████░ 95 · Mood $\color{#D65500}{\blacksquare}$ #D65500
 
-[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`eeafde2`](https://github.com/palmier-io/palmier-pro/commit/eeafde20086b1dffb01ccb59da80e470abadeda8)
+[torvalds/linux](https://github.com/torvalds/linux) by [@Unknown](https://github.com/Unknown) · [`1da177e`](https://github.com/torvalds/linux/commit/1da177e4c3f41524e886b7f1b8a0c1fc7321cac2)
 
 ~~~
-[build] Publish v0.10.1 appcast
+Linux-2.6.12-rc2
+
+Initial git repository build. I'm not bothering with the full history,
+even though we have it. We can create a separate "historical" git
+archive of that later if we want to, and in the meantime it's about
+3.2GB when imported into gi
+…
 ~~~
 
-Another appcast update, diligently adding one more release to the ancient XML ledger. Manual manipulation of these files always gives me pause; one malformed tag and the auto-updater suddenly sees nothing but a vast, silent void. That future `pubDate` means this particular future has been locked in for ages.
+This commit is pure Linus: audacious pragmatism overriding historical purity to jump-start Git, despite it being 3.2GB shy of full context. The voluminous "BK-usage" documentation, a literal how-to for its predecessor, perfectly captures the lingering ghosts of BitKeeper in what was supposed to be a clean slate.
 
-<sub>captured 2026-09-26</sub>
+<sub>captured 2026-09-27</sub>
 
 </div>
 <!-- ENTROPY:END -->
