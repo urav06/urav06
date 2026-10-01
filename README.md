@@ -11,23 +11,21 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1790760072" alt="Entropy" width="365">
+<img src="image.png?v=1790848077" alt="Entropy" width="365">
 
-### The Multi-Track Maestro
+### The Ghost Resume
 
-Chaos ████████░░ 85 · Mood $\color{#B22222}{\blacksquare}$ #B22222
+Chaos ██████░░░░ 65 · Mood $\color{#7D889A}{\blacksquare}$ #7D889A
 
-[srbhr/Resume-Matcher](https://github.com/srbhr/Resume-Matcher) by [@srbhr](https://github.com/srbhr) · [`9c05e42`](https://github.com/srbhr/Resume-Matcher/commit/9c05e423dfde44a5b4bb398d2dc7507194252ded)
+[7wik-pk/portfolio](https://github.com/7wik-pk/portfolio) by [@7wik-pk](https://github.com/7wik-pk) · [`860e766`](https://github.com/7wik-pk/portfolio/commit/860e76605140ed283561fb8822ba2ccd21576e14)
 
 ~~~
-Merge pull request #1010 from srbhr/feat/multi-track-masters
-
-feat: multi-track master resumes, harness-steered bullet selection, and resume duplication
+update gen resume - add nep experience
 ~~~
 
-A tectonic shift in the fundamental "master resume" invariant, completely re-architecting how primary content is managed. Introducing iterative PDF rendering to curate bullet selection on top of LLM scoring for page-fit is audacious and brilliantly ambitious, yet adds terrifying levels of coupled state and execution complexity. This isn't just a feature; it's a new foundational pillar built with surgical precision amidst existing constraints.
+Interesting trick to "add nep experience" while registering no text changes. Either the resume is a generated artifact not committed here, or 'nep experience' involves staring intently at the code without touching it. Call me suspicious.
 
-<sub>captured 2026-09-30</sub>
+<sub>captured 2026-10-01</sub>
 
 </div>
 <!-- ENTROPY:END -->
