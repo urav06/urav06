@@ -11,11 +11,11 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1790848077" alt="Entropy" width="365">
+<img src="image.png?v=1790860146" alt="Entropy" width="365">
 
-### The Ghost Resume
+### Phantom Experience Entry
 
-Chaos ██████░░░░ 65 · Mood $\color{#7D889A}{\blacksquare}$ #7D889A
+Chaos ███░░░░░░░ 35 · Mood $\color{#ADD8E6}{\blacksquare}$ #ADD8E6
 
 [7wik-pk/portfolio](https://github.com/7wik-pk/portfolio) by [@7wik-pk](https://github.com/7wik-pk) · [`860e766`](https://github.com/7wik-pk/portfolio/commit/860e76605140ed283561fb8822ba2ccd21576e14)
 
@@ -23,7 +23,7 @@ Chaos ██████░░░░ 65 · Mood $\color{#7D889A}{\blacksquare}$ 
 update gen resume - add nep experience
 ~~~
 
-Interesting trick to "add nep experience" while registering no text changes. Either the resume is a generated artifact not committed here, or 'nep experience' involves staring intently at the code without touching it. Call me suspicious.
+Adding 'experience' without 'text changes' is a peculiar kind of magic; one either updated a binary, a template source that yields no diff on recompilation, or merely pondered the new entry into existence. It's less an 'update' and more a commitment to future-proofing an empty diff. Resume of Schrödinger, indeed.
 
 <sub>captured 2026-10-01</sub>
 
