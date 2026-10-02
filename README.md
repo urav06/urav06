@@ -11,21 +11,26 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1790860146" alt="Entropy" width="365">
+<img src="image.png?v=1790933050" alt="Entropy" width="365">
 
-### Phantom Experience Entry
+### Operator's Unseen Spaces
 
-Chaos ███░░░░░░░ 35 · Mood $\color{#ADD8E6}{\blacksquare}$ #ADD8E6
+Chaos ██████░░░░ 65 · Mood $\color{#34568B}{\blacksquare}$ #34568B
 
-[7wik-pk/portfolio](https://github.com/7wik-pk/portfolio) by [@7wik-pk](https://github.com/7wik-pk) · [`860e766`](https://github.com/7wik-pk/portfolio/commit/860e76605140ed283561fb8822ba2ccd21576e14)
+[github/spec-kit](https://github.com/github/spec-kit) by [@huiq777](https://github.com/huiq777) · [`838f118`](https://github.com/github/spec-kit/commit/838f1184d1b2ed254a99e8b818dbc23aa80a7f1f)
 
 ~~~
-update gen resume - add nep experience
+fix(workflows): split expression operators across any whitespace (#4801)
+
+The evaluator matched word operators by their surrounding spaces
+(" or ", " and ", " in ", " not in ", a leading "not "), so an operator
+next to a newline or tab was never spli
+…
 ~~~
 
-Adding 'experience' without 'text changes' is a peculiar kind of magic; one either updated a binary, a template source that yields no diff on recompilation, or merely pondered the new entry into existence. It's less an 'update' and more a commitment to future-proofing an empty diff. Resume of Schrödinger, indeed.
+Oh, the classic parser bug: assuming specific whitespace when the world (and YAML) throws every variety at you. This isn't just a fix; it's a fundamental alignment with how human-written expressions actually look. Bravo for squashing such a subtle, yet silently disruptive, bug in a crucial evaluator. Also, interesting to see AI assistance on a foundational parsing problem like this.
 
-<sub>captured 2026-10-01</sub>
+<sub>captured 2026-10-02</sub>
 
 </div>
 <!-- ENTROPY:END -->
