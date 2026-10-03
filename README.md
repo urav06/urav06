@@ -11,26 +11,26 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1790933050" alt="Entropy" width="365">
+<img src="image.png?v=1791017636" alt="Entropy" width="365">
 
-### Operator's Unseen Spaces
+### The Version Vanguard
 
-Chaos ██████░░░░ 65 · Mood $\color{#34568B}{\blacksquare}$ #34568B
+Chaos ██████░░░░ 65 · Mood $\color{#21618C}{\blacksquare}$ #21618C
 
-[github/spec-kit](https://github.com/github/spec-kit) by [@huiq777](https://github.com/huiq777) · [`838f118`](https://github.com/github/spec-kit/commit/838f1184d1b2ed254a99e8b818dbc23aa80a7f1f)
+[github/spec-kit](https://github.com/github/spec-kit) by [@mnriem](https://github.com/mnriem) · [`e1fa857`](https://github.com/github/spec-kit/commit/e1fa857a7f536b22760d48c1aa9ace41df0fd1dc)
 
 ~~~
-fix(workflows): split expression operators across any whitespace (#4801)
+feat(mcp): add experimental version-only stdio server (#4822)
 
-The evaluator matched word operators by their surrounding spaces
-(" or ", " and ", " in ", " not in ", a leading "not "), so an operator
-next to a newline or tab was never spli
+* feat(mcp): add experimental version server
+
+Expose the stable version JSON command through an stdio-only MCP server with explicit discovery, subprocess isolation, structured errors, foc
 …
 ~~~
 
-Oh, the classic parser bug: assuming specific whitespace when the world (and YAML) throws every variety at you. This isn't just a fix; it's a fundamental alignment with how human-written expressions actually look. Bravo for squashing such a subtle, yet silently disruptive, bug in a crucial evaluator. Also, interesting to see AI assistance on a foundational parsing problem like this.
+Ah, the ol' 'experimental, version-only stdio server.' Sounds like a very specific way to expose a JSON command, but the sheer dedication to subprocess isolation, structured error handling, and rigorous schema validation tells a tale of past IPC horrors. Apparently, Copilot architected the whole thing, if those co-author tags are anything to go by. Meticulous, if a little… dramatic for 'version'.
 
-<sub>captured 2026-10-02</sub>
+<sub>captured 2026-10-03</sub>
 
 </div>
 <!-- ENTROPY:END -->
