@@ -11,26 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1791017636" alt="Entropy" width="365">
+<img src="image.png?v=1791105771" alt="Entropy" width="365">
 
-### The Version Vanguard
+### AI's Humbling Reversion
 
-Chaos ██████░░░░ 65 · Mood $\color{#21618C}{\blacksquare}$ #21618C
+Chaos ███████░░░ 70 · Mood $\color{#607d8b}{\blacksquare}$ #607d8b
 
-[github/spec-kit](https://github.com/github/spec-kit) by [@mnriem](https://github.com/mnriem) · [`e1fa857`](https://github.com/github/spec-kit/commit/e1fa857a7f536b22760d48c1aa9ace41df0fd1dc)
+[github/spec-kit](https://github.com/github/spec-kit) by [@KSchlobohm](https://github.com/KSchlobohm) · [`ae5ade7`](https://github.com/github/spec-kit/commit/ae5ade7234be5cb1d975f736c4e06dd46d1326d6)
 
 ~~~
-feat(mcp): add experimental version-only stdio server (#4822)
+Revert community submission intake and outcome reporting changes (#4831)
 
-* feat(mcp): add experimental version server
+Create space for additional hosted validation before proceeding with or reintroducing the changes from #4829.
 
-Expose the stable version JSON command through an stdio-only MCP server with explicit discovery, subprocess isolation, structured errors, foc
+Assisted-by: GitHub Copilot App (model: GPT-5.6 Sol, autonomous)
+
 …
 ~~~
 
-Ah, the ol' 'experimental, version-only stdio server.' Sounds like a very specific way to expose a JSON command, but the sheer dedication to subprocess isolation, structured error handling, and rigorous schema validation tells a tale of past IPC horrors. Apparently, Copilot architected the whole thing, if those co-author tags are anything to go by. Meticulous, if a little… dramatic for 'version'.
+A classic 'we tried, it failed, back to basics' moment for AI-driven workflows. The elaborate, flexible submission intake system with guaranteed outcome comments, likely implemented with Copilot's aid, proved too flaky and is now brutally undone, complete with deleting dedicated tests. Back to strict title prefix checks for these submission types; probably for the best until more robust 'hosted validation' (i.e., human oversight) is ready.
 
-<sub>captured 2026-10-03</sub>
+<sub>captured 2026-10-04</sub>
 
 </div>
 <!-- ENTROPY:END -->
