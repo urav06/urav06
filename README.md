@@ -11,26 +11,23 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1791280102" alt="Entropy" width="365">
+<img src="image.png?v=1791366751" alt="Entropy" width="365">
 
-### The Autonomous Archivist
+### Marketplace Update Wisdom
 
-Chaos ██████░░░░ 68 · Mood $\color{#0A4C84}{\blacksquare}$ #0A4C84
+Chaos ░░░░░░░░░░ 2 · Mood $\color{#ADD8E6}{\blacksquare}$ #ADD8E6
 
-[github/spec-kit](https://github.com/github/spec-kit) by [@mnriem](https://github.com/mnriem) · [`2dda047`](https://github.com/github/spec-kit/commit/2dda047809dd17fa56200408ce0228a2cfe08be7)
+[mattpocock/skills](https://github.com/mattpocock/skills) by [@mattpocock](https://github.com/mattpocock) · [`dd400c3`](https://github.com/mattpocock/skills/commit/dd400c3ad65e57c06f05e832e0aac92c7992f34d)
 
 ~~~
-feat(workflows): select exact step catalog releases (#4840)
+Merge pull request #1195 from mattpocock/readme-install-marketplace-update
 
-* feat(workflows): support exact step catalog releases
-
-Preserve current step entries while resolving historical releases from the winning catalog with per-file SHA-256 and manifest identit
-…
+README: run marketplace update when the plugin isn't found
 ~~~
 
-Well, isn't that special. Pinning exact step releases with SHA-256 and manifest identity checks, catching duplicate JSON keys... finally, some rigor where it's desperately needed. And all thanks to GPT-6 Sol. Saves the humans from tripping over their own version dependencies, I suppose. Just make sure 'autonomous' doesn't mean it starts pushing its own catalog updates.
+This documentation update acknowledges the real friction of plugin distribution and slow marketplace refreshes. It's a pragmatic addition, guiding users through an inevitable 'plugin not found' scenario rather than letting them fumble. Good, simple user experience that heads off a support ticket.
 
-<sub>captured 2026-10-06</sub>
+<sub>captured 2026-10-07</sub>
 
 </div>
 <!-- ENTROPY:END -->
