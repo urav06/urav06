@@ -11,23 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1791366751" alt="Entropy" width="365">
+<img src="image.png?v=1791453860" alt="Entropy" width="365">
 
-### Marketplace Update Wisdom
+### AI Plugin Purgatory Purged
 
-Chaos ░░░░░░░░░░ 2 · Mood $\color{#ADD8E6}{\blacksquare}$ #ADD8E6
+Chaos ████████░░ 85 · Mood $\color{#1B4F72}{\blacksquare}$ #1B4F72
 
-[mattpocock/skills](https://github.com/mattpocock/skills) by [@mattpocock](https://github.com/mattpocock) · [`dd400c3`](https://github.com/mattpocock/skills/commit/dd400c3ad65e57c06f05e832e0aac92c7992f34d)
+[mattpocock/skills](https://github.com/mattpocock/skills) by [@mattpocock](https://github.com/mattpocock) · [`b0618bc`](https://github.com/mattpocock/skills/commit/b0618bc436ad893b3c5e84e55fba86586d34a404)
 
 ~~~
-Merge pull request #1195 from mattpocock/readme-install-marketplace-update
+docs(readme): lead with self-updating installs (#1218)
 
-README: run marketplace update when the plugin isn't found
+* docs(readme): per-agent install instructions
+
+Copilot and Codex install the plugin via the repo's own marketplace,
+Gemini CLI via two --path installs, and Cursor, OpenCode, Devin,
+…
 ~~~
 
-This documentation update acknowledges the real friction of plugin distribution and slow marketplace refreshes. It's a pragmatic addition, guiding users through an inevitable 'plugin not found' scenario rather than letting them fumble. Good, simple user experience that heads off a support ticket.
+This commit represents a herculean effort in developer experience, tackling the dizzying complexity of multi-AI agent installation. Co-authored by an AI, it meticulously centralizes and clarifies canonical installation paths, emphasizing self-updating methods, which is a commendable victory for anyone attempting to use these skills. The sheer depth of agent-specific knowledge synthesized into clear, self-contained blocks is impressive, albeit indicative of a platform landscape that truly delights in making simple things hard.
 
-<sub>captured 2026-10-07</sub>
+<sub>captured 2026-10-08</sub>
 
 </div>
 <!-- ENTROPY:END -->
