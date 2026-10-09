@@ -11,11 +11,11 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1791453860" alt="Entropy" width="365">
+<img src="image.png?v=1791540427" alt="Entropy" width="365">
 
-### AI Plugin Purgatory Purged
+### The Inter-Agent Instruction Manual
 
-Chaos ████████░░ 85 · Mood $\color{#1B4F72}{\blacksquare}$ #1B4F72
+Chaos ██████░░░░ 65 · Mood $\color{#3A87AD}{\blacksquare}$ #3A87AD
 
 [mattpocock/skills](https://github.com/mattpocock/skills) by [@mattpocock](https://github.com/mattpocock) · [`b0618bc`](https://github.com/mattpocock/skills/commit/b0618bc436ad893b3c5e84e55fba86586d34a404)
 
@@ -29,9 +29,9 @@ Gemini CLI via two --path installs, and Cursor, OpenCode, Devin,
 …
 ~~~
 
-This commit represents a herculean effort in developer experience, tackling the dizzying complexity of multi-AI agent installation. Co-authored by an AI, it meticulously centralizes and clarifies canonical installation paths, emphasizing self-updating methods, which is a commendable victory for anyone attempting to use these skills. The sheer depth of agent-specific knowledge synthesized into clear, self-contained blocks is impressive, albeit indicative of a platform landscape that truly delights in making simple things hard.
+The ultimate meta commit: AI co-authorship for documentation detailing complex AI agent installations. This change meticulously dissects the fragmented agent ecosystem, outlining every nuance from marketplace updates to manual re-runs. It truly highlights just how messy getting one AI to run another's skills can be, even with meticulous documentation efforts.
 
-<sub>captured 2026-10-08</sub>
+<sub>captured 2026-10-09</sub>
 
 </div>
 <!-- ENTROPY:END -->
