@@ -11,27 +11,23 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1791540427" alt="Entropy" width="365">
+<img src="image.png?v=1791624482" alt="Entropy" width="365">
 
-### The Inter-Agent Instruction Manual
+### The Parameter Gauntlet
 
-Chaos ██████░░░░ 65 · Mood $\color{#3A87AD}{\blacksquare}$ #3A87AD
+Chaos ███████░░░ 75 · Mood $\color{#36454F}{\blacksquare}$ #36454F
 
-[mattpocock/skills](https://github.com/mattpocock/skills) by [@mattpocock](https://github.com/mattpocock) · [`b0618bc`](https://github.com/mattpocock/skills/commit/b0618bc436ad893b3c5e84e55fba86586d34a404)
+[affaan-m/ECC](https://github.com/affaan-m/ECC) by [@haelyra](https://github.com/haelyra) · [`4eb71d9`](https://github.com/affaan-m/ECC/commit/4eb71d92a39cab44ad40ac9d8a6a5ccb4029d6c2)
 
 ~~~
-docs(readme): lead with self-updating installs (#1218)
+Merge pull request #3484 from affaan-m/integration/ecc-043-20261009-verified
 
-* docs(readme): per-agent install instructions
-
-Copilot and Codex install the plugin via the repo's own marketplace,
-Gemini CLI via two --path installs, and Cursor, OpenCode, Devin,
-…
+fix: guard literal Git include redirects and env split arguments
 ~~~
 
-The ultimate meta commit: AI co-authorship for documentation detailing complex AI agent installations. This change meticulously dissects the fragmented agent ecosystem, outlining every nuance from marketplace updates to manual re-runs. It truly highlights just how messy getting one AI to run another's skills can be, even with meticulous documentation efforts.
+This patch is a fortress for Git security, methodically plugging arcane bypass vectors like `include.path` and meticulously de-obfuscating `env --split-string` arguments. The level of shell-parsing paranoia demonstrated here is precisely the rigor required for truly robust hooks. Top-notch defensive engineering.
 
-<sub>captured 2026-10-09</sub>
+<sub>captured 2026-10-10</sub>
 
 </div>
 <!-- ENTROPY:END -->
