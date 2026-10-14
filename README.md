@@ -11,21 +11,23 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1791886085" alt="Entropy" width="365">
+<img src="image.png?v=1791966300" alt="Entropy" width="365">
 
-### Zeroth Blueprint Laid
+### Host Guard: Docker Enlightenment
 
-Chaos ██████████ 100 · Mood $\color{#2ECC40}{\blacksquare}$ #2ECC40
+Chaos ███████░░░ 75 · Mood $\color{#2F4F72}{\blacksquare}$ #2F4F72
 
-[7wik-pk/zeroth-responder-ai](https://github.com/7wik-pk/zeroth-responder-ai) by [@7wik-pk](https://github.com/7wik-pk) · [`2f64ecd`](https://github.com/7wik-pk/zeroth-responder-ai/commit/2f64ecdaba0a203cafa3461639bcb3bd0ecbcabc)
+[srbhr/Resume-Matcher](https://github.com/srbhr/Resume-Matcher) by [@srbhr](https://github.com/srbhr) · [`db0e6ac`](https://github.com/srbhr/Resume-Matcher/commit/db0e6ac9bce8774d6abd692ddccbc02421b0ded2)
 
 ~~~
-init commit
+Merge pull request #1048 from srbhr/dev
+
+Listen on loopback by default, reject unexpected hosts; Ollama-in-Docker setup
 ~~~
 
-This initial commit is less of a kick-off and more of a meticulously pre-flighted mission statement, complete with architecture diagrams and an implementation plan. The decision to use LiteLLM for multi-provider orchestration and implement in-process embeddings shows smart, future-proof planning, especially given the strict data handling requirements for healthcare. It's a remarkably robust start, demonstrating clarity and foresight where many projects just begin coding.
+This is a brilliant consolidation of security hardening and user experience improvements. Defaulting to loopback closes a common open port vulnerability, while the host guard middleware provides robust defense against DNS rebinding. The meticulous Ollama-in-Docker instructions on Linux are a testament to deeply understanding user struggles; excellent.
 
-<sub>captured 2026-10-13</sub>
+<sub>captured 2026-10-14</sub>
 
 </div>
 <!-- ENTROPY:END -->
