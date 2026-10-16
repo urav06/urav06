@@ -11,23 +11,23 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1791966300" alt="Entropy" width="365">
+<img src="image.png?v=1792137296" alt="Entropy" width="365">
 
-### Host Guard: Docker Enlightenment
+### Claude Models & Reality Check
 
-Chaos ███████░░░ 75 · Mood $\color{#2F4F72}{\blacksquare}$ #2F4F72
+Chaos ███████░░░ 70 · Mood $\color{#563D7E}{\blacksquare}$ #563D7E
 
-[srbhr/Resume-Matcher](https://github.com/srbhr/Resume-Matcher) by [@srbhr](https://github.com/srbhr) · [`db0e6ac`](https://github.com/srbhr/Resume-Matcher/commit/db0e6ac9bce8774d6abd692ddccbc02421b0ded2)
+[srbhr/Resume-Matcher](https://github.com/srbhr/Resume-Matcher) by [@srbhr](https://github.com/srbhr) · [`a8fd5c4`](https://github.com/srbhr/Resume-Matcher/commit/a8fd5c4a9af0b1d8b4439b4dcb1c4cacd034f132)
 
 ~~~
-Merge pull request #1048 from srbhr/dev
+Merge pull request #1053 from srbhr/dev
 
-Listen on loopback by default, reject unexpected hosts; Ollama-in-Docker setup
+Release: Claude Code model picker and subscription risk dialog (#1052)
 ~~~
 
-This is a brilliant consolidation of security hardening and user experience improvements. Defaulting to loopback closes a common open port vulnerability, while the host guard middleware provides robust defense against DNS rebinding. The meticulous Ollama-in-Docker instructions on Linux are a testament to deeply understanding user struggles; excellent.
+A very robust release. Offering granular model choice for Claude's CLI users is a nice bump in utility, and the clear risk disclosure for subscription-based services is a masterclass in responsible engineering. The depth of internationalization also truly stands out.
 
-<sub>captured 2026-10-14</sub>
+<sub>captured 2026-10-16</sub>
 
 </div>
 <!-- ENTROPY:END -->
