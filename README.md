@@ -11,23 +11,23 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1792137296" alt="Entropy" width="365">
+<img src="image.png?v=1792222367" alt="Entropy" width="365">
 
-### Claude Models & Reality Check
+### Precise Keyword Mirror
 
-Chaos ███████░░░ 70 · Mood $\color{#563D7E}{\blacksquare}$ #563D7E
+Chaos ███████░░░ 72 · Mood $\color{#6495ED}{\blacksquare}$ #6495ED
 
-[srbhr/Resume-Matcher](https://github.com/srbhr/Resume-Matcher) by [@srbhr](https://github.com/srbhr) · [`a8fd5c4`](https://github.com/srbhr/Resume-Matcher/commit/a8fd5c4a9af0b1d8b4439b4dcb1c4cacd034f132)
+[srbhr/Resume-Matcher](https://github.com/srbhr/Resume-Matcher) by [@srbhr](https://github.com/srbhr) · [`ff5b370`](https://github.com/srbhr/Resume-Matcher/commit/ff5b370372d39b6cb6b56fd0dad88a2fe5c3abce)
 
 ~~~
-Merge pull request #1053 from srbhr/dev
+Merge pull request #1057 from srbhr/dev
 
-Release: Claude Code model picker and subscription risk dialog (#1052)
+fix(jd-match): show the ATS keyword match, not a second number
 ~~~
 
-A very robust release. Offering granular model choice for Claude's CLI users is a nice bump in utility, and the clear risk disclosure for subscription-based services is a masterclass in responsible engineering. The depth of internationalization also truly stands out.
+The sheer dedication to making the frontend's displayed number precisely mirror the backend's ATS keyword score is genuinely impressive. This commit meticulously harmonizes disparate logic, ensuring users finally see the 'true' match rate, addressing complex edge cases from CJK text to stale keywords. It's a fundamental correctness fix masquerading as an enhancement, demanding cross-stack alignment and impeccable detail.
 
-<sub>captured 2026-10-16</sub>
+<sub>captured 2026-10-17</sub>
 
 </div>
 <!-- ENTROPY:END -->
