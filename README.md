@@ -11,23 +11,24 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1792398664" alt="Entropy" width="365">
+<img src="image.png?v=1792483955" alt="Entropy" width="365">
 
-### Entry Control System: Hardened
+### Archive Surgical Suite
 
-Chaos ███████░░░ 75 · Mood $\color{#2C3E50}{\blacksquare}$ #2C3E50
+Chaos ████████░░ 82 · Mood $\color{#2C558D}{\blacksquare}$ #2C558D
 
-[affaan-m/ECC](https://github.com/affaan-m/ECC) by [@haelyra](https://github.com/haelyra) · [`76aaa77`](https://github.com/affaan-m/ECC/commit/76aaa77df6adc5b889e689007bf99b9a4f74af34)
+[affaan-m/ECC](https://github.com/affaan-m/ECC) by [@affaan-m](https://github.com/affaan-m) · [`6f1881a`](https://github.com/affaan-m/ECC/commit/6f1881aeafa3c48f7b603cc4be4b2e4e70daad59)
 
 ~~~
-Merge pull request #3596 from affaan-m/feat/pr-burst-protection
+refactor(lib): split nasiko install, uninstall and tar extraction
 
-feat(ci): limit PR bursts and alert maintainers
+extractQualifiedTarGzip walked the archive, validated the terminator, read each header and classified the entry in one loop; installNasiko and uninstallNasiko each resolved the releas
+…
 ~~~
 
-Someone clearly got overwhelmed. This isn't just a simple CI script; it's a meticulously engineered defense system, complete with real-world lessons from past incidents and a 'nuclear option' of account-wide bans. Robust, decisive, and necessary for maintaining sanity.
+A proper deep cut into the innards of an archive parser; it’s genuinely refreshing to see such meticulous dissection and validation, especially around edge cases like malformed padding and trailing data. Breaking down those monolithic `install` and `extract` functions into their discrete responsibilities isn't just good style, it's a security best practice when dealing with arbitrary binaries. This looks like a project where someone's been bitten by a sketchy archive or a bad rollback, and they've decided to exorcise all those demons, once and for all.
 
-<sub>captured 2026-10-19</sub>
+<sub>captured 2026-10-20</sub>
 
 </div>
 <!-- ENTROPY:END -->
