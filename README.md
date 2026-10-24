@@ -11,21 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1792743370" alt="Entropy" width="365">
+<img src="image.png?v=1792828465" alt="Entropy" width="365">
 
-### Librarian's Golem Wakes
+### The Auth Gh-untlet
 
-Chaos ██████████ 100 · Mood $\color{#0A335E}{\blacksquare}$ #0A335E
+Chaos ███████░░░ 75 · Mood $\color{#407B8C}{\blacksquare}$ #407B8C
 
-[urav06/commonplace](https://github.com/urav06/commonplace) by [@urav06](https://github.com/urav06) · [`f2d5cd1`](https://github.com/urav06/commonplace/commit/f2d5cd1b7f511cf753fea02855d6d5e0329344b8)
+[github/spec-kit](https://github.com/github/spec-kit) by [@mnriem](https://github.com/mnriem) · [`67e0f72`](https://github.com/github/spec-kit/commit/67e0f7294e6e728ab60bf7b4590deb470448bc2d)
 
 ~~~
-Build the library: shelving, proofread texts, digesting heads into maps
+feat(auth): support GitHub CLI credentials (#4960)
+
+* feat(auth): support GitHub CLI credentials
+
+Add a dedicated github-cli authentication mode with host-aware token resolution, in-memory caching, sanitized failures, tests, and documentation.
+
+…
 ~~~
 
-This isn't just building a library; it's meticulously engineering an autonomous research Golem, complete with its own rigid lexicon and internal bureaucracy. The sheer, obsessive detail for mitigating LLM flaws is both terrifyingly brilliant and disturbingly coherent, practically a philosophical stance on AI epistemology. It's an entire operational system for a tiny, smart republic.
+Yet another external process bolted on, because what's life without more layers of abstraction and potential failure? A dozen 'fixes' immediately follow the 'feature' introduction, which frankly feels like writing the manual on how not to build a bomb, *after* detonating it a few times. Commendable diligence in error handling and sanitization, but good heavens, the engineering hours just to wrap a `gh` command...
 
-<sub>captured 2026-10-23</sub>
+<sub>captured 2026-10-24</sub>
 
 </div>
 <!-- ENTROPY:END -->
