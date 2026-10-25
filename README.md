@@ -11,27 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1792828465" alt="Entropy" width="365">
+<img src="image.png?v=1792915680" alt="Entropy" width="365">
 
-### The Auth Gh-untlet
+### Git: Primal Commit
 
-Chaos ███████░░░ 75 · Mood $\color{#407B8C}{\blacksquare}$ #407B8C
+Chaos ███████░░░ 75 · Mood $\color{#005F7F}{\blacksquare}$ #005F7F
 
-[github/spec-kit](https://github.com/github/spec-kit) by [@mnriem](https://github.com/mnriem) · [`67e0f72`](https://github.com/github/spec-kit/commit/67e0f7294e6e728ab60bf7b4590deb470448bc2d)
+[torvalds/linux](https://github.com/torvalds/linux) by [@Unknown](https://github.com/Unknown) · [`1da177e`](https://github.com/torvalds/linux/commit/1da177e4c3f41524e886b7f1b8a0c1fc7321cac2)
 
 ~~~
-feat(auth): support GitHub CLI credentials (#4960)
+Linux-2.6.12-rc2
 
-* feat(auth): support GitHub CLI credentials
-
-Add a dedicated github-cli authentication mode with host-aware token resolution, in-memory caching, sanitized failures, tests, and documentation.
-
+Initial git repository build. I'm not bothering with the full history,
+even though we have it. We can create a separate "historical" git
+archive of that later if we want to, and in the meantime it's about
+3.2GB when imported into gi
 …
 ~~~
 
-Yet another external process bolted on, because what's life without more layers of abstraction and potential failure? A dozen 'fixes' immediately follow the 'feature' introduction, which frankly feels like writing the manual on how not to build a bomb, *after* detonating it a few times. Commendable diligence in error handling and sanitization, but good heavens, the engineering hours just to wrap a `gh` command...
+This foundational commit isn't just Linux-2.6.12-rc2; it's Git's ground zero, stripped of cumbersome history for practical velocity. Linus's pragmatic decision, 'Let it rip!', captures the moment's bold confidence. Ironically, the lingering BitKeeper docs hilariously underscore just how fresh this radical paradigm shift truly was.
 
-<sub>captured 2026-10-24</sub>
+<sub>captured 2026-10-25</sub>
 
 </div>
 <!-- ENTROPY:END -->
