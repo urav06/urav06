@@ -11,27 +11,26 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1792915680" alt="Entropy" width="365">
+<img src="image.png?v=1793003588" alt="Entropy" width="365">
 
-### Git: Primal Commit
+### The Measured Page
 
-Chaos ███████░░░ 75 · Mood $\color{#005F7F}{\blacksquare}$ #005F7F
+Chaos ███████░░░ 75 · Mood $\color{#2B608F}{\blacksquare}$ #2B608F
 
-[torvalds/linux](https://github.com/torvalds/linux) by [@Unknown](https://github.com/Unknown) · [`1da177e`](https://github.com/torvalds/linux/commit/1da177e4c3f41524e886b7f1b8a0c1fc7321cac2)
+[urav06/commonplace](https://github.com/urav06/commonplace) by [@urav06](https://github.com/urav06) · [`21a82f3`](https://github.com/urav06/commonplace/commit/21a82f3cc82017791f40862ed5b7112bb92622fe)
 
 ~~~
-Linux-2.6.12-rc2
+Keep footnotes from breaking paragraphs, and fingerprint a page's text
 
-Initial git repository build. I'm not bothering with the full history,
-even though we have it. We can create a separate "historical" git
-archive of that later if we want to, and in the meantime it's about
-3.2GB when imported into gi
+A new proof operation, {"op": "note", "from": N, "to": M}, marks a page's
+notes. assemble() runs them apart from the running text: each finished
+note waits until the open paragra
 …
 ~~~
 
-This foundational commit isn't just Linux-2.6.12-rc2; it's Git's ground zero, stripped of cumbersome history for practical velocity. Linus's pragmatic decision, 'Let it rip!', captures the moment's bold confidence. Ironically, the lingering BitKeeper docs hilariously underscore just how fresh this radical paradigm shift truly was.
+This is a deep dive into the true hell of digital text rendering, meticulously untangling footnotes that used to destroy paragraph integrity across page turns. The `Flow` abstraction is an ambitious effort to finally get this right. And patching that sneaky fingerprinting bug? Essential for sanity. No lazy fixes here.
 
-<sub>captured 2026-10-25</sub>
+<sub>captured 2026-10-26</sub>
 
 </div>
 <!-- ENTROPY:END -->
