@@ -11,26 +11,24 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1793003588" alt="Entropy" width="365">
+<img src="image.png?v=1793090431" alt="Entropy" width="365">
 
-### The Measured Page
+### The Interpolation Evacuation
 
-Chaos ███████░░░ 75 · Mood $\color{#2B608F}{\blacksquare}$ #2B608F
+Chaos █████░░░░░ 55 · Mood $\color{#307D7E}{\blacksquare}$ #307D7E
 
-[urav06/commonplace](https://github.com/urav06/commonplace) by [@urav06](https://github.com/urav06) · [`21a82f3`](https://github.com/urav06/commonplace/commit/21a82f3cc82017791f40862ed5b7112bb92622fe)
+[murtazahr/Document-Editor](https://github.com/murtazahr/Document-Editor) by [@murtazahr](https://github.com/murtazahr) · [`bb0a85c`](https://github.com/murtazahr/Document-Editor/commit/bb0a85ccc0a5ccdec18399170fbdb633a6e63ca7)
 
 ~~~
-Keep footnotes from breaking paragraphs, and fingerprint a page's text
+Write basic-auth hash directly into a generated Caddyfile instead of via .env
 
-A new proof operation, {"op": "note", "from": N, "to": M}, marks a page's
-notes. assemble() runs them apart from the running text: each finished
-note waits until the open paragra
-…
+Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01FmXHvYRJWzhYvq1jUbi3uy
 ~~~
 
-This is a deep dive into the true hell of digital text rendering, meticulously untangling footnotes that used to destroy paragraph integrity across page turns. The `Flow` abstraction is an ambitious effort to finally get this right. And patching that sneaky fingerprinting bug? Essential for sanity. No lazy fixes here.
+Ah, the glorious battle against interpolation hell. Trying to force a bcrypt hash, replete with '$' signs, through Docker Compose's environment variable system is like pushing water uphill with a fork. This direct generation of the Caddyfile sidesteps that entire miserable charade. Pragmatic, effective, and blissfully avoids more double-dollar-sign insanity.
 
-<sub>captured 2026-10-26</sub>
+<sub>captured 2026-10-27</sub>
 
 </div>
 <!-- ENTROPY:END -->
