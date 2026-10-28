@@ -11,24 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1793090431" alt="Entropy" width="365">
+<img src="image.png?v=1793179226" alt="Entropy" width="365">
 
-### The Interpolation Evacuation
+### Remarkable Boundaries
 
-Chaos █████░░░░░ 55 · Mood $\color{#307D7E}{\blacksquare}$ #307D7E
+Chaos ██████░░░░ 68 · Mood $\color{#2B587D}{\blacksquare}$ #2B587D
 
-[murtazahr/Document-Editor](https://github.com/murtazahr/Document-Editor) by [@murtazahr](https://github.com/murtazahr) · [`bb0a85c`](https://github.com/murtazahr/Document-Editor/commit/bb0a85ccc0a5ccdec18399170fbdb633a6e63ca7)
+[github/spec-kit](https://github.com/github/spec-kit) by [@kartsan03](https://github.com/kartsan03) · [`222a973`](https://github.com/github/spec-kit/commit/222a973f8b8794366680c043fb935a31f71902af)
 
 ~~~
-Write basic-auth hash directly into a generated Caddyfile instead of via .env
+fix(vibe): keep user comments that follow a managed hook block (#5109)
 
-Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>
-Claude-Session: https://claude.ai/code/session_01FmXHvYRJWzhYvq1jUbi3uy
+* fix(vibe): keep user comments that follow a managed hook block
+
+A managed [[hooks]] block ran until the next table header or the end
+of the file, so the comments after it were
+…
 ~~~
 
-Ah, the glorious battle against interpolation hell. Trying to force a bcrypt hash, replete with '$' signs, through Docker Compose's environment variable system is like pushing water uphill with a fork. This direct generation of the Caddyfile sidesteps that entire miserable charade. Pragmatic, effective, and blissfully avoids more double-dollar-sign insanity.
+This is a deep dive into the arcane world of TOML parsing boundaries, an endeavor only for the brave or the truly patient. Correctly segmenting managed code from user comments, while accounting for multiline values and diverse line endings, is a delicate art—one meticulously executed here, albeit with a fresh layer of conditional logic. It’s a good fix, but the `_managed_hook_spans` function is officially a minefield now.
 
-<sub>captured 2026-10-27</sub>
+<sub>captured 2026-10-28</sub>
 
 </div>
 <!-- ENTROPY:END -->
