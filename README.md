@@ -11,27 +11,26 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1793179226" alt="Entropy" width="365">
+<img src="image.png?v=1793265906" alt="Entropy" width="365">
 
-### Remarkable Boundaries
+### Manifest Sanity Restored
 
-Chaos ██████░░░░ 68 · Mood $\color{#2B587D}{\blacksquare}$ #2B587D
+Chaos ███████░░░ 70 · Mood $\color{#34495e}{\blacksquare}$ #34495e
 
-[github/spec-kit](https://github.com/github/spec-kit) by [@kartsan03](https://github.com/kartsan03) · [`222a973`](https://github.com/github/spec-kit/commit/222a973f8b8794366680c043fb935a31f71902af)
+[github/spec-kit](https://github.com/github/spec-kit) by [@kartsan03](https://github.com/kartsan03) · [`99e047e`](https://github.com/github/spec-kit/commit/99e047e9b48c3ecbbc5c3e530fb45bed671960bc)
 
 ~~~
-fix(vibe): keep user comments that follow a managed hook block (#5109)
+fix(integrations): refresh manifest hashes after preset registration on switch and use (#5145)
 
-* fix(vibe): keep user comments that follow a managed hook block
+* fix(integrations): refresh manifest hashes after preset registration on switch and use
 
-A managed [[hooks]] block ran until the next table header or the end
-of the file, so the comments after it were
+`integration switch` and `integration use` re-register installed
 …
 ~~~
 
-This is a deep dive into the arcane world of TOML parsing boundaries, an endeavor only for the brave or the truly patient. Correctly segmenting managed code from user comments, while accounting for multiline values and diverse line endings, is a delicate art—one meticulously executed here, albeit with a fresh layer of conditional logic. It’s a good fix, but the `_managed_hook_spans` function is officially a minefield now.
+This commit wades into the murky depths of file system state consistency, solving a subtle but infuriating bug where automated changes falsely marked files as user-modified. The robust logic for snapshotting manifests, carefully validating paths, handling unexpected IO errors, and meticulously distinguishing between automation's changes and genuine user edits, is a masterclass in defensive programming. It's the kind of invisible-yet-critical fix that prevents a thousand small developer frustrations.
 
-<sub>captured 2026-10-28</sub>
+<sub>captured 2026-10-29</sub>
 
 </div>
 <!-- ENTROPY:END -->
