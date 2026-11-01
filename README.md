@@ -11,27 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1793438287" alt="Entropy" width="365">
+<img src="image.png?v=1793527615" alt="Entropy" width="365">
 
-### The Clean Slate Imperative
+### Factory System Blueprints
 
-Chaos ██████░░░░ 65 · Mood $\color{#6BA3BF}{\blacksquare}$ #6BA3BF
+Chaos ███████░░░ 75 · Mood $\color{#0A3C52}{\blacksquare}$ #0A3C52
 
-[mattpocock/skills](https://github.com/mattpocock/skills) by [@mattpocock](https://github.com/mattpocock) · [`a496f55`](https://github.com/mattpocock/skills/commit/a496f5513d4a4cf889bc48e189e579f4b0bdf6aa)
+[mattpocock/skills](https://github.com/mattpocock/skills) by [@mattpocock](https://github.com/mattpocock) · [`4ae2317`](https://github.com/mattpocock/skills/commit/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d)
 
 ~~~
-implement-spec: a fresh implementer subagent per ticket (#1342)
+software-factory: glossary skill for designing a factory (#1316)
 
-* implement-spec: a fresh implementer subagent per ticket
+* software-factory: add glossary skill for designing a factory
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
 
 …
 ~~~
 
-Ah, the venerable 'new process per request' pattern, now applied to digital subagents. A fresh canvas ensures clean state and avoids unseen baggage, though one wonders what previous ghosts necessitated the change. Seeing Claude co-author the hygiene guidelines for its algorithmic siblings feels uniquely meta, a proper ouroboros.
+This isn't merely a 'skill'; it's an entire operational philosophy, outlining the blueprint for what 'software factory' design *should* be. The meticulous framework, detailed service surveys, and emphasis on 'brakes' demonstrate a shrewd foresight for AI-orchestrated development. And yes, those 'surveyed 2026-10' dates with Claude Opus 5.5 as co-author aren't subtle—they're either audacious genius or impeccably transparent ghostwriting, producing a future artifact today.
 
-<sub>captured 2026-10-31</sub>
+<sub>captured 2026-11-01</sub>
 
 </div>
 <!-- ENTROPY:END -->
