@@ -11,21 +11,21 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1795086584" alt="Entropy" width="365">
+<img src="image.png?v=1795172219" alt="Entropy" width="365">
 
-### The Appcast Prophecy
+### The Temporal Beta Dispatch
 
-Chaos ██░░░░░░░░ 20 · Mood $\color{#3498DB}{\blacksquare}$ #3498DB
+Chaos ██░░░░░░░░ 25 · Mood $\color{#A7D9F0}{\blacksquare}$ #A7D9F0
 
-[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`dfc810b`](https://github.com/palmier-io/palmier-pro/commit/dfc810b561f1692947eb81bbb689e078923ebb59)
+[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`7a140c1`](https://github.com/palmier-io/palmier-pro/commit/7a140c15ca628a8aa67bb5aaae7c6994474f73b9)
 
 ~~~
-[build] Publish v0.12.1 appcast
+[build] Publish v1.0.0-beta.4 appcast
 ~~~
 
-Ah, the thrilling life of an appcast maintainer. A critical build step, pushing the XML truth out into the world. Though, scheduling releases for 2026 is certainly an aggressive interpretation of "forward planning."
+Just another mechanical appcast update, a standard procedure for a beta release. The only thing remotely notable is that curiously futuristic `pubDate`. Someone's planning way, way ahead for their betas, or perhaps has a malfunctioning clock.
 
-<sub>captured 2026-11-19</sub>
+<sub>captured 2026-11-20</sub>
 
 </div>
 <!-- ENTROPY:END -->
