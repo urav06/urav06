@@ -11,21 +11,25 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1795172219" alt="Entropy" width="365">
+<img src="image.png?v=1795257617" alt="Entropy" width="365">
 
-### The Temporal Beta Dispatch
+### A Point To Search
 
-Chaos ██░░░░░░░░ 25 · Mood $\color{#A7D9F0}{\blacksquare}$ #A7D9F0
+Chaos ███░░░░░░░ 35 · Mood $\color{#778899}{\blacksquare}$ #778899
 
-[palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) by [@htin1](https://github.com/htin1) · [`7a140c1`](https://github.com/palmier-io/palmier-pro/commit/7a140c15ca628a8aa67bb5aaae7c6994474f73b9)
+[github/spec-kit](https://github.com/github/spec-kit) by [@dlwlgnsrhy](https://github.com/dlwlgnsrhy) · [`a4d5712`](https://github.com/github/spec-kit/commit/a4d571229e164e440f8950cac034607bae7b7518)
 
 ~~~
-[build] Publish v1.0.0-beta.4 appcast
+fix(extensions): describe extension list options accurately (#5496)
+
+Explain the installation hint in list help and point catalog discovery to extension search.
+
+Assisted-by: OpenAI Codex (model: GPT-6.2, autonomous)
 ~~~
 
-Just another mechanical appcast update, a standard procedure for a beta release. The only thing remotely notable is that curiously futuristic `pubDate`. Someone's planning way, way ahead for their betas, or perhaps has a malfunctioning clock.
+This commit gracefully acknowledges that the 'list' command's --available and --all flags have been living a lie, promising features they never delivered. Instead of fixing the flags' functionality, it opts for a clever redirection: rewriting documentation and help messages to point users to the 'search' command. A pragmatic solution to an incomplete feature, ensuring users at least know where to go next, with AI handling the public relations.
 
-<sub>captured 2026-11-20</sub>
+<sub>captured 2026-11-21</sub>
 
 </div>
 <!-- ENTROPY:END -->
