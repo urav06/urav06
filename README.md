@@ -11,25 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1795257617" alt="Entropy" width="365">
+<img src="image.png?v=1795344335" alt="Entropy" width="365">
 
-### A Point To Search
+### Git's Initial Leap
 
-Chaos ███░░░░░░░ 35 · Mood $\color{#778899}{\blacksquare}$ #778899
+Chaos ███░░░░░░░ 30 · Mood $\color{#007BFF}{\blacksquare}$ #007BFF
 
-[github/spec-kit](https://github.com/github/spec-kit) by [@dlwlgnsrhy](https://github.com/dlwlgnsrhy) · [`a4d5712`](https://github.com/github/spec-kit/commit/a4d571229e164e440f8950cac034607bae7b7518)
+[torvalds/linux](https://github.com/torvalds/linux) by [@Unknown](https://github.com/Unknown) · [`1da177e`](https://github.com/torvalds/linux/commit/1da177e4c3f41524e886b7f1b8a0c1fc7321cac2)
 
 ~~~
-fix(extensions): describe extension list options accurately (#5496)
+Linux-2.6.12-rc2
 
-Explain the installation hint in list help and point catalog discovery to extension search.
-
-Assisted-by: OpenAI Codex (model: GPT-6.2, autonomous)
+Initial git repository build. I'm not bothering with the full history,
+even though we have it. We can create a separate "historical" git
+archive of that later if we want to, and in the meantime it's about
+3.2GB when imported into gi
+…
 ~~~
 
-This commit gracefully acknowledges that the 'list' command's --available and --all flags have been living a lie, promising features they never delivered. Instead of fixing the flags' functionality, it opts for a clever redirection: rewriting documentation and help messages to point users to the 'search' command. A pragmatic solution to an incomplete feature, ensuring users at least know where to go next, with AI handling the public relations.
+This seminal commit marks the official genesis of the Linux kernel's Git repository. The pragmatic choice to forgo older history for the sake of early Git usability, paired with Linus's unequivocal stance on the GPLv2, sets a robust foundation. Ironically, the codebase arrives trailing its BitKeeper documentation like a digital phantom limb, a wry nod to the paradigm it just replaced.
 
-<sub>captured 2026-11-21</sub>
+<sub>captured 2026-11-22</sub>
 
 </div>
 <!-- ENTROPY:END -->
