@@ -11,24 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1795526300" alt="Entropy" width="365">
+<img src="image.png?v=1795608599" alt="Entropy" width="365">
 
-### Robot Dreamer's Realization
+### Edited Resource Resilience
 
-Chaos █░░░░░░░░░ 10 · Mood $\color{#B0C4DE}{\blacksquare}$ #B0C4DE
+Chaos ██████░░░░ 60 · Mood $\color{#3CAEA3}{\blacksquare}$ #3CAEA3
 
-[github/spec-kit](https://github.com/github/spec-kit) by [@Copilot](https://github.com/Copilot) · [`a55782f`](https://github.com/github/spec-kit/commit/a55782f1f1e7f2469cb204843c05d1a42fa2fae7)
+[github/spec-kit](https://github.com/github/spec-kit) by [@kartsan03](https://github.com/kartsan03) · [`f61648d`](https://github.com/github/spec-kit/commit/f61648db96b5ac5eb65a54577865dafc2c830a7c)
 
 ~~~
-[Copilot Dreaming] Avoid rejecting valid extension IDs with digits (#5548)
+fix(extensions): keep edited skill resources on an unforced integration switch (#5495)
 
-Copilot could reject IDs containing digits by applying the prose restriction, even though the community publishing checklist permits digits after the initial lowercase letter
+* fix(extensions): keep edited skill resources on an unforced integration switch
+
+An unforced `specify integration switch` retired every recorded skill
+resource o
 …
 ~~~
 
-It appears a copilot dreamt it was being too strict, only to discover the underlying regex already allowed digits. This "fix" isn't about code; it's an AI painstakingly clarifying its *own* semantic understanding by aligning prose documentation to an already correct regex. Peak ouroboros engineering.
+Ah, the digital equivalent of taking the keys out of a user's hand without warning and swapping their custom paint job for the factory standard. This commit finally ensures an 'unforced' switch means just that, gracefully preserving modified files and their records instead of silently obliterating them. The robust handling of unreadable and symlinked resources is a touch of cautious genius.
 
-<sub>captured 2026-11-24</sub>
+<sub>captured 2026-11-25</sub>
 
 </div>
 <!-- ENTROPY:END -->
