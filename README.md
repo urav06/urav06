@@ -11,27 +11,27 @@ Every day a bot grabs a commit (one of mine, someone I follow, or a stranger's),
 <!-- ENTROPY:START -->
 <div align="center">
 
-<img src="image.png?v=1795608599" alt="Entropy" width="365">
+<img src="image.png?v=1795694145" alt="Entropy" width="365">
 
-### Edited Resource Resilience
+### Bot-Squared Enhancement
 
-Chaos ██████░░░░ 60 · Mood $\color{#3CAEA3}{\blacksquare}$ #3CAEA3
+Chaos █░░░░░░░░░ 10 · Mood $\color{#2196F3}{\blacksquare}$ #2196F3
 
-[github/spec-kit](https://github.com/github/spec-kit) by [@kartsan03](https://github.com/kartsan03) · [`f61648d`](https://github.com/github/spec-kit/commit/f61648db96b5ac5eb65a54577865dafc2c830a7c)
+[github/spec-kit](https://github.com/github/spec-kit) by [@github-actions[bot]](https://github.com/github-actions[bot]) · [`f201054`](https://github.com/github/spec-kit/commit/f2010547121b3351e4923fe467205079e4593a32)
 
 ~~~
-fix(extensions): keep edited skill resources on an unforced integration switch (#5495)
+Update Spec Status extension to v0.4.1 (#5576)
 
-* fix(extensions): keep edited skill resources on an unforced integration switch
+Update spec-status extension submitted by @tosin2013:
+- extensions/catalog.community.json (version, download_url, etc.)
+- docs/community/extensions.md community extensions table
 
-An unforced `specify integration switch` retired every recorded skill
-resource o
 …
 ~~~
 
-Ah, the digital equivalent of taking the keys out of a user's hand without warning and swapping their custom paint job for the factory standard. This commit finally ensures an 'unforced' switch means just that, gracefully preserving modified files and their records instead of silently obliterating them. The robust handling of unreadable and symlinked resources is a touch of cautious genius.
+Another day, another version bump by the bot brigade. While just metadata in a JSON, moving from 0.2.0 to 0.4.1 with a new command signals proper iteration. The layers of automation, with bots co-authoring, speak volumes about the hands-off maintenance required for sprawling open source.
 
-<sub>captured 2026-11-25</sub>
+<sub>captured 2026-11-26</sub>
 
 </div>
 <!-- ENTROPY:END -->
